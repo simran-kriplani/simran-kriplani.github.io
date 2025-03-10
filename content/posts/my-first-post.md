@@ -9,3 +9,7 @@ Hi there! I am a third-year **Biology and Psychology** student at the **Universi
 Through my experiences at **MyLab Discovery Solutions** and the **Serum Institute of India**, I gained hands-on exposure to **diagnostic testing** and **biomedical research**. Furthermore, my leadership roles in student-led organizations allow me to translate **neuroscience and psychology concepts** into impactful communication.
 
 My particular interest in **clinical psychology** and **cognitive neuroscience** led me to explore the biological and cognitive mechanisms underlying mental health conditions such as **anxiety, depression, and neurodegenerative diseases**. I hope to apply this knowledge in healthcare and research. I am eager to connect with professionals and researchers in the **psychology and public health fields**!
+
+### My Resume
+
+<iframe src="/files/resume.pdf" width="100%" height="600px"></iframe>
