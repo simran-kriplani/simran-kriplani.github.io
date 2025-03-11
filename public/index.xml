@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome to PawsPortfolio on PawsPortfolio</title>
+    <title>Welcome to PawsPortfolio on Simran Kriplani</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Welcome to PawsPortfolio on PawsPortfolio</description>
-    <image>
-      <title>PawsPortfolio</title>
-      <url>https://simran-kriplani.github.io/assets/images/cat.jpg</url>
-      <link>https://simran-kriplani.github.io/assets/images/cat.jpg</link>
-    </image>
-    <generator>Hugo -- 0.145.0</generator>
+    <description>Recent content in Welcome to PawsPortfolio on Simran Kriplani</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 08 Feb 2025 22:57:31 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>paws.simran@gmail.com (Simran Kriplani)</managingEditor>
+    <webMaster>paws.simran@gmail.com (Simran Kriplani)</webMaster>
+    <copyright>© 2025 Simran Kriplani</copyright>
+    <lastBuildDate>Sat, 08 Feb 2025 22:57:31 -0500</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
     <item>
       <title>About Me</title>
       <link>http://localhost:1313/posts/my-first-post/</link>
       <pubDate>Sat, 08 Feb 2025 22:57:31 -0500</pubDate>
+      <author>paws.simran@gmail.com (Simran Kriplani)</author>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;p&gt;Hi there! I am a third-year &lt;strong&gt;Biology and Psychology&lt;/strong&gt; student at the &lt;strong&gt;University of Toronto&lt;/strong&gt; with a strong passion for understanding the intersection of health and human behaviour. My academic journey has been shaped by a broad foundation in the life sciences, complemented by &lt;em&gt;rigorous coursework&lt;/em&gt; and various projects in psychology and virology. These experiences have strengthened my ability to critically evaluate scientific literature and solve real-world problems.&lt;/p&gt;
-&lt;p&gt;Through my experiences at &lt;strong&gt;MyLab Discovery Solutions&lt;/strong&gt; and the &lt;strong&gt;Serum Institute of India&lt;/strong&gt;, I gained hands-on exposure to &lt;strong&gt;diagnostic testing&lt;/strong&gt; and &lt;strong&gt;biomedical research&lt;/strong&gt;. Furthermore, my leadership roles in student-led organizations allow me to translate &lt;strong&gt;neuroscience and psychology concepts&lt;/strong&gt; into impactful communication.&lt;/p&gt;</description>
+      <description></description>
+      
     </item>
+    
   </channel>
 </rss>
