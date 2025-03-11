@@ -12,4 +12,5 @@ My particular interest in **clinical psychology** and **cognitive neuroscience**
 
 ### My Resume
 
-<iframe src="/files/resume.pdf" width="100%" height="600px"></iframe>
+For more information
+[View My Resume](/files/resume.pdf)
