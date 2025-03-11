@@ -1,7 +1,7 @@
 baseURL: "https://simran-kriplani.github.io/"
 title: "PawsPortfolio"
 description: "A place where I showcase my projects, literature, and everything else."
-paginate: 5
+pagination.pagerSize: 5
 theme: PaperMod
 
 enableRobotsTXT: true
