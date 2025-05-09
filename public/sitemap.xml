@@ -9,14 +9,56 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/posts/drug-paper/</loc>
+    <lastmod>2025-05-09T00:20:39-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/meat/</loc>
+    <lastmod>2025-05-09T00:40:26-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/serum/</loc>
+    <lastmod>2025-05-09T00:45:15-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/mylab/</loc>
+    <lastmod>2025-05-09T00:42:28-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/phenotypic-plasticity/</loc>
+    <lastmod>2025-05-09T00:36:06-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/drosophila/</loc>
+    <lastmod>2025-05-09T00:38:44-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/goldenrods/</loc>
+    <lastmod>2025-05-09T00:29:53-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-02-08T22:57:31-05:00</lastmod>
+    <lastmod>2025-05-09T00:45:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-02-08T22:57:31-05:00</lastmod>
+    <lastmod>2025-05-09T00:45:15-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

@@ -9,7 +9,7 @@
     <managingEditor>paws.simran@gmail.com (Simran Kriplani)</managingEditor>
     <webMaster>paws.simran@gmail.com (Simran Kriplani)</webMaster>
     <copyright>© 2025 Simran Kriplani</copyright>
-    <lastBuildDate>Sat, 08 Feb 2025 22:57:31 -0500</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 May 2025 00:45:15 -0400</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About Me</title>
@@ -17,6 +17,76 @@
       <pubDate>Sat, 08 Feb 2025 22:57:31 -0500</pubDate>
       <author>paws.simran@gmail.com (Simran Kriplani)</author>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>LSD and the Brain: A Psychedelic Puzzle</title>
+      <link>http://localhost:1313/posts/drug-paper/</link>
+      <pubDate>Fri, 09 May 2025 00:20:39 -0400</pubDate>
+      <author>paws.simran@gmail.com (Simran Kriplani)</author>
+      <guid>http://localhost:1313/posts/drug-paper/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>&lt;em&gt;Meat&lt;/em&gt; Your Match: Microfluidics and Cultured Meat</title>
+      <link>http://localhost:1313/posts/meat/</link>
+      <pubDate>Fri, 09 May 2025 00:40:26 -0400</pubDate>
+      <author>paws.simran@gmail.com (Simran Kriplani)</author>
+      <guid>http://localhost:1313/posts/meat/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Serum Institute Internship Report: Vaccine Development, Recombinant Labs, and Clinical Trials</title>
+      <link>http://localhost:1313/posts/serum/</link>
+      <pubDate>Fri, 09 May 2025 00:45:15 -0400</pubDate>
+      <author>paws.simran@gmail.com (Simran Kriplani)</author>
+      <guid>http://localhost:1313/posts/serum/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>MyLab Internship Report: Diagnostics, PCR and More</title>
+      <link>http://localhost:1313/posts/mylab/</link>
+      <pubDate>Fri, 09 May 2025 00:42:28 -0400</pubDate>
+      <author>paws.simran@gmail.com (Simran Kriplani)</author>
+      <guid>http://localhost:1313/posts/mylab/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Adaptability in Dog-Strangling Vine and Coleus</title>
+      <link>http://localhost:1313/posts/phenotypic-plasticity/</link>
+      <pubDate>Fri, 09 May 2025 00:36:06 -0400</pubDate>
+      <author>paws.simran@gmail.com (Simran Kriplani)</author>
+      <guid>http://localhost:1313/posts/phenotypic-plasticity/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Genetic Drift and Selection in Fruit Flies</title>
+      <link>http://localhost:1313/posts/drosophila/</link>
+      <pubDate>Fri, 09 May 2025 00:38:44 -0400</pubDate>
+      <author>paws.simran@gmail.com (Simran Kriplani)</author>
+      <guid>http://localhost:1313/posts/drosophila/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>The Effects of Galls on &lt;em&gt;Solidago canadensis&lt;/em&gt;</title>
+      <link>http://localhost:1313/posts/goldenrods/</link>
+      <pubDate>Fri, 09 May 2025 00:29:53 -0400</pubDate>
+      <author>paws.simran@gmail.com (Simran Kriplani)</author>
+      <guid>http://localhost:1313/posts/goldenrods/</guid>
       <description></description>
       
     </item>

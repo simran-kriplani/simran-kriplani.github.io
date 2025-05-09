@@ -2,6 +2,7 @@
 date = '2025-02-08T22:57:31-05:00'
 draft = false
 title = 'About Me'
+weight = 1
 +++
 
 Hi there! I am a third-year **Biology and Psychology** student at the **University of Toronto** with a strong passion for understanding the intersection of health and human behaviour. My academic journey has been shaped by a broad foundation in the life sciences, complemented by _rigorous coursework_ and various projects in psychology and virology. These experiences have strengthened my ability to critically evaluate scientific literature and solve real-world problems.
