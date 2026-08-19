@@ -1,5 +1,5 @@
 +++
 # Homepage
 type = "widget_page"
-headless = true
+headless = true  # Homepage is headless, other widget pages are not.
 +++

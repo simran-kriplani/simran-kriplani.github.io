@@ -1,22 +1,20 @@
 +++
-# Contact widget
-widget = "contact"
-headless = true
-active = true
-weight = 85
-id = "contact"
+# Contact widget.
+widget = "contact"  # See https://sourcethemes.com/academic/docs/page-builder/
+headless = true  # This file represents a page section.
+active = true  # Activate this widget? true/false
+weight = 130  # Order that this section will appear.
 
-title = "Let's Connect"
-subtitle = "Interested in consulting, research collaboration, or discussing market insights?"
+title = "Contact"
+subtitle = "Connect with me"
 
-[email_form]
-  provider = "netlify"
-  netlify.captcha = false
+# Automatically link email and phone?
+autolink = true
 
-# Contact details
-email = "paws.simran@gmail.com"
-phone = ""
-address = ""
+# Email form provider
+#   0: Disable email form
+#   1: Netlify (requires that the site is hosted by Netlify)
+#   2: formspree.io
+email_form = 2
 +++
 
-I'm available for consulting engagements, market research projects, and collaboration on behavioral finance initiatives. Reach out to discuss how behavioral science can drive your business strategy.

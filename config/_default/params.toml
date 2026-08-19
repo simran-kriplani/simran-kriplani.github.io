@@ -1,19 +1,21 @@
 # SITE SETUP
 # Documentation: https://sourcethemes.com/academic/
 
+# marketing
+microsoft_clarity = ""
+
 # Color theme.
 #   Choose from `default`, `ocean`, `forest`, `dark`, `apogee`, `1950s`, `coffee`, `cupcake`, `strawberry`.
 color_theme = "default"
-
 # Enable users to switch between day and night mode?
 day_night = true
 
 # Font style.
-#   Choose from `default`, `classic`, or `rose`.
+#   Choose from `default`, `classic`, or `playfair`.
 font = "classic"
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = "Portfolio and research interests of Simran Kriplani"
+description = ""
 
 # Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
 sharing_image = ""
@@ -28,6 +30,8 @@ logo = ""
 # Enable global source code highlighting? true/false
 # Documentation: https://sourcethemes.com/academic/docs/writing-markdown-latex/#highlighting-options
 highlight = true
+# highlight_languages = ["r"]  # Add support for highlighting additional languages
+# highlight_style = "github"  # For supported styles, see https://cdnjs.com/libraries/highlight.js/
 
 # Enable global LaTeX math rendering?
 #   If false, you can enable it locally on a per page basis.
@@ -49,20 +53,26 @@ time_format = "3:04 PM"
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "paws.simran@gmail.com"
-phone = ""
-address = ""
-linkedin = "linkedin.com/in/simran-kriplani"
+email = "test@example.org"
+phone = "888 888 88 88"
+address = "Building 1 Room 1, Stanford University, California, 90210, USA"
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
-office_hours = ""
+office_hours = """Monday 10:00 to 13:00<br>
+                  Wednesday 09:00 to 10:00"""
 
 # Enter an optional link for booking appointments (e.g. calendly.com).
-appointment_url = ""
+appointment_url = "https://calendly.com"
 
 # Contact links
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
-contact_links = []
+contact_links = [
+  {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/Twitter"},
+  {icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:echo123?call"},
+  {icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/"},
+  {icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
+  # {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
+  ]
 
 # Display a map.
 # To show your address on a map in the contact widget, you need to enter your latitude, longitude and choose
@@ -72,10 +82,17 @@ contact_links = []
 # To use OpenStreetMap tiles, set `map = 2`.
 # To use OpenStreetMap on a high traffic site, set `map = 3` and enter your API key that can be obtained here:
 #   https://www.mapbox.com/studio/account/tokens
-map = 0
-map_api_key = ""
-latitude = ""
-longitude = ""
+# To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
+#
+# Map provider:
+#   0: No map
+#   1: Google Maps
+#   2: OpenStreetMap (Mapnik)
+#   3: OpenStreetMap (Mapbox)
+map = 2
+map_api_key = "AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
+latitude = "37.4275"
+longitude = "-122.1697"
 zoom = 15
 
 ############################
@@ -102,7 +119,7 @@ menu_align_right = true
 reading_time = true
 
 # Display comment count (if commenting enabled in config.toml)? (true/false)
-comment_count = false
+comment_count = true
 
 # Display next/previous section pager? (true/false)
 section_pager = false
@@ -130,3 +147,19 @@ sharing = true
   post_view = 3
   publication_view = 3
   talk_view = 2
+
+# Search.
+[search]
+  # Search provider:
+  #   0: No search engine
+  #   1: academia (built-in)
+  #   2: Algolia (https://www.algolia.com)
+  engine = 0
+
+  # Configuration of Algolia search engine.
+  # Paste the values from your Algolia dashboard.
+  [search.algolia]
+    app_id = ""
+    api_key = ""
+    index_name = ""
+    show_logo = false

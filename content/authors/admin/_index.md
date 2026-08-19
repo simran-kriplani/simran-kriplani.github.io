@@ -1,40 +1,82 @@
 ---
-name: "Simran Kriplani"
+# Display name
+name: Michael Vahn
 avatar_image: "cat.jpg"
-role: "Behavioral Finance & Market Research Consultant"
-bio: "Leveraging behavioral science insights to drive strategic consulting and market research initiatives"
+# Username (this should match the folder name)
+authors:
+  - admin
+# resume download button
+btn:
+  - url: https://docs.gethugothemes.com/guide/
+    label: Download Resume
+
+# Is this the primary user of the site?
+superuser: true
+
+# Role/position
+role: Professor of Artificial Intelligence
+
+# Organizations/Affiliations
+organizations:
+  - name: Stanford University
+    url: ""
+
+# Short bio (displayed in user profile at end of posts)
+bio: My research interests include distributed robotics, mobile computing and
+  programmable matter.
+
+# Should the user's education and interests be displayed?
+display_education: false
+
 interests:
-  - Behavioral Finance
-  - Consumer Psychology
-  - Market Research & Analytics
-  - Decision Science
-  - Neuromarketing
-  - Risk Perception & Behavior
+  - Artificial Intelligence
+  - Computational Linguistics
+  - Information Retrieval
+
+education:
+  courses:
+    - course: PhD in Artificial Intelligence
+      institution: Stanford University
+      year: 2012
+    - course: MEng in Artificial Intelligence
+      institution: Massachusetts Institute of Technology
+      year: 2009
+    - course: BSc in Artificial Intelligence
+      institution: Massachusetts Institute of Technology
+      year: 2008
+
+# Social/academia Networking
+# For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
+#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
+#   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
   - icon: envelope
     icon_pack: fas
-    link: "mailto:paws.simran@gmail.com"
-  - icon: linkedin
+    link: "#contact"
+  - icon: twitter
     icon_pack: fab
-    link: "https://linkedin.com/in/simran-kriplani"
+    link: https://twitter.com/GeorgeCushen
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
   - icon: github
     icon_pack: fab
-    link: "https://github.com/simran-kriplani"
-superuser: true
+    link: https://github.com/gcushen
+# Link to a PDF of your resume/CV from the About widget.
+# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
+# - icon: cv
+#   icon_pack: ai
+#   link: files/cv.pdf
+
+# Enter email to display Gravatar (if Gravatar enabled in Config)
+email: ""
+
+# Organizational groups that you belong to (for People widget)
+#   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
-  - Consultants
   - Researchers
+  - Visitors
 ---
+Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and prograce leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
 
-I'm a behavioral science specialist with expertise in applying psychological and neuroscience principles to market research and consulting. My work bridges the gap between consumer behavior theory and practical business strategy.
-
-With a strong foundation in **psychology, behavioral economics, and decision science**, I help organizations understand the hidden motivations driving consumer choices and market dynamics. My research focuses on how cognitive biases, emotional factors, and social influences shape financial decisions, market trends, and consumer behavior.
-
-Through my consulting engagements and research projects, I've developed expertise in:
-
-- **Behavioral Finance**: Understanding how psychological factors influence investment decisions, risk perception, and financial markets
-- **Market Research**: Designing studies to uncover consumer motivations beyond traditional surveys
-- **Consumer Psychology**: Analyzing decision-making processes and predicting behavior patterns
-- **Strategic Consulting**: Translating behavioral science findings into actionable business strategies
-
-I'm passionate about helping organizations make data-driven decisions grounded in behavioral science, and I'm actively seeking consulting and research opportunities in finance, market analysis, and strategic planning.
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum. The point of using Lorem Ipsum. distracted by the readable content of a page.

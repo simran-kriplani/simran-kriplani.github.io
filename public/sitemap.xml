@@ -2,233 +2,144 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/authors/</loc>
-    <lastmod>2025-05-09T00:45:15-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/courses/example/example1/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-05-09T00:45:15-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/courses/example.1/example3/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/consulting/</loc>
-    <lastmod>2025-05-09T00:45:15-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/courses/example.2/example3/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/consulting-experience/</loc>
-    <lastmod>2025-05-09T00:45:15-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/courses/example.1/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/global-markets/</loc>
-    <lastmod>2025-05-09T00:45:15-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/courses/example.2/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/market-research/</loc>
-    <lastmod>2025-05-09T00:45:15-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/courses/example/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/serum/</loc>
-    <lastmod>2025-05-09T00:45:15-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/courses/example.2/example4/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/pharmaceutical-markets/</loc>
-    <lastmod>2025-05-09T00:45:15-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/courses/example/example2/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-05-09T00:45:15-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/courses/example.1/example4/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/admin/</loc>
-    <lastmod>2025-05-09T00:45:15-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/strategic-planning/</loc>
-    <lastmod>2025-05-09T00:45:15-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/talk/coding/</loc>
+    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-05-09T00:45:15-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/talk/qualitative/</loc>
+    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/mylab/</loc>
-    <lastmod>2025-05-09T00:42:28-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/talk/</loc>
+    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/diagnostic-markets/</loc>
-    <lastmod>2025-05-09T00:42:28-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/talk/synthesizing/</loc>
+    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/healthcare-technology/</loc>
-    <lastmod>2025-05-09T00:42:28-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/courses/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/strategic-analysis/</loc>
-    <lastmod>2025-05-09T00:42:28-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/authors/admin/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/consumer-behavior/</loc>
-    <lastmod>2025-05-09T00:40:26-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/publication_types/3/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/meat/</loc>
-    <lastmod>2025-05-09T00:40:26-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/publication/preprint/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/consumer-psychology/</loc>
-    <lastmod>2025-05-09T00:40:26-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/authors/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/innovation-adoption/</loc>
-    <lastmod>2025-05-09T00:40:26-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/publication_types/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sustainability/</loc>
-    <lastmod>2025-05-09T00:40:26-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/publication/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/technology-markets/</loc>
-    <lastmod>2025-05-09T00:40:26-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/tags/source-themes/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/adaptation/</loc>
-    <lastmod>2025-05-09T00:38:44-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/behavioral-science/</loc>
-    <lastmod>2025-05-09T00:38:44-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/post/jupyter/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/competitive-dynamics/</loc>
-    <lastmod>2025-05-09T00:38:44-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/post/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/drosophila/</loc>
-    <lastmod>2025-05-09T00:38:44-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/slides/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/market-evolution/</loc>
-    <lastmod>2025-05-09T00:38:44-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/slides/example/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/phenotypic-plasticity/</loc>
-    <lastmod>2025-05-09T00:36:06-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/project/artificial-intelligence/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/behavioral-adaptation/</loc>
-    <lastmod>2025-05-09T00:36:06-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/project/deep-learning/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/consumer-psychology/</loc>
-    <lastmod>2025-05-09T00:36:06-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/tags/deep-learning/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/environmental-factors/</loc>
-    <lastmod>2025-05-09T00:36:06-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/tags/demo/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/market-dynamics/</loc>
-    <lastmod>2025-05-09T00:36:06-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/project/external-project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/competitive-analysis/</loc>
-    <lastmod>2025-05-09T00:29:53-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/tags/human/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/goldenrods/</loc>
-    <lastmod>2025-05-09T00:29:53-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/project/internal-project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/market-disruption/</loc>
-    <lastmod>2025-05-09T00:29:53-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/stakeholder-impact/</loc>
-    <lastmod>2025-05-09T00:29:53-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/project/robotics/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/drug-paper/</loc>
-    <lastmod>2025-05-09T00:20:39-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/tags/robotics/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/behavioral-finance/</loc>
-    <lastmod>2025-05-09T00:20:39-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/project/skin-cancer-ai/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/decision-science/</loc>
-    <lastmod>2025-05-09T00:20:39-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/post/snail/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/risk-perception/</loc>
-    <lastmod>2025-05-09T00:20:39-04:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/tags/academia/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/about/</loc>
-    <lastmod>2025-02-08T22:57:31-05:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/post/getting-started/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/my-first-post/</loc>
-    <lastmod>2025-02-08T22:57:31-05:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/publication_types/2/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/consulting/</loc>
-    <lastmod>2025-02-08T22:57:31-05:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/publication/journal-article/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/market-research/</loc>
-    <lastmod>2025-02-08T22:57:31-05:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/authors/robert-ford/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/publication_types/1/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <loc>//localhost:1313/publication/conference-paper/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/</loc>
   </url>
 </urlset>

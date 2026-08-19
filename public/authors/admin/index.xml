@@ -1,184 +1,508 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Simran Kriplani</title>
-    <link>http://localhost:1313/authors/admin/</link>
-    <description>Recent content on Simran Kriplani</description>
+    <title>Academia</title>
+    <link>//localhost:1313/authors/admin/</link>
+    <description>Recent content on Academia</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
-    <language>en</language>
-    <managingEditor>paws.simran@gmail.com</managingEditor>
-    <webMaster>paws.simran@gmail.com</webMaster>
-    <lastBuildDate>Fri, 09 May 2025 00:45:15 -0400</lastBuildDate>
+    <language>en-us</language>
+    <managingEditor>test@example.org</managingEditor>
+    <webMaster>test@example.org</webMaster>
+    <copyright>Copyright &amp;copy; {year}</copyright>
+    <lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="http://localhost:1313/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="//localhost:1313/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Pharmaceutical Market Dynamics: Case Study in Vaccine Development and Distribution</title>
-      <link>http://localhost:1313/posts/serum/</link>
-      <pubDate>Fri, 09 May 2025 00:45:15 -0400</pubDate>
-      <author>paws.simran@gmail.com</author>
-      <guid>http://localhost:1313/posts/serum/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Consulting Engagement&lt;/strong&gt;: A comprehensive case study examining vaccine development, market dynamics, and strategic implementation at a global pharmaceutical scale. This engagement provided insights into complex stakeholder ecosystems, regulatory environments, and market strategy.&lt;/p&gt;
-&lt;p&gt;Key consulting insights:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Large-scale pharmaceutical market dynamics&lt;/li&gt;
-&lt;li&gt;Multi-stakeholder decision-making and coordination&lt;/li&gt;
-&lt;li&gt;Global market access and distribution strategy&lt;/li&gt;
-&lt;li&gt;Quality control and market reliability&lt;/li&gt;
-&lt;li&gt;Public health and commercial considerations&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;read-the-report-here&#34;&gt;Read the Report &lt;a href=&#34;http://localhost:1313/files/serum.pdf&#34;&gt;here.&lt;/a&gt;&lt;/h3&gt;
+      <title></title>
+      <link>//localhost:1313/authors/admin/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <author>test@example.org</author>
+      <guid>//localhost:1313/authors/admin/</guid>
+      <description>&lt;p&gt;Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and prograce leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.&lt;/p&gt;
+&lt;p&gt;It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum. The point of using Lorem Ipsum. distracted by the readable content of a page.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Consulting in Diagnostics: Molecular Decision-Making and Market Strategy</title>
-      <link>http://localhost:1313/posts/mylab/</link>
-      <pubDate>Fri, 09 May 2025 00:42:28 -0400</pubDate>
-      <author>paws.simran@gmail.com</author>
-      <guid>http://localhost:1313/posts/mylab/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Consulting Case Study&lt;/strong&gt;: Insights from strategic work in the diagnostics and healthcare technology sector. This engagement focused on understanding market dynamics, competitive positioning, and consumer decision-making in molecular diagnostics.&lt;/p&gt;
-&lt;p&gt;Key learnings:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Healthcare decision-making processes and stakeholder analysis&lt;/li&gt;
-&lt;li&gt;Technical complexity and market communication&lt;/li&gt;
-&lt;li&gt;Business model evaluation for diagnostic tools&lt;/li&gt;
-&lt;li&gt;Strategic positioning in competitive healthcare markets&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;read-the-report-here&#34;&gt;Read the Report &lt;a href=&#34;http://localhost:1313/files/mylab.pdf&#34;&gt;here.&lt;/a&gt;&lt;/h3&gt;
+      <title>An example preprint / working paper</title>
+      <link>//localhost:1313/publication/preprint/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <author>test@example.org</author>
+      <guid>//localhost:1313/publication/preprint/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo academia&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Consumer Perception of Disruptive Food Technology: A Behavioral Market Analysis</title>
-      <link>http://localhost:1313/posts/meat/</link>
-      <pubDate>Fri, 09 May 2025 00:40:26 -0400</pubDate>
-      <author>paws.simran@gmail.com</author>
-      <guid>http://localhost:1313/posts/meat/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Market Research Study&lt;/strong&gt;: An examination of how consumers perceive and adopt emerging food technologies. This collaborative research explores the intersection of innovation, consumer psychology, and market acceptance.&lt;/p&gt;
-&lt;p&gt;Research focuses on:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Innovation adoption curves and consumer willingness to try novel products&lt;/li&gt;
-&lt;li&gt;Perception of technological disruption in traditional markets&lt;/li&gt;
-&lt;li&gt;Sustainability messaging and consumer values&lt;/li&gt;
-&lt;li&gt;Barriers and enablers of market acceptance for disruptive technologies&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;view-the-analysis-here&#34;&gt;View the Analysis &lt;a href=&#34;http://localhost:1313/files/meat.pdf&#34;&gt;here.&lt;/a&gt;&lt;/h3&gt;
+      <title>Display Jupyter Notebooks with academia</title>
+      <link>//localhost:1313/post/jupyter/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <author>test@example.org</author>
+      <guid>//localhost:1313/post/jupyter/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; IPython.core.display &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; Image
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Image(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;//localhost:1313/post/jupyter/academia_0_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Welcome to academia!&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Welcome to academia!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;install-python-and-jupyter&#34;&gt;Install Python and Jupyter&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.anaconda.com/distribution/#download-section&#34;&gt;Install Anaconda&lt;/a&gt; which includes Python 3 and Jupyter notebook.&lt;/p&gt;
+&lt;p&gt;Otherwise, for advanced users, install Jupyter notebook with &lt;code&gt;pip3 install jupyter&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;create-a-new-blog-post-as-usual&#34;&gt;Create a new blog post &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-a-blog-post&#34;&gt;as usual&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Run the following commands in your Terminal, substituting &lt;code&gt;&amp;lt;MY_WEBSITE_FOLDER&amp;gt;&lt;/code&gt; and &lt;code&gt;my-post&lt;/code&gt; with the file path to your academia website folder and a name for your blog post (without spaces), respectively:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd &amp;lt;MY_WEBSITE_FOLDER&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new  --kind post post/my-post
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd &amp;lt;MY_WEBSITE_FOLDER&amp;gt;/content/post/my-post/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;create-or-upload-a-jupyter-notebook&#34;&gt;Create or upload a Jupyter notebook&lt;/h2&gt;
+&lt;p&gt;Run the following command to start Jupyter within your new blog post folder. Then create a new Jupyter notebook (&lt;em&gt;New &amp;gt; Python Notebook&lt;/em&gt;) or upload a notebook.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;jupyter notebook
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;convert-notebook-to-markdown&#34;&gt;Convert notebook to Markdown&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;jupyter nbconvert Untitled.ipynb --to markdown --NbConvertApp.output_files_dir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Copy the contents of Untitled.md and append it to index.md:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cat Untitled.md | tee -a index.md
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Remove the temporary file:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rm Untitled.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;edit-your-post-metadata&#34;&gt;Edit your post metadata&lt;/h2&gt;
+&lt;p&gt;Open &lt;code&gt;index.md&lt;/code&gt; in your text editor and edit the title etc. in the &lt;a href=&#34;https://sourcethemes.com/academic/docs/front-matter/&#34;&gt;front matter&lt;/a&gt; according to your preference.&lt;/p&gt;
+&lt;p&gt;To set a &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34;&gt;featured image&lt;/a&gt;, place an image named &lt;code&gt;featured&lt;/code&gt; into your post&amp;rsquo;s folder.&lt;/p&gt;
+&lt;p&gt;For other tips, such as using math, see the guide on &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;writing content with academia&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Evolutionary Insights into Market Dynamics: Natural Selection in Consumer Behavior</title>
-      <link>http://localhost:1313/posts/drosophila/</link>
-      <pubDate>Fri, 09 May 2025 00:38:44 -0400</pubDate>
-      <author>paws.simran@gmail.com</author>
-      <guid>http://localhost:1313/posts/drosophila/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Consulting Application&lt;/strong&gt;: An exploration of evolutionary principles as applied to market dynamics and consumer preference evolution. Using principles of natural selection and genetic variation, this research examines how market trends emerge, adapt, and evolve over time.&lt;/p&gt;
-&lt;p&gt;Key insights for market researchers:&lt;/p&gt;
+      <title>A Study of Snail Behavior</title>
+      <link>//localhost:1313/post/snail/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <author>test@example.org</author>
+      <guid>//localhost:1313/post/snail/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Create a free website with academia using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 &lt;em&gt;widgets&lt;/em&gt;, &lt;em&gt;themes&lt;/em&gt;, and &lt;em&gt;language packs&lt;/em&gt; included!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://academia-demo.netlify.com/&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or &lt;a href=&#34;https://sourcethemes.com/academic/#expo&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;How competitive pressures shape consumer preferences over time&lt;/li&gt;
-&lt;li&gt;Adaptation mechanisms in consumer behavior patterns&lt;/li&gt;
-&lt;li&gt;Market segmentation through evolutionary lens&lt;/li&gt;
-&lt;li&gt;Predicting market trends using population dynamics principles&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/post/snail/#install&#34;&gt;&lt;strong&gt;Setup academia&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34;&gt;&lt;strong&gt;Get Started&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34;&gt;View the documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://discuss.gohugo.io/&#34;&gt;Ask a question&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academia/issues&#34;&gt;Request a feature or report a bug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Updating? View the &lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34;&gt;Update Guide&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support development of academia:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://paypal.me/cushen&#34;&gt;Donate a coffee&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.patreon.com/cushen&#34;&gt;Become a backer on Patreon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.redbubble.com/people/neutreno/works/34387919-academia&#34;&gt;Decorate your laptop or journal with an academia sticker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://academia.threadless.com/&#34;&gt;Wear the T-shirt&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;read-the-research-here&#34;&gt;Read the Research &lt;a href=&#34;http://localhost:1313/files/drosophila.pdf&#34;&gt;here.&lt;/a&gt;&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academia/&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academia/master/academia.png&#34; alt=&#34;Screenshot&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key features:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with &lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://sourcethemes.com/academic/docs/jupyter/&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://docs.gethugothemes.com/guide/#install-with-rstudio&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 15+ language packs including English, 中文, and Português&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;color-themes&#34;&gt;Color Themes&lt;/h2&gt;
+&lt;p&gt;academia comes with &lt;strong&gt;day (light) and night (dark) mode&lt;/strong&gt; built-in. Click the sun/moon icon in the top right of the &lt;a href=&#34;https://academia-demo.netlify.com/&#34;&gt;Demo&lt;/a&gt; to see it in action!&lt;/p&gt;
+&lt;p&gt;Choose a stunning color and font theme for your site. Themes are fully customizable and include:&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;//localhost:1313/post/snail/gallery/theme-1950s.png&#34; data-caption=&#34;1950s&#34;&gt;
+  &lt;img src=&#34;//localhost:1313/post/snail/gallery/theme-1950s_hu_3df16cb4e000756d.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;//localhost:1313/post/snail/gallery/theme-apogee.png&#34; data-caption=&#34;Apogee&#34;&gt;
+  &lt;img src=&#34;//localhost:1313/post/snail/gallery/theme-apogee_hu_53f9a77eacf7101.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;//localhost:1313/post/snail/gallery/theme-coffee-playfair.png&#34; data-caption=&#34;Coffee theme with Playfair font&#34;&gt;
+  &lt;img src=&#34;//localhost:1313/post/snail/gallery/theme-coffee-playfair_hu_c0b733f1caf3eed7.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;//localhost:1313/post/snail/gallery/theme-dark.png&#34; data-caption=&#34;Dark&#34;&gt;
+  &lt;img src=&#34;//localhost:1313/post/snail/gallery/theme-dark_hu_ba52b5681ad91cc0.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;//localhost:1313/post/snail/gallery/theme-default.png&#34; data-caption=&#34;Default&#34;&gt;
+  &lt;img src=&#34;//localhost:1313/post/snail/gallery/theme-default_hu_ecc6375b0db16a75.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;//localhost:1313/post/snail/gallery/theme-forest.png&#34; data-caption=&#34;Forest&#34;&gt;
+  &lt;img src=&#34;//localhost:1313/post/snail/gallery/theme-forest_hu_30553c23ebdd8598.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;//localhost:1313/post/snail/gallery/theme-ocean.png&#34; data-caption=&#34;Ocean&#34;&gt;
+  &lt;img src=&#34;//localhost:1313/post/snail/gallery/theme-ocean_hu_f6427f7c95185d0f.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;//localhost:1313/post/snail/gallery/theme-strawberry.png&#34; data-caption=&#34;Strawberry&#34;&gt;
+  &lt;img src=&#34;//localhost:1313/post/snail/gallery/theme-strawberry_hu_7fffc548209def07.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academia-admin&#34;&gt;academia Admin&lt;/a&gt;:&lt;/strong&gt; An admin tool to import publications from BibTeX or import assets for an offline site&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academia-scripts&#34;&gt;academia Scripts&lt;/a&gt;:&lt;/strong&gt; Scripts to help migrate content to new versions of academia&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.gethugothemes.com/guide/#install-with-web-browser&#34;&gt;&lt;strong&gt;one-click install using your web browser (recommended)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.gethugothemes.com/guide/#install-with-git&#34;&gt;install on your computer using &lt;strong&gt;Git&lt;/strong&gt; with the Command Prompt/Terminal app&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.gethugothemes.com/guide/#install-with-zip&#34;&gt;install on your computer by downloading the &lt;strong&gt;ZIP files&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.gethugothemes.com/guide/#install-with-rstudio&#34;&gt;install on your computer with &lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then &lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34;&gt;personalize and deploy your new site&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34;&gt;View the Update Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on &lt;a href=&#34;https://github.com/gcushen/hugo-academia/&#34;&gt;Github&lt;/a&gt; to help keep track of &lt;a href=&#34;https://sourcethemes.com/academic/updates&#34;&gt;updates&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academia/blob/master/LICENSE.md&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Adaptive Behavior Under Changing Environments: Behavioral Flexibility in Markets</title>
-      <link>http://localhost:1313/posts/phenotypic-plasticity/</link>
-      <pubDate>Fri, 09 May 2025 00:36:06 -0400</pubDate>
-      <author>paws.simran@gmail.com</author>
-      <guid>http://localhost:1313/posts/phenotypic-plasticity/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Market Research Application&lt;/strong&gt;: An investigation of how individuals and markets adapt to changing environmental and competitive conditions. This research explores behavioral flexibility and strategic adaptation in uncertain environments.&lt;/p&gt;
-&lt;p&gt;Research explores:&lt;/p&gt;
+      <title>academia: the website builder for Hugo</title>
+      <link>//localhost:1313/post/getting-started/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <author>test@example.org</author>
+      <guid>//localhost:1313/post/getting-started/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Create a free website with academia using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 &lt;em&gt;widgets&lt;/em&gt;, &lt;em&gt;themes&lt;/em&gt;, and &lt;em&gt;language packs&lt;/em&gt; included!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://academia-demo.netlify.com/&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or &lt;a href=&#34;https://sourcethemes.com/academic/#expo&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;How consumer behavior shifts with market conditions&lt;/li&gt;
-&lt;li&gt;Adaptation strategies in dynamic competitive landscapes&lt;/li&gt;
-&lt;li&gt;Environmental factors influencing decision-making&lt;/li&gt;
-&lt;li&gt;Resilience and flexibility in consumer preferences&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/post/getting-started/#install&#34;&gt;&lt;strong&gt;Setup academia&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34;&gt;&lt;strong&gt;Get Started&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34;&gt;View the documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://discuss.gohugo.io/&#34;&gt;Ask a question&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academia/issues&#34;&gt;Request a feature or report a bug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Updating? View the &lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34;&gt;Update Guide&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support development of academia:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://paypal.me/cushen&#34;&gt;Donate a coffee&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.patreon.com/cushen&#34;&gt;Become a backer on Patreon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.redbubble.com/people/neutreno/works/34387919-academia&#34;&gt;Decorate your laptop or journal with an academia sticker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://academia.threadless.com/&#34;&gt;Wear the T-shirt&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;read-the-analysis-here&#34;&gt;Read the Analysis &lt;a href=&#34;http://localhost:1313/files/phenotypic.pdf&#34;&gt;here.&lt;/a&gt;&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academia/&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academia/master/academia.png&#34; alt=&#34;Screenshot&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key features:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with &lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://sourcethemes.com/academic/docs/jupyter/&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://docs.gethugothemes.com/guide/#install-with-rstudio&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 15+ language packs including English, 中文, and Português&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;color-themes&#34;&gt;Color Themes&lt;/h2&gt;
+&lt;p&gt;academia comes with &lt;strong&gt;day (light) and night (dark) mode&lt;/strong&gt; built-in. Click the sun/moon icon in the top right of the &lt;a href=&#34;https://academia-demo.netlify.com/&#34;&gt;Demo&lt;/a&gt; to see it in action!&lt;/p&gt;
+&lt;p&gt;Choose a stunning color and font theme for your site. Themes are fully customizable and include:&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;//localhost:1313/post/getting-started/gallery/theme-1950s.png&#34; data-caption=&#34;1950s&#34;&gt;
+  &lt;img src=&#34;//localhost:1313/post/getting-started/gallery/theme-1950s_hu_3df16cb4e000756d.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;//localhost:1313/post/getting-started/gallery/theme-apogee.png&#34; data-caption=&#34;Apogee&#34;&gt;
+  &lt;img src=&#34;//localhost:1313/post/getting-started/gallery/theme-apogee_hu_53f9a77eacf7101.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;//localhost:1313/post/getting-started/gallery/theme-coffee-playfair.png&#34; data-caption=&#34;Coffee theme with Playfair font&#34;&gt;
+  &lt;img src=&#34;//localhost:1313/post/getting-started/gallery/theme-coffee-playfair_hu_c0b733f1caf3eed7.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;//localhost:1313/post/getting-started/gallery/theme-dark.png&#34; data-caption=&#34;Dark&#34;&gt;
+  &lt;img src=&#34;//localhost:1313/post/getting-started/gallery/theme-dark_hu_ba52b5681ad91cc0.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;//localhost:1313/post/getting-started/gallery/theme-default.png&#34; data-caption=&#34;Default&#34;&gt;
+  &lt;img src=&#34;//localhost:1313/post/getting-started/gallery/theme-default_hu_ecc6375b0db16a75.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;//localhost:1313/post/getting-started/gallery/theme-forest.png&#34; data-caption=&#34;Forest&#34;&gt;
+  &lt;img src=&#34;//localhost:1313/post/getting-started/gallery/theme-forest_hu_30553c23ebdd8598.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;//localhost:1313/post/getting-started/gallery/theme-ocean.png&#34; data-caption=&#34;Ocean&#34;&gt;
+  &lt;img src=&#34;//localhost:1313/post/getting-started/gallery/theme-ocean_hu_f6427f7c95185d0f.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;//localhost:1313/post/getting-started/gallery/theme-strawberry.png&#34; data-caption=&#34;Strawberry&#34;&gt;
+  &lt;img src=&#34;//localhost:1313/post/getting-started/gallery/theme-strawberry_hu_7fffc548209def07.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academia-admin&#34;&gt;academia Admin&lt;/a&gt;:&lt;/strong&gt; An admin tool to import publications from BibTeX or import assets for an offline site&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academia-scripts&#34;&gt;academia Scripts&lt;/a&gt;:&lt;/strong&gt; Scripts to help migrate content to new versions of academia&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.gethugothemes.com/guide/#install-with-web-browser&#34;&gt;&lt;strong&gt;one-click install using your web browser (recommended)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.gethugothemes.com/guide/#install-with-git&#34;&gt;install on your computer using &lt;strong&gt;Git&lt;/strong&gt; with the Command Prompt/Terminal app&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.gethugothemes.com/guide/#install-with-zip&#34;&gt;install on your computer by downloading the &lt;strong&gt;ZIP files&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.gethugothemes.com/guide/#install-with-rstudio&#34;&gt;install on your computer with &lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then &lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34;&gt;personalize and deploy your new site&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34;&gt;View the Update Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on &lt;a href=&#34;https://github.com/gcushen/hugo-academia/&#34;&gt;Github&lt;/a&gt; to help keep track of &lt;a href=&#34;https://sourcethemes.com/academic/updates&#34;&gt;updates&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academia/blob/master/LICENSE.md&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Competitive Dynamics and Market Impact: Analyzing Disruptive Forces</title>
-      <link>http://localhost:1313/posts/goldenrods/</link>
-      <pubDate>Fri, 09 May 2025 00:29:53 -0400</pubDate>
-      <author>paws.simran@gmail.com</author>
-      <guid>http://localhost:1313/posts/goldenrods/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Market Research Application&lt;/strong&gt;: An investigation of how disruptive forces impact market participants and competitive dynamics. This research examines mechanisms of disruption, adaptation, and co-evolution in competitive environments.&lt;/p&gt;
-&lt;p&gt;Research focuses on:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Identifying disruptive forces and their impact mechanisms&lt;/li&gt;
-&lt;li&gt;Competitive response strategies and adaptation&lt;/li&gt;
-&lt;li&gt;Market concentration and ecosystem effects&lt;/li&gt;
-&lt;li&gt;Strategic positioning against disruption&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;read-the-analysis-here&#34;&gt;Read the Analysis &lt;a href=&#34;http://localhost:1313/files/goldenrods.pdf&#34;&gt;here&lt;/a&gt;&lt;/h3&gt;
+      <title>An example journal article</title>
+      <link>//localhost:1313/publication/journal-article/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <author>test@example.org</author>
+      <guid>//localhost:1313/publication/journal-article/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo academia&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Behavioral Economics of Psychedelics: Decision-Making Under Novel Compounds</title>
-      <link>http://localhost:1313/posts/drug-paper/</link>
-      <pubDate>Fri, 09 May 2025 00:20:39 -0400</pubDate>
-      <author>paws.simran@gmail.com</author>
-      <guid>http://localhost:1313/posts/drug-paper/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Market Research Perspective&lt;/strong&gt;: A comprehensive analysis of how behavioral and neurological factors influence decision-making around emerging markets and novel products. This research examines the psychological mechanisms underlying consumer adoption patterns, risk assessment, and market perception.&lt;/p&gt;
-&lt;p&gt;Drawing parallels to financial markets, this study explores:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;How cognitive biases shape perception of novel substances and emerging markets&lt;/li&gt;
-&lt;li&gt;Risk perception and tolerance in unfamiliar domains&lt;/li&gt;
-&lt;li&gt;Decision-making under uncertainty and novel information&lt;/li&gt;
-&lt;li&gt;Market trends and adoption curves from a behavioral perspective&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;read-the-research-here&#34;&gt;Read the Research &lt;a href=&#34;http://localhost:1313/files/drug_paper.pdf&#34;&gt;here.&lt;/a&gt;&lt;/h3&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About My Consulting &amp; Research Practice</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Sat, 08 Feb 2025 22:57:31 -0500</pubDate>
-      <author>paws.simran@gmail.com</author>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;h2 id=&#34;professional-focus&#34;&gt;Professional Focus&lt;/h2&gt;
-&lt;p&gt;I specialize in applying &lt;strong&gt;behavioral science and psychology&lt;/strong&gt; to solve complex business challenges in consulting and market research. My work focuses on understanding the human factors that drive financial decisions, market dynamics, and consumer behavior.&lt;/p&gt;
-&lt;h3 id=&#34;core-expertise&#34;&gt;Core Expertise&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Behavioral Finance &amp;amp; Market Research&lt;/strong&gt; — Combining psychological insights with financial analysis to understand how emotions, cognitive biases, and social influences shape market behavior and investment decisions.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Consumer Psychology&lt;/strong&gt; — Analyzing the decision-making processes behind consumer choices, from initial consideration through purchase and loyalty.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Strategic Consulting&lt;/strong&gt; — Translating behavioral science findings into actionable business strategy for financial services, technology, and consumer brands.&lt;/p&gt;
-&lt;h3 id=&#34;consulting-experience&#34;&gt;Consulting Experience&lt;/h3&gt;
-&lt;p&gt;I bring hands-on consulting experience from engagements across:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Healthcare &amp;amp; Pharmaceutical Markets&lt;/strong&gt; — Strategic analysis of complex market dynamics, competitive positioning, and stakeholder decision-making&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Diagnostics &amp;amp; Technology&lt;/strong&gt; — Market analysis, technology adoption, and competitive strategy&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Global Markets&lt;/strong&gt; — Understanding large-scale market dynamics, regulatory environments, and multi-stakeholder ecosystems&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;research-interests&#34;&gt;Research Interests&lt;/h3&gt;
-&lt;p&gt;My research explores:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;How cognitive biases influence financial decision-making&lt;/li&gt;
-&lt;li&gt;Consumer adoption patterns for disruptive technologies&lt;/li&gt;
-&lt;li&gt;Market dynamics through a behavioral lens&lt;/li&gt;
-&lt;li&gt;Strategic positioning in competitive environments&lt;/li&gt;
-&lt;li&gt;Behavioral adaptation and market evolution&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;why-behavioral-science-matters&#34;&gt;Why Behavioral Science Matters&lt;/h3&gt;
-&lt;p&gt;Traditional economic models assume rational actors making decisions based on complete information. In reality, human decision-making is shaped by psychology, emotions, and cognitive limitations. By understanding these behavioral drivers, organizations can:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Better predict market trends and consumer behavior&lt;/li&gt;
-&lt;li&gt;Design more effective strategies and interventions&lt;/li&gt;
-&lt;li&gt;Understand and influence stakeholder decision-making&lt;/li&gt;
-&lt;li&gt;Navigate uncertainty and complexity with greater confidence&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I&amp;rsquo;m passionate about bridging the gap between behavioral science research and practical consulting impact, helping organizations make smarter, data-driven decisions grounded in human psychology.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Available for consulting engagements&lt;/strong&gt; in behavioral finance, market research, and strategic planning. &lt;a href=&#34;mailto:paws.simran@gmail.com&#34;&gt;Contact me&lt;/a&gt; to discuss your research or consulting needs.&lt;/p&gt;
+      <title>An example conference paper</title>
+      <link>//localhost:1313/publication/conference-paper/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <author>test@example.org</author>
+      <guid>//localhost:1313/publication/conference-paper/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo academia&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

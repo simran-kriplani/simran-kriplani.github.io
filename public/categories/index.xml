@@ -1,62 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Simran Kriplani</title>
-    <link>http://localhost:1313/categories/</link>
-    <description>Recent content in Categories on Simran Kriplani</description>
+    <title>Categories on Academia</title>
+    <link>//localhost:1313/categories/</link>
+    <description>Recent content in Categories on Academia</description>
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
-    <language>en</language>
-    <managingEditor>paws.simran@gmail.com</managingEditor>
-    <webMaster>paws.simran@gmail.com</webMaster>
-    <lastBuildDate>Fri, 09 May 2025 00:45:15 -0400</lastBuildDate>
+    <language>en-us</language>
+    <managingEditor>test@example.org</managingEditor>
+    <webMaster>test@example.org</webMaster>
+    <copyright>Copyright &amp;copy; {year}</copyright>
     
-	    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="//localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Consulting</title>
-      <link>http://localhost:1313/categories/consulting/</link>
-      <pubDate>Fri, 09 May 2025 00:45:15 -0400</pubDate>
-      <author>paws.simran@gmail.com</author>
-      <guid>http://localhost:1313/categories/consulting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Market Research</title>
-      <link>http://localhost:1313/categories/market-research/</link>
-      <pubDate>Fri, 09 May 2025 00:45:15 -0400</pubDate>
-      <author>paws.simran@gmail.com</author>
-      <guid>http://localhost:1313/categories/market-research/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Consumer Psychology</title>
-      <link>http://localhost:1313/categories/consumer-psychology/</link>
-      <pubDate>Fri, 09 May 2025 00:40:26 -0400</pubDate>
-      <author>paws.simran@gmail.com</author>
-      <guid>http://localhost:1313/categories/consumer-psychology/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Behavioral Science</title>
-      <link>http://localhost:1313/categories/behavioral-science/</link>
-      <pubDate>Fri, 09 May 2025 00:38:44 -0400</pubDate>
-      <author>paws.simran@gmail.com</author>
-      <guid>http://localhost:1313/categories/behavioral-science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/categories/about/</link>
-      <pubDate>Sat, 08 Feb 2025 22:57:31 -0500</pubDate>
-      <author>paws.simran@gmail.com</author>
-      <guid>http://localhost:1313/categories/about/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
