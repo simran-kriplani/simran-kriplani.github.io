@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Evolution on Simran Kriplani</title>
+    <link>http://localhost:1313/tags/evolution/</link>
+    <description>Recent content in Evolution on Simran Kriplani</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en</language>
+    <managingEditor>paws.simran@gmail.com</managingEditor>
+    <webMaster>paws.simran@gmail.com</webMaster>
+    <lastBuildDate>Fri, 09 May 2025 00:29:53 -0400</lastBuildDate>
+    
+	    <atom:link href="http://localhost:1313/tags/evolution/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Effects of Galls on Solidago canadensis</title>
+      <link>http://localhost:1313/posts/goldenrods/</link>
+      <pubDate>Fri, 09 May 2025 00:29:53 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/posts/goldenrods/</guid>
+      <description>&lt;p&gt;Galls may look like botanical curiosities, but this report reveals their deeper ecological implications.&lt;/p&gt;
+&lt;p&gt;Focusing on the relationship between goldenrods and parasitic gall flies, I investigated how these plant deformations impact height, reproduction, and growth, offering insights into plant-herbivore coevolution.&lt;/p&gt;
+&lt;h3 id=&#34;read-it-here&#34;&gt;Read it &lt;a href=&#34;http://localhost:1313/files/goldenrods.pdf&#34;&gt;here&lt;/a&gt;&lt;/h3&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

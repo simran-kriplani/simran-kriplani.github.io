@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bio on Simran Kriplani</title>
+    <link>http://localhost:1313/tags/bio/</link>
+    <description>Recent content in Bio on Simran Kriplani</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en</language>
+    <managingEditor>paws.simran@gmail.com</managingEditor>
+    <webMaster>paws.simran@gmail.com</webMaster>
+    <lastBuildDate>Sat, 08 Feb 2025 22:57:31 -0500</lastBuildDate>
+    
+	    <atom:link href="http://localhost:1313/tags/bio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Sat, 08 Feb 2025 22:57:31 -0500</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description>&lt;p&gt;Hi there! I am a third-year &lt;strong&gt;Biology and Psychology&lt;/strong&gt; student at the &lt;strong&gt;University of Toronto&lt;/strong&gt; with a strong passion for understanding the intersection of health and human behaviour. My academic journey has been shaped by a broad foundation in the life sciences, complemented by &lt;em&gt;rigorous coursework&lt;/em&gt; and various projects in psychology and virology. These experiences have strengthened my ability to critically evaluate scientific literature and solve real-world problems.&lt;/p&gt;
+&lt;p&gt;Through my experiences at &lt;strong&gt;MyLab Discovery Solutions&lt;/strong&gt; and the &lt;strong&gt;Serum Institute of India&lt;/strong&gt;, I gained hands-on exposure to &lt;strong&gt;diagnostic testing&lt;/strong&gt; and &lt;strong&gt;biomedical research&lt;/strong&gt;. Furthermore, my leadership roles in student-led organizations allow me to translate &lt;strong&gt;neuroscience and psychology concepts&lt;/strong&gt; into impactful communication.&lt;/p&gt;
+&lt;p&gt;My particular interest in &lt;strong&gt;clinical psychology&lt;/strong&gt; and &lt;strong&gt;cognitive neuroscience&lt;/strong&gt; led me to explore the biological and cognitive mechanisms underlying mental health conditions such as &lt;strong&gt;anxiety, depression, and neurodegenerative diseases&lt;/strong&gt;. I hope to apply this knowledge in healthcare and research. I am eager to connect with professionals and researchers in the &lt;strong&gt;psychology and public health fields&lt;/strong&gt;!&lt;/p&gt;
+&lt;h3 id=&#34;my-resume&#34;&gt;My Resume&lt;/h3&gt;
+&lt;p&gt;For more information
+&lt;a href=&#34;http://localhost:1313/files/resume.pdf&#34;&gt;View My Resume&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,15 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Simran Kriplani</title>
     <link>http://localhost:1313/authors/</link>
     <description>Recent content in Authors on Simran Kriplani</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en</language>
-    <managingEditor>paws.simran@gmail.com (Simran Kriplani)</managingEditor>
-    <webMaster>paws.simran@gmail.com (Simran Kriplani)</webMaster>
-    <copyright>© 2025 Simran Kriplani</copyright>
-    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>paws.simran@gmail.com</managingEditor>
+    <webMaster>paws.simran@gmail.com</webMaster>
+    <lastBuildDate>Fri, 09 May 2025 00:45:15 -0400</lastBuildDate>
+    
+	    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Simran Kriplani</title>
+      <link>http://localhost:1313/authors/admin/</link>
+      <pubDate>Fri, 09 May 2025 00:45:15 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/authors/admin/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a behavioral science specialist with expertise in applying psychological and neuroscience principles to market research and consulting. My work bridges the gap between consumer behavior theory and practical business strategy.&lt;/p&gt;
+&lt;p&gt;With a strong foundation in &lt;strong&gt;psychology, behavioral economics, and decision science&lt;/strong&gt;, I help organizations understand the hidden motivations driving consumer choices and market dynamics. My research focuses on how cognitive biases, emotional factors, and social influences shape financial decisions, market trends, and consumer behavior.&lt;/p&gt;
+&lt;p&gt;Through my consulting engagements and research projects, I&amp;rsquo;ve developed expertise in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Behavioral Finance&lt;/strong&gt;: Understanding how psychological factors influence investment decisions, risk perception, and financial markets&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Market Research&lt;/strong&gt;: Designing studies to uncover consumer motivations beyond traditional surveys&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Consumer Psychology&lt;/strong&gt;: Analyzing decision-making processes and predicting behavior patterns&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Strategic Consulting&lt;/strong&gt;: Translating behavioral science findings into actionable business strategies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I&amp;rsquo;m passionate about helping organizations make data-driven decisions grounded in behavioral science, and I&amp;rsquo;m actively seeking consulting and research opportunities in finance, market analysis, and strategic planning.&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>

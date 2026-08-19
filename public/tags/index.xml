@@ -1,15 +1,251 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Simran Kriplani</title>
     <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Simran Kriplani</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en</language>
-    <managingEditor>paws.simran@gmail.com (Simran Kriplani)</managingEditor>
-    <webMaster>paws.simran@gmail.com (Simran Kriplani)</webMaster>
-    <copyright>© 2025 Simran Kriplani</copyright>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>paws.simran@gmail.com</managingEditor>
+    <webMaster>paws.simran@gmail.com</webMaster>
+    <lastBuildDate>Fri, 09 May 2025 00:45:15 -0400</lastBuildDate>
+    
+	    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Consulting Experience</title>
+      <link>http://localhost:1313/tags/consulting-experience/</link>
+      <pubDate>Fri, 09 May 2025 00:45:15 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/consulting-experience/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Global Markets</title>
+      <link>http://localhost:1313/tags/global-markets/</link>
+      <pubDate>Fri, 09 May 2025 00:45:15 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/global-markets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pharmaceutical Markets</title>
+      <link>http://localhost:1313/tags/pharmaceutical-markets/</link>
+      <pubDate>Fri, 09 May 2025 00:45:15 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/pharmaceutical-markets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Strategic Planning</title>
+      <link>http://localhost:1313/tags/strategic-planning/</link>
+      <pubDate>Fri, 09 May 2025 00:45:15 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/strategic-planning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Diagnostic Markets</title>
+      <link>http://localhost:1313/tags/diagnostic-markets/</link>
+      <pubDate>Fri, 09 May 2025 00:42:28 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/diagnostic-markets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Healthcare Technology</title>
+      <link>http://localhost:1313/tags/healthcare-technology/</link>
+      <pubDate>Fri, 09 May 2025 00:42:28 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/healthcare-technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Strategic Analysis</title>
+      <link>http://localhost:1313/tags/strategic-analysis/</link>
+      <pubDate>Fri, 09 May 2025 00:42:28 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/strategic-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Consumer Behavior</title>
+      <link>http://localhost:1313/tags/consumer-behavior/</link>
+      <pubDate>Fri, 09 May 2025 00:40:26 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/consumer-behavior/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Innovation Adoption</title>
+      <link>http://localhost:1313/tags/innovation-adoption/</link>
+      <pubDate>Fri, 09 May 2025 00:40:26 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/innovation-adoption/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sustainability</title>
+      <link>http://localhost:1313/tags/sustainability/</link>
+      <pubDate>Fri, 09 May 2025 00:40:26 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/sustainability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technology Markets</title>
+      <link>http://localhost:1313/tags/technology-markets/</link>
+      <pubDate>Fri, 09 May 2025 00:40:26 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/technology-markets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adaptation</title>
+      <link>http://localhost:1313/tags/adaptation/</link>
+      <pubDate>Fri, 09 May 2025 00:38:44 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/adaptation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Competitive Dynamics</title>
+      <link>http://localhost:1313/tags/competitive-dynamics/</link>
+      <pubDate>Fri, 09 May 2025 00:38:44 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/competitive-dynamics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Market Evolution</title>
+      <link>http://localhost:1313/tags/market-evolution/</link>
+      <pubDate>Fri, 09 May 2025 00:38:44 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/market-evolution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Behavioral Adaptation</title>
+      <link>http://localhost:1313/tags/behavioral-adaptation/</link>
+      <pubDate>Fri, 09 May 2025 00:36:06 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/behavioral-adaptation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Consumer Psychology</title>
+      <link>http://localhost:1313/tags/consumer-psychology/</link>
+      <pubDate>Fri, 09 May 2025 00:36:06 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/consumer-psychology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Environmental Factors</title>
+      <link>http://localhost:1313/tags/environmental-factors/</link>
+      <pubDate>Fri, 09 May 2025 00:36:06 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/environmental-factors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Market Dynamics</title>
+      <link>http://localhost:1313/tags/market-dynamics/</link>
+      <pubDate>Fri, 09 May 2025 00:36:06 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/market-dynamics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Competitive Analysis</title>
+      <link>http://localhost:1313/tags/competitive-analysis/</link>
+      <pubDate>Fri, 09 May 2025 00:29:53 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/competitive-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Market Disruption</title>
+      <link>http://localhost:1313/tags/market-disruption/</link>
+      <pubDate>Fri, 09 May 2025 00:29:53 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/market-disruption/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stakeholder Impact</title>
+      <link>http://localhost:1313/tags/stakeholder-impact/</link>
+      <pubDate>Fri, 09 May 2025 00:29:53 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/stakeholder-impact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Behavioral Finance</title>
+      <link>http://localhost:1313/tags/behavioral-finance/</link>
+      <pubDate>Fri, 09 May 2025 00:20:39 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/behavioral-finance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Decision Science</title>
+      <link>http://localhost:1313/tags/decision-science/</link>
+      <pubDate>Fri, 09 May 2025 00:20:39 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/decision-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Risk Perception</title>
+      <link>http://localhost:1313/tags/risk-perception/</link>
+      <pubDate>Fri, 09 May 2025 00:20:39 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/risk-perception/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Consulting</title>
+      <link>http://localhost:1313/tags/consulting/</link>
+      <pubDate>Sat, 08 Feb 2025 22:57:31 -0500</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/consulting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Market Research</title>
+      <link>http://localhost:1313/tags/market-research/</link>
+      <pubDate>Sat, 08 Feb 2025 22:57:31 -0500</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/tags/market-research/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

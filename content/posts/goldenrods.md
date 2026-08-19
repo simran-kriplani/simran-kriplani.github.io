@@ -1,12 +1,25 @@
-+++
-date = '2025-05-09T00:29:53-04:00'
-draft = false
-title = 'The Effects of Galls on <em>Solidago canadensis</em>'
-weight = 7
-+++
+---
+title: "Competitive Dynamics and Market Impact: Analyzing Disruptive Forces"
+date: 2025-05-09T00:29:53-04:00
+draft: false
+authors:
+  - admin
+categories:
+  - Market Research
+  - Behavioral Science
+tags:
+  - Competitive Analysis
+  - Market Disruption
+  - Stakeholder Impact
+  - Strategic Planning
+---
 
-Galls may look like botanical curiosities, but this report reveals their deeper ecological implications.
+**Market Research Application**: An investigation of how disruptive forces impact market participants and competitive dynamics. This research examines mechanisms of disruption, adaptation, and co-evolution in competitive environments.
 
-Focusing on the relationship between goldenrods and parasitic gall flies, I investigated how these plant deformations impact height, reproduction, and growth, offering insights into plant-herbivore coevolution.
+Research focuses on:
+- Identifying disruptive forces and their impact mechanisms
+- Competitive response strategies and adaptation
+- Market concentration and ecosystem effects
+- Strategic positioning against disruption
 
-### Read it [here](/files/goldenrods.pdf)
+### Read the Analysis [here](/files/goldenrods.pdf)

@@ -1,10 +1,25 @@
-+++
-date = '2025-05-09T00:42:28-04:00'
-draft = false
-title = 'MyLab Internship Report: Diagnostics, PCR and More'
-weight = 5
-+++
+---
+title: "Consulting in Diagnostics: Molecular Decision-Making and Market Strategy"
+date: 2025-05-09T00:42:28-04:00
+draft: false
+authors:
+  - admin
+categories:
+  - Consulting
+  - Market Research
+tags:
+  - Diagnostic Markets
+  - Strategic Analysis
+  - Consulting Experience
+  - Healthcare Technology
+---
 
-My reflections on a summer internship at MyLab Discovery Solutions, where I explored the science behind disease detection, particularly PCR and molecular diagnostics. From SOPs to RNA extraction, this report blends technical precision with personal growth in a hands-on research environment.
+**Consulting Case Study**: Insights from strategic work in the diagnostics and healthcare technology sector. This engagement focused on understanding market dynamics, competitive positioning, and consumer decision-making in molecular diagnostics.
 
-### Read it [here.](/files/mylab.pdf)
+Key learnings:
+- Healthcare decision-making processes and stakeholder analysis
+- Technical complexity and market communication
+- Business model evaluation for diagnostic tools
+- Strategic positioning in competitive healthcare markets
+
+### Read the Report [here.](/files/mylab.pdf)

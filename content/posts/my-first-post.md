@@ -1,17 +1,55 @@
-+++
-date = '2025-02-08T22:57:31-05:00'
-draft = false
-title = 'About Me'
-weight = 1
-+++
+---
+title: "About My Consulting & Research Practice"
+date: 2025-02-08T22:57:31-05:00
+draft: false
+authors:
+  - admin
+categories:
+  - About
+tags:
+  - Behavioral Finance
+  - Consulting
+  - Market Research
+---
 
-Hi there! I am a third-year **Biology and Psychology** student at the **University of Toronto** with a strong passion for understanding the intersection of health and human behaviour. My academic journey has been shaped by a broad foundation in the life sciences, complemented by _rigorous coursework_ and various projects in psychology and virology. These experiences have strengthened my ability to critically evaluate scientific literature and solve real-world problems.
+## Professional Focus
 
-Through my experiences at **MyLab Discovery Solutions** and the **Serum Institute of India**, I gained hands-on exposure to **diagnostic testing** and **biomedical research**. Furthermore, my leadership roles in student-led organizations allow me to translate **neuroscience and psychology concepts** into impactful communication.
+I specialize in applying **behavioral science and psychology** to solve complex business challenges in consulting and market research. My work focuses on understanding the human factors that drive financial decisions, market dynamics, and consumer behavior.
 
-My particular interest in **clinical psychology** and **cognitive neuroscience** led me to explore the biological and cognitive mechanisms underlying mental health conditions such as **anxiety, depression, and neurodegenerative diseases**. I hope to apply this knowledge in healthcare and research. I am eager to connect with professionals and researchers in the **psychology and public health fields**!
+### Core Expertise
 
-### My Resume
+**Behavioral Finance & Market Research** — Combining psychological insights with financial analysis to understand how emotions, cognitive biases, and social influences shape market behavior and investment decisions.
 
-For more information
-[View My Resume](/files/resume.pdf)
+**Consumer Psychology** — Analyzing the decision-making processes behind consumer choices, from initial consideration through purchase and loyalty.
+
+**Strategic Consulting** — Translating behavioral science findings into actionable business strategy for financial services, technology, and consumer brands.
+
+### Consulting Experience
+
+I bring hands-on consulting experience from engagements across:
+- **Healthcare & Pharmaceutical Markets** — Strategic analysis of complex market dynamics, competitive positioning, and stakeholder decision-making
+- **Diagnostics & Technology** — Market analysis, technology adoption, and competitive strategy
+- **Global Markets** — Understanding large-scale market dynamics, regulatory environments, and multi-stakeholder ecosystems
+
+### Research Interests
+
+My research explores:
+- How cognitive biases influence financial decision-making
+- Consumer adoption patterns for disruptive technologies
+- Market dynamics through a behavioral lens
+- Strategic positioning in competitive environments
+- Behavioral adaptation and market evolution
+
+### Why Behavioral Science Matters
+
+Traditional economic models assume rational actors making decisions based on complete information. In reality, human decision-making is shaped by psychology, emotions, and cognitive limitations. By understanding these behavioral drivers, organizations can:
+- Better predict market trends and consumer behavior
+- Design more effective strategies and interventions
+- Understand and influence stakeholder decision-making
+- Navigate uncertainty and complexity with greater confidence
+
+I'm passionate about bridging the gap between behavioral science research and practical consulting impact, helping organizations make smarter, data-driven decisions grounded in human psychology.
+
+---
+
+**Available for consulting engagements** in behavioral finance, market research, and strategic planning. [Contact me](mailto:paws.simran@gmail.com) to discuss your research or consulting needs.

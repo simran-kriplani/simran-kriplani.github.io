@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Internship on Simran Kriplani</title>
+    <link>http://localhost:1313/tags/internship/</link>
+    <description>Recent content in Internship on Simran Kriplani</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en</language>
+    <managingEditor>paws.simran@gmail.com</managingEditor>
+    <webMaster>paws.simran@gmail.com</webMaster>
+    <lastBuildDate>Fri, 09 May 2025 00:45:15 -0400</lastBuildDate>
+    
+	    <atom:link href="http://localhost:1313/tags/internship/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Serum Institute Internship Report: Vaccine Development, Recombinant Labs, and Clinical Trials</title>
+      <link>http://localhost:1313/posts/serum/</link>
+      <pubDate>Fri, 09 May 2025 00:45:15 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/posts/serum/</guid>
+      <description>&lt;p&gt;At the Serum Institute of India, I gained a front-row seat to vaccine development and pharmaceutical quality control. This report outlines my immersive experience across R&amp;amp;D, clinical trials, and analytical labs—highlighting the rigorous processes behind public health innovations like the Covishield vaccine.&lt;/p&gt;
+&lt;h3 id=&#34;read-it-here&#34;&gt;Read it &lt;a href=&#34;http://localhost:1313/files/serum.pdf&#34;&gt;here.&lt;/a&gt;&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MyLab Internship Report: Diagnostics, PCR and More</title>
+      <link>http://localhost:1313/posts/mylab/</link>
+      <pubDate>Fri, 09 May 2025 00:42:28 -0400</pubDate>
+      <author>paws.simran@gmail.com</author>
+      <guid>http://localhost:1313/posts/mylab/</guid>
+      <description>&lt;p&gt;My reflections on a summer internship at MyLab Discovery Solutions, where I explored the science behind disease detection, particularly PCR and molecular diagnostics. From SOPs to RNA extraction, this report blends technical precision with personal growth in a hands-on research environment.&lt;/p&gt;
+&lt;h3 id=&#34;read-it-here&#34;&gt;Read it &lt;a href=&#34;http://localhost:1313/files/mylab.pdf&#34;&gt;here.&lt;/a&gt;&lt;/h3&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

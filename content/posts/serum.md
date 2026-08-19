@@ -1,10 +1,26 @@
-+++
-date = '2025-05-09T00:45:15-04:00'
-draft = false
-title = 'Serum Institute Internship Report: Vaccine Development, Recombinant Labs, and Clinical Trials'
-weight = 4
-+++
+---
+title: "Pharmaceutical Market Dynamics: Case Study in Vaccine Development and Distribution"
+date: 2025-05-09T00:45:15-04:00
+draft: false
+authors:
+  - admin
+categories:
+  - Consulting
+  - Market Research
+tags:
+  - Pharmaceutical Markets
+  - Strategic Planning
+  - Consulting Experience
+  - Global Markets
+---
 
-At the Serum Institute of India, I gained a front-row seat to vaccine development and pharmaceutical quality control. This report outlines my immersive experience across R&D, clinical trials, and analytical labs—highlighting the rigorous processes behind public health innovations like the Covishield vaccine.
+**Consulting Engagement**: A comprehensive case study examining vaccine development, market dynamics, and strategic implementation at a global pharmaceutical scale. This engagement provided insights into complex stakeholder ecosystems, regulatory environments, and market strategy.
 
-### Read it [here.](/files/serum.pdf)
+Key consulting insights:
+- Large-scale pharmaceutical market dynamics
+- Multi-stakeholder decision-making and coordination
+- Global market access and distribution strategy
+- Quality control and market reliability
+- Public health and commercial considerations
+
+### Read the Report [here.](/files/serum.pdf)

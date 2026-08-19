@@ -1,12 +1,25 @@
-+++
-date = '2025-05-09T00:36:06-04:00'
-draft = false
-title = 'Adaptability in Dog-Strangling Vine and Coleus'
-weight = 5
-+++
+---
+title: "Adaptive Behavior Under Changing Environments: Behavioral Flexibility in Markets"
+date: 2025-05-09T00:36:06-04:00
+draft: false
+authors:
+  - admin
+categories:
+  - Market Research
+  - Behavioral Science
+tags:
+  - Behavioral Adaptation
+  - Market Dynamics
+  - Consumer Psychology
+  - Environmental Factors
+---
 
-What happens when plants grow under different light conditions?
+**Market Research Application**: An investigation of how individuals and markets adapt to changing environmental and competitive conditions. This research explores behavioral flexibility and strategic adaptation in uncertain environments.
 
-I investigated phenotypic plasticity in two species—one invasive, one ornamental—to understand how morphology, chlorophyll content, and stomatal density shift between sun and shade environments. A compelling read on plant adaptability and ecological resilience.
+Research explores:
+- How consumer behavior shifts with market conditions
+- Adaptation strategies in dynamic competitive landscapes
+- Environmental factors influencing decision-making
+- Resilience and flexibility in consumer preferences
 
-### Read it [here.](/files/phenotypic.pdf)
+### Read the Analysis [here.](/files/phenotypic.pdf)
