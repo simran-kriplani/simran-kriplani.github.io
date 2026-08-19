@@ -19,6 +19,8 @@ social:
   - icon: twitter
     icon_pack: fab
     link: "https://twitter.com"
+image:
+  filename: cat.jpg
 superuser: true
 user_groups:
   - Consultants
