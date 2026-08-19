@@ -4,6 +4,7 @@ widget = "featured"
 headless = true
 active = true
 weight = 40
+id = "featured"
 
 title = "Featured Work"
 subtitle = "Recent consulting projects and research insights"

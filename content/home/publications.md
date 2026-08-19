@@ -4,6 +4,7 @@ widget = "pages"
 headless = true
 active = true
 weight = 50
+id = "publications"
 
 title = "Publications & Research"
 subtitle = "Market research, behavioral studies, and consulting insights"

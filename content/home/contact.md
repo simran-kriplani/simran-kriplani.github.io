@@ -4,6 +4,7 @@ widget = "contact"
 headless = true
 active = true
 weight = 85
+id = "contact"
 
 title = "Let's Connect"
 subtitle = "Interested in consulting, research collaboration, or discussing market insights?"

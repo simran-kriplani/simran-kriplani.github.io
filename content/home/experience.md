@@ -4,6 +4,7 @@ widget = "experience"
 headless = true
 active = true
 weight = 45
+id = "experience"
 
 title = "Experience"
 subtitle = "Consulting and research background"

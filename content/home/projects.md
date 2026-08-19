@@ -4,6 +4,7 @@ widget = "portfolio"
 headless = true
 active = true
 weight = 65
+id = "projects"
 
 title = "Projects & Case Studies"
 subtitle = "Consulting engagements and research applications"

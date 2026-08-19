@@ -4,6 +4,7 @@ widget = "pages"
 headless = true
 active = true
 weight = 60
+id = "posts"
 
 title = "Market Research & Insights"
 subtitle = "Behavioral finance and market research articles and case studies"

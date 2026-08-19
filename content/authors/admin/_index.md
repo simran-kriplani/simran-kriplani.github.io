@@ -1,5 +1,6 @@
 ---
-title: "Simran Kriplani"
+name: "Simran Kriplani"
+avatar_image: "cat.jpg"
 role: "Behavioral Finance & Market Research Consultant"
 bio: "Leveraging behavioral science insights to drive strategic consulting and market research initiatives"
 interests:
@@ -15,12 +16,10 @@ social:
     link: "mailto:paws.simran@gmail.com"
   - icon: linkedin
     icon_pack: fab
-    link: "https://linkedin.com"
-  - icon: twitter
+    link: "https://linkedin.com/in/simran-kriplani"
+  - icon: github
     icon_pack: fab
-    link: "https://twitter.com"
-image:
-  filename: cat.jpg
+    link: "https://github.com/simran-kriplani"
 superuser: true
 user_groups:
   - Consultants

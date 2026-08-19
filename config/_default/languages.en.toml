@@ -9,15 +9,15 @@ title = "Simran Kriplani"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  # logo = "img/cat.jpg"
-  # secondaryLogo = "img/secondary-logo.png"
+  # logo = "cat.jpg"
+  # secondaryLogo = "cat.jpg"
   description = "Simran's Portfolio"
   # copyright = "Copy, _right?_ :thinking_face:"
 
 [params.author]
    name = "Simran Kriplani"
    email = "paws.simran@gmail.com"
-   image = "img/cat.jpg"
+   image = "cat.jpg"
    imageQuality = 96
    headline = "Biology & Psychology at the University of Toronto"
    bio = ""

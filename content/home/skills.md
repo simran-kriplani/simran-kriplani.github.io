@@ -4,6 +4,7 @@ widget = "accomplishments"
 headless = true
 active = true
 weight = 70
+id = "skills"
 
 title = "Skills & Expertise"
 subtitle = "Core competencies in behavioral finance and market research"

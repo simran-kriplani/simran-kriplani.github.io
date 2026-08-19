@@ -4,6 +4,7 @@ widget = "pages"
 headless = true
 active = true
 weight = 55
+id = "talks"
 
 title = "Talks & Presentations"
 subtitle = "Speaking engagements and conference presentations"
