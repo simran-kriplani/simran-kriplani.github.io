@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Michael Vahn
+name: Simran Kriplani
 avatar_image: "cat.jpg"
 # Username (this should match the folder name)
 authors:
@@ -10,15 +10,18 @@ btn:
   - url: https://docs.gethugothemes.com/guide/
     label: Download Resume
 
+# contact button
+
+
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: CFA Level I Candidate | Consumer Psychology · Market Research · Strategy
 
 # Organizations/Affiliations
 organizations:
-  - name: Stanford University
+  - name: University of Toronto
     url: ""
 
 # Short bio (displayed in user profile at end of posts)
@@ -53,15 +56,18 @@ social:
   - icon: envelope
     icon_pack: fas
     link: "#contact"
-  - icon: twitter
+  #- icon: twitter
+  #  icon_pack: fab
+  #  link: https://twitter.com/GeorgeCushen
+  # - icon: google-scholar
+  #  icon_pack: ai
+  #  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  - icon: linkedin
     icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
-  - icon: google-scholar
-    icon_pack: ai
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: https://www.linkedin.com/in/simran-kriplani/
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
+    link: https://github.com/simran-kriplani/simran-kriplani.github.io
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
 # - icon: cv

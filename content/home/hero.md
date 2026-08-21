@@ -2,10 +2,10 @@
 # Hero widget.
 widget = "hero"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
+active = false  # Activate this widget? true/false
 weight = 10  # Order that this section will appear.
 
-title = "Academia"
+title = "Simran Kriplani"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
 hero_media = "cat.jpg"
@@ -17,8 +17,9 @@ hero_media = "cat.jpg"
   #   Any HTML color name or Hex value is valid.
 
   # Background color.
-  color = "#fff"
-  
+  color = "#d8b183"
+
+
   # Background gradient.
   # gradient_start = "#4bb4e3"
   # gradient_end = "#000"
@@ -28,7 +29,7 @@ hero_media = "cat.jpg"
   # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
-  text_color_light = false
+text_color_light = false
 
 # Call to action links (optional).
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
@@ -36,7 +37,7 @@ hero_media = "cat.jpg"
 [btn]
   url = "authors/admin/"
   label = "Know more"
-  
+
 [btn_alt]
   url = "#contact"
   label = "Contact me"

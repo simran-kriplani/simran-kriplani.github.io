@@ -1,0 +1,15 @@
+# Font style metadata
+name = "Playfair"
+
+# Optional Google font URL
+google_fonts = "Playfair+Display:400,500,600,700|Source+Sans+3:400,600,700|Roboto+Mono"
+
+# Font families
+heading_font = "Playfair Display"
+body_font = "Source Sans 3"
+nav_font = "Playfair Display"
+mono_font = "Roboto Mono"
+
+# Font size
+font_size = "20"
+font_size_small = "16"
