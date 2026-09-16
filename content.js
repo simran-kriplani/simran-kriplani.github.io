@@ -46,6 +46,10 @@ window.siteContent = {
           "Executive presentations",
           "Python & Excel",
         ],
+        pdf: {
+          href: "assets/case-studies/grocery-oligopoly.pdf",
+          label: "View case study PDF",
+        },
       },
       {
         slug: "brand-anthropomorphism",
@@ -62,6 +66,10 @@ window.siteContent = {
           "Behavioural frameworks",
           "Academic & technical writing",
         ],
+        pdf: {
+          href: "assets/case-studies/brand-anthropomorphism.pdf",
+          label: "View case study PDF",
+        },
       },
       {
         slug: "campus-leadership",
@@ -78,6 +86,10 @@ window.siteContent = {
           "Behavioural design",
           "Brand voice",
         ],
+        pdf: {
+          href: "assets/case-studies/campus-leadership.pdf",
+          label: "View case study PDF",
+        },
       },
     ],
     archive: [
@@ -106,13 +118,13 @@ window.siteContent = {
 
   about: {
     title: "About",
-    bio: "I'm finishing an Honours Bachelor of Science in Psychology and Biology at the University of Toronto, alongside the CFA Level I curriculum. That combination is deliberate: psychology gives me a working model of why people decide the way they do, biology trained me to treat every claim as a hypothesis to test, and the CFA program keeps that thinking anchored to how markets and companies actually behave. I'm most interested in the space where those three things meet - pricing, brand strategy, and the research underneath both.",
+    bio: "I hold an Honours Bachelor of Science in Psychology and Biology at the University of Toronto, alongside the CFA Level I curriculum. That combination is deliberate: psychology gives me a working model of why people decide the way they do, biology trained me to treat every claim as a hypothesis to test, and the CFA program keeps that thinking anchored to how markets and companies actually behave. I'm most interested in the space where those three things meet - pricing, brand strategy, and the research underneath both.",
     education: {
       heading: "Education",
       entries: [
         {
           title: "Honours Bachelor of Science - Psychology & Biology",
-          meta: "Expected May 2026",
+          meta: "September 2022 - May 2026",
           org: "University of Toronto, Toronto, Ontario",
           paragraphs: ["High distinction. Dean's List, 2023-2026."],
           coursework:
@@ -235,7 +247,7 @@ window.siteContent = {
 
   contact: {
     title: "Contact",
-    lede: "I'm currently looking for summer and full-time roles in consumer strategy, insights, and management consulting. If you're working on a pricing question, a brand repositioning, or just want to talk through a behavioural economics paper, I'd like to hear from you.",
+    lede: "I'm currently looking for full-time roles in consumer strategy, insights, and management consulting. If you're working on a pricing question, a brand repositioning, or just want to talk through a behavioural economics paper, I'd like to hear from you.",
     links: [
       {
         type: "email",

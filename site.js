@@ -161,6 +161,13 @@
         tags.appendChild(el("span", "tag", tag));
       });
       body.appendChild(tags);
+      if (study.pdf) {
+        var pdfLink = el("a", "case-pdf-link", study.pdf.label);
+        pdfLink.href = study.pdf.href;
+        pdfLink.target = "_blank";
+        pdfLink.rel = "noopener";
+        body.appendChild(pdfLink);
+      }
       details.appendChild(body);
       list.appendChild(details);
     });
