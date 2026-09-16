@@ -1,0 +1,175 @@
+\documentclass[10pt]{article}
+
+\usepackage[left=0.6in, right=0.6in, top=0.35in, bottom=0.35in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{tabularx}
+\usepackage{hyperref}
+
+% ---------- Colors ----------
+\definecolor{accent}{HTML}{7A2E2E}   % deep muted maroon
+\definecolor{darktext}{HTML}{222222}
+\definecolor{graytext}{HTML}{555555}
+\definecolor{rulegray}{HTML}{CCCCCC}
+
+% ---------- Fonts ----------
+\setmainfont{Latin Modern Sans}
+\newfontfamily\headingfont{Latin Modern Roman}
+\newfontfamily\titlefont{Latin Modern Roman}
+
+\color{darktext}
+
+% ---------- Links ----------
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent}
+
+% ---------- Section formatting ----------
+\titleformat{\section}
+  {\headingfont\large\bfseries\color{accent}}
+  {}{0em}{}
+  [\vspace{-4pt}{\color{rulegray}\titlerule[0.8pt]}]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+% ---------- List formatting ----------
+\setlist[itemize,1]{
+  leftmargin=14pt,
+  topsep=1pt,
+  itemsep=1pt,
+  parsep=0pt,
+  label={\raisebox{0.35ex}{\tiny\textbullet}}
+}
+
+\newcommand{\role}[4]{%
+  % #1 = Title/Role, #2 = Org, #3 = Location, #4 = Dates
+  \noindent\textbf{#1}\hfill{\small\color{graytext}#4}\\
+  {\itshape\small #2 \hfill #3}\par\vspace{2pt}
+}
+
+\newcommand{\subrole}[2]{%
+  % #1 = Title, #2 = Dates
+  \noindent\textbf{\small #1}\hfill{\small\color{graytext}#2}\par
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+% ================= HEADER =================
+\begin{center}
+  {\titlefont\Huge\bfseries\color{darktext} Simran Kriplani}\\[6pt]
+  {\small
+    +1 (365) 275-3626
+    \quad\textcolor{rulegray}{|}\quad
+    \href{mailto:simran.kriplani@mail.utoronto.ca}{simran.kriplani@mail.utoronto.ca}
+    \quad\textcolor{rulegray}{|}\quad
+    \href{https://www.linkedin.com/in/simran-kriplani/}{linkedin.com/in/simran-kriplani}
+  }\\[4pt]
+  {\small\color{accent}\itshape CFA Level 1 Candidate \ $\cdot$\ Consumer Strategy \ $\cdot$\ Finance \ $\cdot$\ Market Research}
+\end{center}
+
+\vspace{-6pt}
+
+% ================= EDUCATION =================
+\section*{Education}
+
+\role{Honours Bachelor of Science (HBSc) --- Psychology \& Biology}{University of Toronto}{Toronto, Ontario}{May 2026}
+\small High Distinction \ $\vert$\ Dean's List (2023--2026)\normalsize\\[2pt]
+\textbf{\small Relevant Coursework:} \small Statistics, Judgment \& Decision-Making, Behaviour Modification, Psychology \& Money, Social Psychology, Business, Advanced Research Methods, Psychology of Prejudice, Cognitive Neuroscience.\normalsize
+
+\vspace{2pt}
+\role{CFA Level 1 Candidate}{CFA Institute}{}{Expected February 2027}
+
+% ================= SKILLS =================
+\section*{Skills}
+
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}
+\textbf{\color{accent}Consumer Insights} & \textbf{\color{accent}Data \& Quantitative} & \textbf{\color{accent}Strategy \& Communication} & \textbf{\color{accent}Tools} & \textbf{\color{accent}Ethics \& Compliance} \\[3pt]
+Consumer Behavior Analysis & Statistical Analysis & Client-Ready Presentations & Generative AI & TCPS 2: CORE 2022 \\
+Qualitative \& Quantitative Research & Econometrics & Research Summaries & Tableau / Power BI & Good Clinical Practice (GCP) \\
+Customer Journey Mapping & Quantitative Reasoning & Campaign \& Content Strategy & SQL & Responsible Conduct of Research (RCR) \\
+Questionnaire Design & & & Excel & \\
+Survey Design & & & Python & \\
+\end{tabularx}
+\normalsize
+
+\vspace{2pt}
+\textbf{\small Areas of Interest:} \small Behavioural Finance, Nudges, Consumer Psychology, Market Research, Judgment and Decision-Making, Marketing, Behavioural Research Methods, Biases and Heuristics.\normalsize
+
+% ================= EXPERIENCE =================
+\section*{Experience}
+
+\role{Research Assistant}{Consumer Behaviour and Psychology, UofT Department of Management}{Toronto, Ontario}{September 2025 -- May 2026}
+{\small\itshape Under the mentorship of Dr. Pankaj Aggarwal}\vspace{2pt}
+\begin{itemize}
+  \item Leveraged Generative AI research tools alongside academic databases to synthesize 220+ articles on consumer judgment, AI role framing, and brand anthropomorphism, reducing research synthesis cycles by 40\%.
+  \item Applied quantitative and qualitative research methodologies to translate complex consumer behavior patterns into actionable frameworks for business strategy and brand positioning.
+  \item Authored a 10-page research manuscript and an SSHRC-style grant proposal using structured problem-solving frameworks to model consumer authenticity and decision-making heuristics.
+\end{itemize}
+
+\vspace{2pt}
+\role{Research Assistant}{Therapeutic Interventions for Psychosis Laboratory}{Toronto, Ontario}{May -- August 2025}
+\begin{itemize}
+  \item Collected behavioural and cognitive data from participants using validated clinical assessments.
+  \item Conducted data entry, participant interaction, and debriefing, in rigorous compliance with TCPS 2: CORE 2022, Good Clinical Practice (GCP), and Responsible Conduct of Research (RCR) ethics protocols.
+\end{itemize}
+
+% ================= PROJECTS =================
+\section*{Projects}
+
+\textbf{A Consumer Behavior Perspective on Canada's Grocery Oligopoly}\\
+{\small\itshape Examining how brand identity, multi-brand strategy, and dynamic pricing drive market share across major Canadian retail \& grocery conglomerates.}
+\begin{itemize}
+  \item Processed and analyzed multi-brand retail datasets using Python and Excel, evaluating dynamic pricing models and shift trends in consumer market share across major Canadian conglomerates.
+  \item Designed data-driven customer strategies and positioning frameworks, translating pricing insights into client-ready executive presentations and thought leadership narratives on the commercial and economic implications of Canada's grocery oligopoly for retail stakeholders.
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Integrative Research Poster Project} --- University of Toronto\\
+{\small\itshape Utilizing microfluidic technology for scalable, efficient and customizable lab-grown meat production, catering to the growing global demand for sustainable dietary options.}
+\begin{itemize}
+  \item Synthesized literature from multiple disciplines to design a research proposal, applying critical thinking and decision-making frameworks relevant to both scientific and consumer contexts.
+  \item Worked collaboratively to create and present a scientific poster during a conference-style session.
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Multimedia Documentary Project} --- University of Toronto\\
+{\small\itshape The effects of a viral infection on host metabolism and energy diversion.}
+\begin{itemize}
+  \item Critically evaluated scientific literature to formulate arguments about the viral hijacking of immune systems.
+  \item Collaborated effectively with peers to create a documentary-style video that relays complex scientific information using engaging, audience-centered storytelling techniques, visual aids, and humour.
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Ecology and Evolutionary Biology Laboratory} --- University of Toronto\\
+{\small\itshape Field, lab and computational approaches to ecology and evolution.}
+\begin{itemize}
+  \item Collected data through field work and lab experiments to explore topics of population genetics, community ecology, and biodiversity.
+  \item Modeled complex multi-variable datasets using Python, R, and SQL, automating data cleaning pipelines and generating visual trend models for quantitative analysis.
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Travel Video Project} --- University of Toronto\\
+{\small\itshape From City to Sanctuary: A Travel Video through the Ma Moosh Ka Win Valley Trail.}
+\begin{itemize}
+  \item Directed and produced a travel video, leading photography, scripting, and narrative development to craft a cohesive story highlighting experiential and environmental themes.
+\end{itemize}
+
+% ================= LEADERSHIP =================
+\section*{Leadership \& Extracurriculars}
+
+\role{Vice President of Communications}{SYNAPSE UofT}{Toronto, Ontario}{September 2023 -- May 2026}
+\begin{itemize}
+  \item Led a communications team to design and execute campaigns that made neuroscience accessible to a diverse student audience, applying behavioural principles to drive engagement and knowledge retention.
+  \item Developed content strategy across social media and events, building trust and consistent brand voice for the organization.
+\end{itemize}
+
+\vspace{2pt}
+\role{Director of Marketing}{Psychological Health Society, UofT}{Toronto, Ontario}{September 2023 -- May 2026}
+\begin{itemize}
+  \item Created and implemented social media campaigns that promoted mental health awareness, applying behavioural insights to foster an inclusive community and encourage positive habits.
+\end{itemize}
+
+\end{document}

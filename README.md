@@ -1,1 +1,0 @@
-# simran-kriplani.github.io
