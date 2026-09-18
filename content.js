@@ -273,18 +273,48 @@ window.siteContent = {
       "Storytelling, media, and visual experiments that translate research into something people can feel, remember, and talk about.",
     items: [
       {
+        slug: "from-city-to-sanctuary",
         title: "From City to Sanctuary",
         meta: "Short documentary · 2024",
+        tags: ["Documentary", "Travel", "Visual storytelling"],
         summary:
           "A travel-film project that turned landscape and reflection into a narrative about movement, belonging, and the textures of place.",
-        link: { href: "#contact", label: "Request the film" },
+        body: [
+          "This short documentary explored how movement, landscape, and memory can become part of the same story. I focused on creating a visual narrative that felt reflective rather than purely informational, using sound, pacing, and place-based imagery to evoke atmosphere as much as information.",
+          "The goal was to show that documentary storytelling can be both intimate and expansive: a single journey can carry questions about belonging, transition, and the emotional texture of place.",
+        ],
+        media: {
+          type: "image",
+          src: "assets/images/headshot.png",
+          alt: "From City to Sanctuary creative project",
+        },
+        link: {
+          href: "creative-space/from-city-to-sanctuary.html",
+          label: "Request the film",
+          external: true,
+        },
       },
       {
+        slug: "research-to-storytelling-projects",
         title: "Research-to-storytelling projects",
         meta: "Multimedia · Ongoing",
+        tags: ["Storytelling", "Research communication", "Multimedia"],
         summary:
           "Turning dense academic ideas into visual narratives, short-form scripts, and presentation assets that make insight accessible.",
-        link: { href: "#contact", label: "Collaborate" },
+        body: [
+          "This work focuses on translating complex academic ideas into format that feels humane, memorable, and understandable to a broader audience. The aim is not to flatten the material, but to make it legible without losing the emotional or intellectual nuance behind it.",
+          "Whether the medium is a short script, visual explanation, or presentation asset, the priority is the same: turn insight into a narrative that helps people feel and understand the argument at the same time.",
+        ],
+        media: {
+          type: "video",
+          src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          alt: "Research-to-storytelling project video",
+        },
+        link: {
+          href: "creative-space/research-to-storytelling-projects.html",
+          label: "Collaborate",
+          external: true,
+        },
       },
     ],
   },
