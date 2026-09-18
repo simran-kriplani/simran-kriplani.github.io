@@ -175,18 +175,38 @@ window.siteContent = {
       "Short reflections on consumer behaviour, decision-making, and the strategic lessons hiding inside everyday choices.",
     items: [
       {
+        slug: "why-behavioural-thinking-makes-strategy-clearer",
         title: "Why behavioural thinking makes strategy clearer",
         meta: "Essay · 2026",
         summary:
           "A note on how framing, defaults, and mental models shape the way people respond to markets, brands, and product decisions.",
-        link: { href: "#contact", label: "Read more" },
+        body: [
+          "Strategy often looks like a problem of positioning, pricing, or product choices. In reality, it is usually a problem of interpretation: how people make sense of the options in front of them and what they believe is being asked of them.",
+          "Behavioural thinking pushes the strategist to ask a more useful question than 'What is the best offer?' It asks, 'What does the customer notice first, and what are they likely to infer before they even compare alternatives?' That shift matters because attention, defaults, and framing shape action long before the final decision is made.",
+          "When those mechanisms are visible, strategy becomes clearer. The brand message stops sounding like generic persuasion and starts acting like a cue about what matters, what is safer, and what is worth acting on. That is where the real work begins: not in crafting a clever claim, but in designing the environment in which people can make a sensible choice.",
+        ],
+        link: {
+          href: "blog-post.html?slug=why-behavioural-thinking-makes-strategy-clearer",
+          label: "Read more",
+          external: true,
+        },
       },
       {
+        slug: "the-hidden-psychology-behind-pricing",
         title: "The hidden psychology behind pricing",
         meta: "Field notes · 2026",
         summary:
           "What a pricing decision looks like when you start from how people actually compare options instead of how theory assumes they should.",
-        link: { href: "#contact", label: "Dive in" },
+        body: [
+          "People rarely compare pricing the way textbooks suggest. We do not first calculate utility and then choose the economically rational option. Instead, we anchor, contrast, and infer value from context before we ever decide whether a price feels fair.",
+          "That is why small changes in framing can shift perceived value more than large changes in actual cost. The difference between '$9.99' and '$10' is tiny on paper but psychologically meaningful in practice, especially when the choice is relative rather than absolute.",
+          "A strong pricing strategy is therefore not simply about discounting or premium positioning. It is about understanding the mental shortcuts consumers rely on when they decide whether a price is acceptable, expensive, or suspiciously cheap. Once you start from that point, pricing stops sounding like arithmetic and starts looking like behaviour design.",
+        ],
+        link: {
+          href: "blog-post.html?slug=the-hidden-psychology-behind-pricing",
+          label: "Dive in",
+          external: true,
+        },
       },
     ],
   },

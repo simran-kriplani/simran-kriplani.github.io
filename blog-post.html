@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog post</title>
+    <style>
+      :root {
+        --bg: #f3efe4;
+        --bg-alt: #eae3d0;
+        --ink: #120d0f;
+        --ink-soft: #4a3d3d;
+        --rule: #b39a7a;
+        --olive: #55613f;
+        --clay: #674452;
+        --font-serif: "Newsreader", Georgia, "Times New Roman", serif;
+        --font-sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: var(--font-sans);
+        line-height: 1.7;
+      }
+
+      a { color: var(--clay); text-decoration: none; }
+      a:hover, a:focus-visible { text-decoration: underline; }
+
+      .page-shell {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+
+      .post-card {
+        background: rgba(255,255,255,0.18);
+        border: 1px solid var(--rule);
+        border-radius: 20px;
+        padding: 36px;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 0.8rem;
+        color: var(--ink-soft);
+      }
+
+      h1 {
+        margin: 0;
+        font-family: var(--font-serif);
+        font-size: clamp(2.2rem, 4vw, 4rem);
+        line-height: 1.08;
+      }
+
+      .subtitle {
+        margin: 14px 0 0;
+        color: var(--ink-soft);
+        font-size: 1rem;
+      }
+
+      .post-body {
+        margin-top: 30px;
+      }
+
+      .post-body p {
+        margin: 0 0 1.4rem;
+        font-size: 1.08rem;
+      }
+
+      .comments {
+        margin-top: 42px;
+        padding-top: 24px;
+        border-top: 1px solid var(--rule);
+      }
+
+      .comments h2 {
+        margin: 0 0 16px;
+        font-size: 1.4rem;
+      }
+
+      textarea {
+        width: 100%;
+        min-height: 120px;
+        border-radius: 12px;
+        border: 1px solid var(--rule);
+        background: rgba(255,255,255,0.25);
+        padding: 14px 16px;
+        font: inherit;
+        color: var(--ink);
+      }
+
+      .comment-actions {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 12px;
+      }
+
+      button {
+        appearance: none;
+        border: none;
+        border-radius: 999px;
+        background: var(--olive);
+        color: white;
+        padding: 10px 18px;
+        font: inherit;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #485533;
+      }
+
+      .comment-list {
+        margin-top: 16px;
+        padding-left: 0;
+        list-style: none;
+      }
+
+      .comment-list li {
+        border: 1px solid var(--rule);
+        border-radius: 12px;
+        padding: 14px 16px;
+        background: rgba(255,255,255,0.18);
+        margin-top: 12px;
+      }
+
+      @media (max-width: 700px) {
+        .post-card {
+          padding: 24px 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page-shell">
+      <a class="back-link" href="index.html">← Back to the site</a>
+
+      <article class="post-card" aria-live="polite">
+        <span class="eyebrow">Blog post</span>
+        <h1 id="blog-post-title">Blog post title</h1>
+        <p class="subtitle" id="blog-post-subtitle"></p>
+
+        <div class="post-body" id="blog-post-body"></div>
+
+        <section class="comments" aria-label="Comments section">
+          <h2>Thoughts</h2>
+          <textarea id="comment-box" placeholder="Share your thoughts..."></textarea>
+          <div class="comment-actions">
+            <button type="button" id="comment-submit">Post comment</button>
+          </div>
+          <ul class="comment-list" id="comment-list"></ul>
+        </section>
+      </article>
+    </main>
+
+    <script src="content.js"></script>
+    <script>
+      (function () {
+        "use strict";
+
+        var posts = (window.siteContent && window.siteContent.blog && window.siteContent.blog.items) || [];
+        var params = new URLSearchParams(window.location.search);
+        var slug = params.get("slug");
+        var post = posts.find(function (item) {
+          return item.slug === slug;
+        }) || posts[0];
+
+        if (!post) {
+          document.getElementById("blog-post-title").textContent = "Blog post";
+          return;
+        }
+
+        document.getElementById("blog-post-title").textContent = post.title;
+        document.getElementById("blog-post-subtitle").textContent = post.meta || "";
+        document.title = post.title + " | Simran Kriplani";
+
+        var bodyEl = document.getElementById("blog-post-body");
+        (post.body || []).forEach(function (paragraph) {
+          var p = document.createElement("p");
+          p.textContent = paragraph;
+          bodyEl.appendChild(p);
+        });
+
+        var commentList = document.getElementById("comment-list");
+        var commentBox = document.getElementById("comment-box");
+        var submitButton = document.getElementById("comment-submit");
+
+        function renderComments() {
+          var comments = JSON.parse(localStorage.getItem("simran-blog-comments") || "{}");
+          var key = post.slug || "default";
+          var items = comments[key] || [];
+          commentList.innerHTML = "";
+          items.forEach(function (comment) {
+            var li = document.createElement("li");
+            li.textContent = comment;
+            commentList.appendChild(li);
+          });
+        }
+
+        submitButton.addEventListener("click", function () {
+          var value = commentBox.value.trim();
+          if (!value) return;
+
+          var storage = JSON.parse(localStorage.getItem("simran-blog-comments") || "{}");
+          var key = post.slug || "default";
+          storage[key] = storage[key] || [];
+          storage[key].push(value);
+          localStorage.setItem("simran-blog-comments", JSON.stringify(storage));
+          commentBox.value = "";
+          renderComments();
+        });
+
+        renderComments();
+      })();
+    </script>
+  </body>
+</html>
