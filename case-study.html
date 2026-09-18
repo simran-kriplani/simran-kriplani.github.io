@@ -189,12 +189,20 @@
       (function () {
         "use strict";
 
-        var studies = (window.siteContent && window.siteContent.caseStudies && window.siteContent.caseStudies.items) || [];
+        var allStudies = [];
+        var caseStudiesSection =
+          window.siteContent && window.siteContent.caseStudies;
+        if (caseStudiesSection) {
+          allStudies = (caseStudiesSection.items || []).concat(
+            caseStudiesSection.archive || []
+          );
+        }
+
         var params = new URLSearchParams(window.location.search);
         var slug = params.get("slug");
-        var study = studies.find(function (item) {
+        var study = allStudies.find(function (item) {
           return item.slug === slug;
-        }) || studies[0];
+        }) || allStudies[0];
 
         if (!study) {
           document.getElementById("case-study-title").textContent = "Case study";

@@ -2753,17 +2753,26 @@
         max-width: var(--max-text);
       }
       .research-strip li {
-        padding: 0.75rem 0;
+        padding: 0.7rem 0;
         border-top: 1px solid var(--rule);
-        font-size: 0.95rem;
-        color: var(--ink-soft);
       }
       .research-strip li:last-child {
         border-bottom: 1px solid var(--rule);
       }
-      .research-strip strong {
+      .research-strip a {
+        display: inline-block;
         color: var(--ink);
+        font-size: 0.98rem;
         font-weight: 600;
+        line-height: 1.5;
+        text-decoration: none;
+        transition: color 0.18s ease, transform 0.18s ease;
+      }
+      .research-strip a:hover,
+      .research-strip a:focus-visible {
+        color: var(--clay);
+        text-decoration: underline;
+        text-underline-offset: 0.18em;
       }
 
       .feature-list {

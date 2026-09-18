@@ -236,8 +236,13 @@
     var archive = document.getElementById("research-strip-list");
     studies.archive.forEach(function (item) {
       var li = document.createElement("li");
-      li.appendChild(el("strong", null, item.title + ". "));
-      li.appendChild(document.createTextNode(item.blurb));
+      var link = document.createElement("a");
+      var targetHref = item.detail && item.detail.href ? item.detail.href : "case-study.html?slug=" + encodeURIComponent(item.slug);
+      link.href = targetHref;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.textContent = item.title;
+      li.appendChild(link);
       archive.appendChild(li);
     });
   }

@@ -57,7 +57,7 @@ window.siteContent = {
     title: "Case studies",
     intro:
       "These sit at the intersection of consumer psychology and commercial strategy - reading market data and research literature for the same thing: what people actually do, and why.",
-    archiveHeading: "Also in the research archive",
+    archiveHeading: "In the archive",
     items: [
       {
         slug: "grocery-oligopoly",
@@ -147,24 +147,80 @@ window.siteContent = {
     ],
     archive: [
       {
-        title: "Integrative Research Poster",
-        blurb:
-          "Designed a research proposal on microfluidic technology for scalable, customizable lab-grown meat production, and presented it at a conference-style session.",
+        slug: "look-good-feel-good",
+        title: "Look Good, Feel Good? Dressing with Intention",
+        meta: "Essay · 2024",
+        paragraphs: [
+          "This project turned the question of personal style into a behavioural research prompt: how do clothing choices shape emotion, confidence, and identity in everyday life?",
+          "I framed the work around the link between self-presentation and self-perception, exploring how our choices in dress can influence not just how others see us but how we feel in our own bodies and routines.",
+          "The result was a reflective, research-informed piece that translated behavioural theory into a clear, accessible argument about intention, identity, and everyday rituals.",
+        ],
+        tags: ["Behavioural design", "Identity", "Self-concept"],
+        photo: {
+          src: "assets/images/headshot.png",
+          alt: "Simran Kriplani portrait",
+        },
+        detail: {
+          href: "in-the-archive/look-good-feel-good.html",
+          label: "Read the work",
+        },
       },
       {
+        slug: "ecology-evolutionary-biology-lab",
         title: "Ecology & Evolutionary Biology Lab",
-        blurb:
-          "Modeled population genetics and biodiversity datasets in Python, R, and SQL, automating data cleaning pipelines and building visual trend models.",
+        meta: "Research project · 2023",
+        paragraphs: [
+          "I built and analyzed biodiversity and population genetics datasets in Python, R, and SQL, combining computational work with ecological interpretation to uncover meaningful patterns in species dynamics.",
+          "The project emphasized clean data pipelines, cross-variable analysis, and visual storytelling, turning technical outputs into insight that could be discussed with scientists and non-specialists alike.",
+          "The goal was not just to model complexity, but to make the patterns legible enough to guide interpretation and decision-making.",
+        ],
+        tags: ["Data analysis", "Biodiversity", "Python & R"],
+        photo: {
+          src: "assets/images/headshot.png",
+          alt: "Simran Kriplani portrait",
+        },
+        detail: {
+          href: "in-the-archive/ecology-evolutionary-biology-lab.html",
+          label: "Read the work",
+        },
       },
       {
+        slug: "multimedia-documentary-project",
         title: "Multimedia Documentary Project",
-        blurb:
-          "Wrote and produced a documentary-style video on viral hijacking of host metabolism, translating dense science into audience-centered storytelling.",
+        meta: "Creative research · 2023",
+        paragraphs: [
+          "This project translated a dense scientific concept into a visually compelling story about how viruses can hijack host metabolism and reshape biological systems.",
+          "I combined research synthesis, narrative framing, and multimedia production to make the topic accessible without losing scientific rigour or emotional resonance.",
+          "The final piece used storytelling to make a complex biological mechanism memorable, engaging, and understandable to a broader audience.",
+        ],
+        tags: ["Science communication", "Storytelling", "Video"],
+        photo: {
+          src: "assets/images/headshot.png",
+          alt: "Simran Kriplani portrait",
+        },
+        detail: {
+          href: "in-the-archive/multimedia-documentary-project.html",
+          label: "Read the work",
+        },
       },
       {
+        slug: "travel-video-project",
         title: "Travel Video Project",
-        blurb:
-          'Directed and produced "From City to Sanctuary," a short film through the Ma Moosh Ka Win Valley Trail.',
+        meta: "Short film · 2023",
+        paragraphs: [
+          "This documentary followed a reflective journey through the Ma Moosh Ka Win Valley Trail, using landscape and movement to explore themes of place, memory, and belonging.",
+          "The work blended visual storytelling with personal observation, focusing on how environment shapes perspective and how travel can become a mode of reflection as well as exploration.",
+          "The result was a short film that paired narrative texture with rich visual atmosphere, turning a trip into a story about transition and connection.",
+        ],
+        tags: ["Documentary", "Travel", "Visual storytelling"],
+        photo: {
+          src: "assets/images/headshot.png",
+          alt: "Simran Kriplani portrait",
+        },
+        detail: {
+          href: "in-the-archive/travel-video-project.html",
+          label: "Read the work",
+        },
       },
     ],
   },
