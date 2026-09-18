@@ -60,6 +60,8 @@
 
     var featuredItems = home.featured.items || [home.featured];
     var featuredIndex = 0;
+    var autoRotateDelay = 7500;
+    var autoRotateTimer = null;
     var card = el("article", "featured-card");
     var controls = el("div", "featured-controls");
     var prevButton = el("button", "featured-nav-button", "←");
@@ -94,19 +96,35 @@
       }
     }
 
+    function startAutoRotate() {
+      if (autoRotateTimer) {
+        clearInterval(autoRotateTimer);
+      }
+
+      if (featuredItems.length > 1) {
+        autoRotateTimer = setInterval(function () {
+          featuredIndex = (featuredIndex + 1) % featuredItems.length;
+          renderFeaturedCard();
+        }, autoRotateDelay);
+      }
+    }
+
     prevButton.addEventListener("click", function () {
       featuredIndex = (featuredIndex - 1 + featuredItems.length) % featuredItems.length;
       renderFeaturedCard();
+      startAutoRotate();
     });
 
     nextButton.addEventListener("click", function () {
       featuredIndex = (featuredIndex + 1) % featuredItems.length;
       renderFeaturedCard();
+      startAutoRotate();
     });
 
     featured.appendChild(card);
     featured.appendChild(controls);
     renderFeaturedCard();
+    startAutoRotate();
 
     var skillsPreview = document.getElementById("skills-preview-content");
     skillsPreview.appendChild(el("h2", null, home.skillsPreview.heading));
