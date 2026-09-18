@@ -29,7 +29,7 @@ window.siteContent = {
           tag: "featured",
           title: "Who's <i>Really</i> In Charge? Competence and Control in the age of AI",
           description:
-            "A synthesis of consumer trust, AI role framing, and brand authenticity - and why the same product can feel helpful or manipulative depending on how it's positioned.",
+            "A synthesis of consumer perception, AI role framing, and agency - and why the same product can feel helpful or manipulative depending on how it's positioned.",
           link: {
             href: "#case-studies:brand-anthropomorphism",
             label: "See more",
@@ -94,8 +94,8 @@ window.siteContent = {
         meta: "Research Assistant · UofT Rotman School of Management",
         paragraphs: [
           "Consumers increasingly form judgments about brands that behave like people - including AI systems introduced as assistants, agents, or advisors. Understanding when that framing builds trust, and when it backfires, has real implications for how companies design and position AI-driven products.",
-          "Working under Dr. Pankaj Aggarwal, I combined generative AI research tools with academic databases to synthesize more than 220 articles spanning consumer judgment, AI role framing, and brand anthropomorphism, cutting research synthesis time by roughly 40%. From there, I applied structured problem-solving frameworks to model how consumers form authenticity judgments and the heuristics they use to decide who, or what, to trust.",
-          "The work became a 10-page research manuscript and an SSHRC-style grant proposal, both built to hold up to academic scrutiny while staying legible to a non-specialist reader.",
+          "Working under Dr. Pankaj Aggarwal, I combined generative AI research tools with academic databases to synthesize more than 220 articles spanning consumer judgment and AI role framing, cutting research synthesis time by roughly 40%. From there, I analysed how the various social roles of AI influence consumer perception, agency, trust, and behaviour.",
+          "This work formed the frontend of an academic manuscript, building arguments that are both rigorous and meaningful.",
         ],
         tags: [
           "Literature synthesis",
