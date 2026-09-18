@@ -122,28 +122,63 @@
     var preview = document.getElementById("skills-preview-grid");
     var full = document.getElementById("skills-full-grid");
 
-    categories.forEach(function (category) {
-      var previewColumn = el("div");
-      previewColumn.appendChild(el("h3", null, category.name));
-      previewColumn.appendChild(
-        el(
-          "p",
-          null,
-          category.tags.slice(0, 3).join(", ") +
-            (category.tags.length > 3 ? ", ..." : ""),
-        ),
-      );
-      preview.appendChild(previewColumn);
+    if (preview) {
+      preview.innerHTML = "";
+      var topSkills = Array.isArray(window.topSkills) ? window.topSkills : [];
 
-      var fullColumn = el("div");
-      fullColumn.appendChild(el("h3", null, category.name));
-      var tags = el("div");
-      category.tags.forEach(function (tag) {
-        tags.appendChild(el("span", "tag", tag));
+      if (topSkills.length) {
+        topSkills.forEach(function (skill) {
+          var card = el("article", "skill-card");
+          var iconWrap = el("div", "skill-icon");
+          var icon = document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "svg",
+          );
+          icon.setAttribute("viewBox", "0 0 24 24");
+          icon.setAttribute("aria-hidden", "true");
+          var iconMarkup =
+            (window.skillIconLibrary && window.skillIconLibrary[skill.icon]) ||
+            (window.skillIconLibrary && window.skillIconLibrary.behaviour) ||
+            "";
+          icon.innerHTML = iconMarkup;
+          iconWrap.appendChild(icon);
+          card.appendChild(iconWrap);
+          card.appendChild(el("h3", null, skill.label));
+          if (skill.short) {
+            card.appendChild(el("p", null, skill.short));
+          }
+          preview.appendChild(card);
+        });
+      } else {
+        categories.forEach(function (category) {
+          var previewColumn = el("div");
+          previewColumn.appendChild(el("h3", null, category.name));
+          previewColumn.appendChild(
+            el(
+              "p",
+              null,
+              category.tags.slice(0, 3).join(", ") +
+                (category.tags.length > 3 ? ", ..." : ""),
+            ),
+          );
+          preview.appendChild(previewColumn);
+        });
+      }
+    }
+
+    if (full) {
+      full.innerHTML = "";
+      categories.forEach(function (category) {
+        var fullColumn = el("div");
+        fullColumn.appendChild(el("h3", null, category.name));
+        var tags = el("div");
+        category.tags.forEach(function (tag) {
+          tags.appendChild(el("span", "tag", tag));
+        });
+        fullColumn.appendChild(tags);
+        full.appendChild(fullColumn);
       });
-      fullColumn.appendChild(tags);
-      full.appendChild(fullColumn);
-    });
+    }
   }
 
   function renderEntry(parent, entry) {
