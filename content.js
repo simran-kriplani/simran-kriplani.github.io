@@ -148,7 +148,7 @@ window.siteContent = {
     archive: [
       {
         slug: "look-good-feel-good",
-        title: "Look Good, Feel Good? Dressing with Intention",
+        title: "Look Good, Feel Good? Behaviour Change Strategies to Dress with Intention",
         meta: "Essay · 2024",
         paragraphs: [
           "This project turned the question of personal style into a behavioural research prompt: how do clothing choices shape emotion, confidence, and identity in everyday life?",
@@ -166,9 +166,9 @@ window.siteContent = {
         },
       },
       {
-        slug: "ecology-evolutionary-biology-lab",
-        title: "Ecology & Evolutionary Biology Lab",
-        meta: "Research project · 2023",
+        slug: "Is this Seat Taken?",
+        title: "Is this Seat Taken? A Behavioural Fix for Crowded Libraries",
+        meta: "Reducing Inefficient Seat Search in UofT Libraries",
         paragraphs: [
           "I built and analyzed biodiversity and population genetics datasets in Python, R, and SQL, combining computational work with ecological interpretation to uncover meaningful patterns in species dynamics.",
           "The project emphasized clean data pipelines, cross-variable analysis, and visual storytelling, turning technical outputs into insight that could be discussed with scientists and non-specialists alike.",
@@ -180,7 +180,7 @@ window.siteContent = {
           alt: "Simran Kriplani portrait",
         },
         detail: {
-          href: "in-the-archive/ecology-evolutionary-biology-lab.html",
+          href: "in-the-archive/is-this-seat-taken.html",
           label: "Read the work",
         },
       },
