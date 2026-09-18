@@ -1,6 +1,6 @@
 # Case study PDFs
 
-Add the case study PDFs to this folder using these filenames:
+Add the PDFs to this folder using these filenames:
 
 - `grocery-oligopoly.pdf`
 - `brand-anthropomorphism.pdf`

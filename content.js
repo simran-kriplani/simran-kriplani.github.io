@@ -27,7 +27,7 @@ window.siteContent = {
         },
         {
           tag: "featured",
-          title: "Consumer Judgment & Brand Anthropomorphism Research",
+          title: "Who’s Really In Charge? Competence and Control in the age of AI",
           description:
             "A synthesis of consumer trust, AI role framing, and brand authenticity - and why the same product can feel helpful or manipulative depending on how it's positioned.",
           link: {
