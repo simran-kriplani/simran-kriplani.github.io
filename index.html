@@ -2629,9 +2629,22 @@
       }
 
       /* ---------- Featured / cards ---------- */
+      .featured {
+        background: linear-gradient(
+          180deg,
+          rgba(234, 227, 208, 0.72),
+          rgba(234, 227, 208, 0.32)
+        );
+        border: 1px solid rgba(179, 154, 122, 0.6);
+        border-radius: 0.9rem;
+        padding: 1.2rem 1.2rem 0.3rem;
+      }
       .featured h2,
       .skills-preview h2 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        line-height: 1.2;
+        letter-spacing: -0.03em;
+        color: var(--ink);
       }
       .featured-card {
         border-top: 1px solid var(--rule);
