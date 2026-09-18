@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The hidden psychology behind pricing</title>
+    <link rel="stylesheet" href="shared.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <a class="back-link" href="../index.html">← Back to the site</a>
+
+      <article class="article">
+        <span class="eyebrow">Blog post</span>
+        <h1>The hidden psychology behind pricing</h1>
+        <p class="subtitle">Field notes · 2026</p>
+
+        <div class="article-body">
+          <p>People rarely compare pricing the way textbooks suggest. We do not first calculate utility and then choose the economically rational option. Instead, we anchor, contrast, and infer value from context before we ever decide whether a price feels fair.</p>
+          <p>That is why small changes in framing can shift perceived value more than large changes in actual cost. The difference between “$9.99” and “$10” is tiny on paper but psychologically meaningful in practice, especially when the choice is relative rather than absolute.</p>
+          <p>A strong pricing strategy is therefore not simply about discounting or premium positioning. It is about understanding the mental shortcuts consumers rely on when they decide whether a price is acceptable, expensive, or suspiciously cheap. Once you start from that point, pricing stops sounding like arithmetic and starts looking like behaviour design.</p>
+          <p>Good pricing does not just communicate cost. It influences how people judge value, fairness, and confidence in the decision they are making. That is why the most effective pricing strategies often feel less like a mechanical calculation and more like a careful read of human judgment.</p>
+        </div>
+
+        <section class="comments" aria-label="Comments section">
+          <h2>Thoughts</h2>
+          <textarea id="comment-box" placeholder="Share your thoughts..."></textarea>
+          <div class="comment-actions">
+            <button type="button" id="comment-submit">Post comment</button>
+          </div>
+          <ul class="comment-list" id="comment-list"></ul>
+        </section>
+      </article>
+    </main>
+
+    <script>
+      (function () {
+        const key = 'the-hidden-psychology-behind-pricing';
+        const commentBox = document.getElementById('comment-box');
+        const submitButton = document.getElementById('comment-submit');
+        const commentList = document.getElementById('comment-list');
+
+        function renderComments() {
+          const comments = JSON.parse(localStorage.getItem('simran-blog-comments') || '{}');
+          const items = comments[key] || [];
+          commentList.innerHTML = '';
+          items.forEach(function (comment) {
+            const li = document.createElement('li');
+            li.textContent = comment;
+            commentList.appendChild(li);
+          });
+        }
+
+        submitButton.addEventListener('click', function () {
+          const value = commentBox.value.trim();
+          if (!value) return;
+          const comments = JSON.parse(localStorage.getItem('simran-blog-comments') || '{}');
+          comments[key] = comments[key] || [];
+          comments[key].push(value);
+          localStorage.setItem('simran-blog-comments', JSON.stringify(comments));
+          commentBox.value = '';
+          renderComments();
+        });
+
+        renderComments();
+      })();
+    </script>
+  </body>
+</html>

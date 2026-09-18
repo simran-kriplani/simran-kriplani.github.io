@@ -80,7 +80,7 @@ window.siteContent = {
           alt: "Simran Kriplani portrait",
         },
         detail: {
-          href: "case-study.html?slug=grocery-oligopoly",
+          href: "case-studies/grocery-oligopoly.html",
           label: "Read the case study",
         },
         pdf: {
@@ -108,7 +108,7 @@ window.siteContent = {
           alt: "Simran Kriplani portrait",
         },
         detail: {
-          href: "case-study.html?slug=brand-anthropomorphism",
+          href: "case-studies/brand-anthropomorphism.html",
           label: "Read the case study",
         },
         pdf: {
@@ -136,7 +136,7 @@ window.siteContent = {
           alt: "Simran Kriplani portrait",
         },
         detail: {
-          href: "case-study.html?slug=campus-leadership",
+          href: "case-studies/campus-leadership.html",
           label: "Read the case study",
         },
         pdf: {

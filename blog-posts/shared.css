@@ -1,0 +1,138 @@
+:root {
+  --bg: #f3efe4;
+  --bg-alt: #eae3d0;
+  --ink: #120d0f;
+  --ink-soft: #4a3d3d;
+  --rule: #b39a7a;
+  --olive: #55613f;
+  --clay: #674452;
+  --font-serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--clay);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+.page-shell {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 48px 20px 80px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.article {
+  background: rgba(255,255,255,0.18);
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  padding: 36px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+h1 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 1.08;
+}
+
+.subtitle {
+  margin: 14px 0 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+}
+
+.article-body p {
+  margin: 0 0 1.5rem;
+  font-size: 1.06rem;
+}
+
+.comments {
+  margin-top: 42px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+}
+
+.comments h2 {
+  margin: 0 0 16px;
+  font-size: 1.4rem;
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  border-radius: 12px;
+  border: 1px solid var(--rule);
+  background: rgba(255,255,255,0.25);
+  padding: 14px 16px;
+  font: inherit;
+  color: var(--ink);
+}
+
+.comment-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+button {
+  appearance: none;
+  border: none;
+  border-radius: 999px;
+  background: var(--olive);
+  color: white;
+  padding: 10px 18px;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #485533;
+}
+
+.comment-list {
+  margin-top: 16px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.comment-list li {
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 14px 16px;
+  background: rgba(255,255,255,0.18);
+  margin-top: 12px;
+}
+
+@media (max-width: 700px) {
+  .article { padding: 24px 18px; }
+}

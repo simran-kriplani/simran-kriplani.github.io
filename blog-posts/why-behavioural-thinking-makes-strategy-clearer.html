@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why behavioural thinking makes strategy clearer</title>
+    <link rel="stylesheet" href="shared.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <a class="back-link" href="../index.html">← Back to the site</a>
+
+      <article class="article">
+        <span class="eyebrow">Blog post</span>
+        <h1>Why behavioural thinking makes strategy clearer</h1>
+        <p class="subtitle">Essay · 2026</p>
+
+        <div class="article-body">
+          <p>Strategy often looks like a problem of positioning, pricing, or product choices. In reality, it is usually a problem of interpretation: how people make sense of the options in front of them and what they believe is being asked of them.</p>
+          <p>Behavioural thinking pushes the strategist to ask a more useful question than “What is the best offer?” It asks, “What does the customer notice first, and what are they likely to infer before they even compare alternatives?” That shift matters because attention, defaults, and framing shape action long before the final decision is made.</p>
+          <p>When those mechanisms are visible, strategy becomes clearer. The brand message stops sounding like generic persuasion and starts acting like a cue about what matters, what is safer, and what is worth acting on. That is where the real work begins: not in crafting a clever claim, but in designing the environment in which people can make a sensible choice.</p>
+          <p>When teams begin from behavioural reality instead of theoretical assumptions, they are able to make sharper decisions. They can identify where the friction actually sits, what people are likely to respond to, and how a product or message needs to be framed so that the outcome is both desirable and believable.</p>
+        </div>
+
+        <section class="comments" aria-label="Comments section">
+          <h2>Thoughts</h2>
+          <textarea id="comment-box" placeholder="Share your thoughts..."></textarea>
+          <div class="comment-actions">
+            <button type="button" id="comment-submit">Post comment</button>
+          </div>
+          <ul class="comment-list" id="comment-list"></ul>
+        </section>
+      </article>
+    </main>
+
+    <script>
+      (function () {
+        const key = 'why-behavioural-thinking-makes-strategy-clearer';
+        const commentBox = document.getElementById('comment-box');
+        const submitButton = document.getElementById('comment-submit');
+        const commentList = document.getElementById('comment-list');
+
+        function renderComments() {
+          const comments = JSON.parse(localStorage.getItem('simran-blog-comments') || '{}');
+          const items = comments[key] || [];
+          commentList.innerHTML = '';
+          items.forEach(function (comment) {
+            const li = document.createElement('li');
+            li.textContent = comment;
+            commentList.appendChild(li);
+          });
+        }
+
+        submitButton.addEventListener('click', function () {
+          const value = commentBox.value.trim();
+          if (!value) return;
+          const comments = JSON.parse(localStorage.getItem('simran-blog-comments') || '{}');
+          comments[key] = comments[key] || [];
+          comments[key].push(value);
+          localStorage.setItem('simran-blog-comments', JSON.stringify(comments));
+          commentBox.value = '';
+          renderComments();
+        });
+
+        renderComments();
+      })();
+    </script>
+  </body>
+</html>
