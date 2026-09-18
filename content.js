@@ -10,13 +10,38 @@ window.siteContent = {
     cta: "Get in touch",
     featured: {
       heading: "Featured work",
-      title: "A Consumer Behaviour Perspective on Canada's Grocery Oligopoly",
-      description:
-        "How brand architecture and dynamic pricing let a handful of conglomerates defend market share across Canada's grocery sector - and what that means for anyone trying to compete with them.",
-      link: {
-        href: "#case-studies:grocery-oligopoly",
-        label: "Read the case study",
-      },
+      items: [
+        {
+          tag: "featured",
+          title: "A Consumer Behaviour Perspective on Canada's Grocery Oligopoly",
+          description:
+            "How brand architecture and dynamic pricing let a handful of conglomerates defend market share across Canada's grocery sector - and what that means for anyone trying to compete with them.",
+          link: {
+            href: "#case-studies:grocery-oligopoly",
+            label: "Read the case study",
+          },
+        },
+        {
+          tag: "featured",
+          title: "Consumer Judgment & Brand Anthropomorphism Research",
+          description:
+            "A synthesis of consumer trust, AI role framing, and brand authenticity - and why the same product can feel helpful or manipulative depending on how it's positioned.",
+          link: {
+            href: "#case-studies:brand-anthropomorphism",
+            label: "Read the case study",
+          },
+        },
+        {
+          tag: "featured",
+          title: "Applied Behavioural Strategy in Campus Leadership",
+          description:
+            "How campaign design, brand voice, and behaviour change frameworks translate into engagement and action when the goal is to move people, not just inform them.",
+          link: {
+            href: "#case-studies:campus-leadership",
+            label: "Read the case study",
+          },
+        },
+      ],
     },
     skillsPreview: {
       heading: "Where the work draws from",
@@ -112,6 +137,50 @@ window.siteContent = {
         title: "Travel Video Project",
         blurb:
           'Directed and produced "From City to Sanctuary," a short film through the Ma Moosh Ka Win Valley Trail.',
+      },
+    ],
+  },
+
+  blog: {
+    title: "Blog",
+    intro:
+      "Short reflections on consumer behaviour, decision-making, and the strategic lessons hiding inside everyday choices.",
+    items: [
+      {
+        title: "Why behavioural thinking makes strategy clearer",
+        meta: "Essay · 2026",
+        summary:
+          "A note on how framing, defaults, and mental models shape the way people respond to markets, brands, and product decisions.",
+        link: { href: "#contact", label: "Discuss a draft" },
+      },
+      {
+        title: "The hidden psychology behind pricing",
+        meta: "Field notes · 2026",
+        summary:
+          "What a pricing decision looks like when you start from how people actually compare options instead of how theory assumes they should.",
+        link: { href: "#contact", label: "Talk through the idea" },
+      },
+    ],
+  },
+
+  creativeWork: {
+    title: "Creative Work",
+    intro:
+      "Storytelling, media, and visual experiments that translate research into something people can feel, remember, and talk about.",
+    items: [
+      {
+        title: "From City to Sanctuary",
+        meta: "Short documentary · 2024",
+        summary:
+          "A travel-film project that turned landscape and reflection into a narrative about movement, belonging, and the textures of place.",
+        link: { href: "#contact", label: "Request the film" },
+      },
+      {
+        title: "Research-to-storytelling projects",
+        meta: "Multimedia · Ongoing",
+        summary:
+          "Turning dense academic ideas into visual narratives, short-form scripts, and presentation assets that make insight accessible.",
+        link: { href: "#contact", label: "Collaborate" },
       },
     ],
   },

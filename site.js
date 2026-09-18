@@ -49,11 +49,56 @@
 
     var featured = document.getElementById("featured-content");
     featured.appendChild(el("h2", null, home.featured.heading));
+
+    var featuredItems = home.featured.items || [home.featured];
+    var featuredIndex = 0;
     var card = el("article", "featured-card");
-    card.appendChild(el("h3", null, home.featured.title));
-    card.appendChild(el("p", null, home.featured.description));
-    appendLink(card, home.featured.link);
+    var controls = el("div", "featured-controls");
+    var prevButton = el("button", "featured-nav-button", "←");
+    var nextButton = el("button", "featured-nav-button", "→");
+    prevButton.type = "button";
+    nextButton.type = "button";
+    prevButton.setAttribute("aria-label", "Previous featured work");
+    nextButton.setAttribute("aria-label", "Next featured work");
+
+    function renderFeaturedCard() {
+      var item = featuredItems[featuredIndex];
+      if (!item) return;
+
+      card.innerHTML = "";
+      card.appendChild(el("span", "featured-tag", item.tag || "featured"));
+      card.appendChild(el("h3", null, item.title));
+      card.appendChild(el("p", null, item.description));
+      var link = el("a", null, item.link.label);
+      link.href = item.link.href;
+      card.appendChild(link);
+
+      var count = el("span", "featured-count", (featuredIndex + 1) + " / " + featuredItems.length);
+      controls.innerHTML = "";
+      controls.appendChild(prevButton);
+      controls.appendChild(count);
+      controls.appendChild(nextButton);
+
+      if (featuredItems.length <= 1) {
+        controls.style.display = "none";
+      } else {
+        controls.style.display = "flex";
+      }
+    }
+
+    prevButton.addEventListener("click", function () {
+      featuredIndex = (featuredIndex - 1 + featuredItems.length) % featuredItems.length;
+      renderFeaturedCard();
+    });
+
+    nextButton.addEventListener("click", function () {
+      featuredIndex = (featuredIndex + 1) % featuredItems.length;
+      renderFeaturedCard();
+    });
+
     featured.appendChild(card);
+    featured.appendChild(controls);
+    renderFeaturedCard();
 
     var skillsPreview = document.getElementById("skills-preview-content");
     skillsPreview.appendChild(el("h2", null, home.skillsPreview.heading));
@@ -183,6 +228,38 @@
     });
   }
 
+  function renderFeatureList(sectionKey, listId) {
+    var section = content[sectionKey];
+    document.getElementById(listId.replace("-list", "-title")).textContent =
+      section.title;
+    document.getElementById(listId.replace("-list", "-intro")).textContent =
+      section.intro;
+
+    var list = document.getElementById(listId);
+    section.items.forEach(function (item) {
+      var card = el("article", "feature-item");
+      card.appendChild(el("h2", null, item.title));
+      if (item.meta) {
+        card.appendChild(el("p", "feature-meta", item.meta));
+      }
+      if (item.summary) {
+        card.appendChild(el("p", "feature-summary", item.summary));
+      }
+      if (item.link) {
+        appendLink(card, item.link);
+      }
+      list.appendChild(card);
+    });
+  }
+
+  function renderBlog() {
+    renderFeatureList("blog", "blog-list");
+  }
+
+  function renderCreativeWork() {
+    renderFeatureList("creativeWork", "creative-work-list");
+  }
+
   function makeIcon(type) {
     var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     svg.setAttribute("class", "icon");
@@ -290,6 +367,8 @@
   renderSkills();
   renderAbout();
   renderCaseStudies();
+  renderBlog();
+  renderCreativeWork();
   renderContact();
   renderFooter();
   setupNavigation();
