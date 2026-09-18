@@ -214,7 +214,13 @@
         tags.appendChild(el("span", "tag", tag));
       });
       body.appendChild(tags);
-      if (study.pdf) {
+      if (study.detail) {
+        var detailLink = el("a", "case-pdf-link", study.detail.label);
+        detailLink.href = study.detail.href;
+        detailLink.target = "_blank";
+        detailLink.rel = "noopener";
+        body.appendChild(detailLink);
+      } else if (study.pdf) {
         var pdfLink = el("a", "case-pdf-link", study.pdf.label);
         pdfLink.href = study.pdf.href;
         pdfLink.target = "_blank";

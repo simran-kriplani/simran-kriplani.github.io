@@ -75,9 +75,17 @@ window.siteContent = {
           "Executive presentations",
           "Python & Excel",
         ],
+        photo: {
+          src: "assets/images/headshot.png",
+          alt: "Simran Kriplani portrait",
+        },
+        detail: {
+          href: "case-study.html?slug=grocery-oligopoly",
+          label: "Read the case study",
+        },
         pdf: {
           href: "assets/case-studies/grocery-oligopoly.pdf",
-          label: "View case study PDF",
+          label: "View PDF",
         },
       },
       {
@@ -95,9 +103,17 @@ window.siteContent = {
           "Behavioural frameworks",
           "Academic & technical writing",
         ],
+        photo: {
+          src: "assets/images/headshot.png",
+          alt: "Simran Kriplani portrait",
+        },
+        detail: {
+          href: "case-study.html?slug=brand-anthropomorphism",
+          label: "Read the case study",
+        },
         pdf: {
           href: "assets/case-studies/brand-anthropomorphism.pdf",
-          label: "View case study PDF",
+          label: "View PDF",
         },
       },
       {
@@ -115,9 +131,17 @@ window.siteContent = {
           "Behavioural design",
           "Brand voice",
         ],
+        photo: {
+          src: "assets/images/headshot.png",
+          alt: "Simran Kriplani portrait",
+        },
+        detail: {
+          href: "case-study.html?slug=campus-leadership",
+          label: "Read the case study",
+        },
         pdf: {
           href: "assets/case-studies/campus-leadership.pdf",
-          label: "View case study PDF",
+          label: "View PDF",
         },
       },
     ],
@@ -155,20 +179,20 @@ window.siteContent = {
         meta: "Essay · 2026",
         summary:
           "A note on how framing, defaults, and mental models shape the way people respond to markets, brands, and product decisions.",
-        link: { href: "#contact", label: "Discuss a draft" },
+        link: { href: "#contact", label: "Read more" },
       },
       {
         title: "The hidden psychology behind pricing",
         meta: "Field notes · 2026",
         summary:
           "What a pricing decision looks like when you start from how people actually compare options instead of how theory assumes they should.",
-        link: { href: "#contact", label: "Talk through the idea" },
+        link: { href: "#contact", label: "Dive in" },
       },
     ],
   },
 
   creativeWork: {
-    title: "Creative Work",
+    title: "Creative Space",
     intro:
       "Storytelling, media, and visual experiments that translate research into something people can feel, remember, and talk about.",
     items: [
@@ -199,7 +223,7 @@ window.siteContent = {
           title: "Honours Bachelor of Science - Psychology & Biology",
           meta: "September 2022 - May 2026",
           org: "University of Toronto, Toronto, Ontario",
-          paragraphs: ["High distinction. Dean's List, 2023-2026."],
+          paragraphs: ["High distinction · Dean's List, 2023-2026."],
           coursework:
             "Relevant coursework: statistics, judgment & decision-making, behaviour modification, psychology & money, social psychology, business, advanced research methods, psychology of prejudice, cognitive neuroscience.",
         },
@@ -214,9 +238,9 @@ window.siteContent = {
       heading: "Experience",
       entries: [
         {
-          title: "Research Assistant, Consumer Behaviour and Psychology Lab",
+          title: "Research Assistant, Consumer Behaviour and Psychology",
           meta: "Sept 2025 - May 2026",
-          org: "UofT Department of Management, under Dr. Pankaj Aggarwal",
+          org: "University of Toronto · Supervised by Dr. Pankaj Aggarwal",
           paragraphs: [
             {
               text: "Synthesized 220+ articles on consumer judgment and brand anthropomorphism, and co-authored a research manuscript and grant proposal.",
