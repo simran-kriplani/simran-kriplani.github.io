@@ -363,6 +363,46 @@
     document.getElementById("footer-updated").textContent = footer.updated;
   }
 
+  function setupThemeToggle() {
+    var root = document.documentElement;
+    var toggle = document.getElementById("theme-toggle");
+    if (!toggle) return;
+
+    function applyTheme(theme) {
+      var nextTheme = theme === "dark" ? "dark" : "light";
+      root.setAttribute("data-theme", nextTheme);
+      toggle.setAttribute(
+        "aria-label",
+        nextTheme === "dark" ? "Switch to light mode" : "Switch to dark mode",
+      );
+      toggle.setAttribute(
+        "title",
+        nextTheme === "dark" ? "Switch to light mode" : "Switch to dark mode",
+      );
+      try {
+        localStorage.setItem("simran-theme", nextTheme);
+      } catch (error) {}
+    }
+
+    var savedTheme = null;
+    try {
+      savedTheme = localStorage.getItem("simran-theme");
+    } catch (error) {}
+
+    if (!savedTheme) {
+      savedTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
+    }
+
+    applyTheme(savedTheme);
+
+    toggle.addEventListener("click", function () {
+      var current = root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      applyTheme(current === "dark" ? "light" : "dark");
+    });
+  }
+
   function setupNavigation() {
     var sections = Array.prototype.slice.call(
       document.querySelectorAll("main > section[data-page]"),
@@ -425,5 +465,6 @@
   renderCreativeWork();
   renderContact();
   renderFooter();
+  setupThemeToggle();
   setupNavigation();
 })();

@@ -2397,6 +2397,11 @@
         color: var(--ink);
         text-decoration: none;
       }
+      .topbar-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
+      }
       .topbar nav {
         display: flex;
         flex-wrap: wrap;
@@ -2415,6 +2420,50 @@
       .topbar nav a[aria-current="page"] {
         color: var(--ink);
         border-bottom-color: var(--clay);
+      }
+      .theme-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.45rem;
+        height: 2.45rem;
+        padding: 0;
+        border: 1px solid var(--rule);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.18);
+        color: var(--ink-soft);
+        cursor: pointer;
+        transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease,
+          background 0.2s ease;
+      }
+      .theme-toggle:hover {
+        transform: translateY(-1px);
+        border-color: var(--olive);
+        color: var(--ink);
+      }
+      .theme-toggle svg {
+        width: 1.05rem;
+        height: 1.05rem;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 1.7;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .theme-toggle .theme-toggle-sun {
+        opacity: 1;
+      }
+      .theme-toggle .theme-toggle-core {
+        fill: currentColor;
+        stroke: none;
+      }
+      :root[data-theme="dark"] .theme-toggle .theme-toggle-sun {
+        opacity: 0;
+      }
+      :root[data-theme="dark"] .theme-toggle .theme-toggle-core {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.7;
       }
 
       main {
@@ -2974,18 +3023,32 @@
 
     <header class="topbar">
       <a class="wordmark" href="#home">Simran Kriplani</a>
-      <nav aria-label="Primary">
-        <a href="#home" data-nav data-page="home">Home</a>
-        <a href="#case-studies" data-nav data-page="case-studies"
-          >Case Studies</a
+      <div class="topbar-actions">
+        <nav aria-label="Primary">
+          <a href="#home" data-nav data-page="home">Home</a>
+          <a href="#case-studies" data-nav data-page="case-studies"
+            >Case Studies</a
+          >
+          <a href="#blog" data-nav data-page="blog">Blog</a>
+          <a href="#creative-space" data-nav data-page="creative-space"
+            >Creative Space</a
+          >
+          <a href="#about" data-nav data-page="about">About</a>
+          <a href="#contact" data-nav data-page="contact">Contact</a>
+        </nav>
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          title="Switch to dark mode"
         >
-        <a href="#blog" data-nav data-page="blog">Blog</a>
-        <a href="#creative-space" data-nav data-page="creative-space"
-          >Creative Space</a
-        >
-        <a href="#about" data-nav data-page="about">About</a>
-        <a href="#contact" data-nav data-page="contact">Contact</a>
-      </nav>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path class="theme-toggle-sun" d="M12 2.5v2.3M12 19.2v2.3M4.7 4.7l1.6 1.6M17.7 17.7l1.6 1.6M2.5 12h2.3M19.2 12h2.3M4.7 19.3l1.6-1.6M17.7 6.3l1.6-1.6" />
+            <circle class="theme-toggle-core" cx="12" cy="12" r="4.1" />
+          </svg>
+        </button>
+      </div>
     </header>
 
     <main id="main">

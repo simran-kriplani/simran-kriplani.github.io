@@ -37,16 +37,16 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     /* Dark-mode defaults: warmer, moodier surfaces with still-readable contrast */
-    --bg: #171210; /* Main dark background */
-    --bg-alt: #241d1b; /* Alternate dark panel background */
-    --ink: #f3e7dc; /* Primary dark-mode text */
-    --ink-soft: #d3bfa9; /* Secondary dark-mode copy */
-    --rule: #574b49; /* Divider and border color in dark mode */
-    --olive: #a89a72; /* Dark-mode accent for buttons and emphasis */
-    --olive-deep: #d3c39a; /* Dark-mode hover/deeper accent */
-    --clay: #d2a9b7; /* Dark-mode highlight and link accent */
-    --tone-about: #211a1a; /* Dark version of About panel */
-    --tone-contact: #1a1415; /* Dark version of Contact panel */
+    --bg: #121819; /* Main dark background */
+    --bg-alt: #1b2425; /* Alternate dark panel background */
+    --ink: #f6efe7; /* Primary dark-mode text */
+    --ink-soft: #d0c0a7; /* Secondary dark-mode copy */
+    --rule: #3f4a46; /* Divider and border color in dark mode */
+    --olive: #aebd8a; /* Dark-mode accent for buttons and emphasis */
+    --olive-deep: #dfe9c6; /* Dark-mode hover/deeper accent */
+    --clay: #d8a5ae; /* Dark-mode highlight and link accent */
+    --tone-about: #1b2323; /* Dark version of About panel */
+    --tone-contact: #171d1d; /* Dark version of Contact panel */
   }
 }
 
@@ -66,14 +66,14 @@
 
 :root[data-theme="dark"] {
   /* Explicit dark-mode palette for manual theme switching */
-  --bg: #171210;
-  --bg-alt: #241d1b;
-  --ink: #f3e7dc;
-  --ink-soft: #d3bfa9;
-  --rule: #574b49;
-  --olive: #a89a72;
-  --olive-deep: #d3c39a;
-  --clay: #d2a9b7;
-  --tone-about: #211a1a;
-  --tone-contact: #1a1415;
+  --bg: #121819;
+  --bg-alt: #1b2425;
+  --ink: #f6efe7;
+  --ink-soft: #d0c0a7;
+  --rule: #3f4a46;
+  --olive: #aebd8a;
+  --olive-deep: #dfe9c6;
+  --clay: #d8a5ae;
+  --tone-about: #1b2323;
+  --tone-contact: #171d1d;
 }
