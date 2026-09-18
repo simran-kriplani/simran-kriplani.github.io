@@ -271,7 +271,7 @@
   }
 
   function renderCreativeWork() {
-    renderFeatureList("creativeWork", "creative-work-list");
+    renderFeatureList("creativeWork", "creative-space-list");
   }
 
   function makeIcon(type) {
