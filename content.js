@@ -22,7 +22,7 @@ window.siteContent = {
             "How brand architecture and dynamic pricing let a handful of conglomerates defend market share across Canada's grocery sector - and what that means for anyone trying to compete with them.",
           link: {
             href: "#case-studies:grocery-oligopoly",
-            label: "Read the case study",
+            label: "See more",
           },
         },
         {
@@ -32,7 +32,7 @@ window.siteContent = {
             "A synthesis of consumer trust, AI role framing, and brand authenticity - and why the same product can feel helpful or manipulative depending on how it's positioned.",
           link: {
             href: "#case-studies:brand-anthropomorphism",
-            label: "Read the case study",
+            label: "See more",
           },
         },
         {
@@ -42,7 +42,7 @@ window.siteContent = {
             "How campaign design, brand voice, and behaviour change frameworks translate into engagement and action when the goal is to move people, not just inform them.",
           link: {
             href: "#case-studies:campus-leadership",
-            label: "Read the case study",
+            label: "See more",
           },
         },
       ],
