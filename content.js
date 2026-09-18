@@ -27,7 +27,7 @@ window.siteContent = {
         },
         {
           tag: "featured",
-          title: "Who's Really In Charge? Competence and Control in the age of AI",
+          title: "Who's <i>Really</i> In Charge? Competence and Control in the age of AI",
           description:
             "A synthesis of consumer trust, AI role framing, and brand authenticity - and why the same product can feel helpful or manipulative depending on how it's positioned.",
           link: {
@@ -90,7 +90,7 @@ window.siteContent = {
       },
       {
         slug: "brand-anthropomorphism",
-        title: "Who's Really In Charge? Competence and Control in the age of AI",
+        title: "Who's <i>Really</i> In Charge? Competence and Control in the age of AI",
         meta: "Research Assistant · UofT Rotman School of Management",
         paragraphs: [
           "Consumers increasingly form judgments about brands that behave like people - including AI systems introduced as assistants, agents, or advisors. Understanding when that framing builds trust, and when it backfires, has real implications for how companies design and position AI-driven products.",
