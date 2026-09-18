@@ -1,0 +1,79 @@
+/*
+  Site theme configuration.
+  Update these values to change the site's palette without editing the layout or component styles.
+  To switch themes, set data-theme="light" or data-theme="dark" on the html element.
+*/
+
+:root {
+  /* Core page surfaces */
+  --bg: #f3efe4; /* Main page background */
+  --bg-alt: #eae3d0; /* Alternate section background, case-study panel */
+
+  /* Typography */
+  --ink: #120d0f; /* Primary text, headings, strong body text */
+  --ink-soft: #4a3d3d; /* Secondary text, metadata, subdued body copy */
+
+  /* Structural dividers and borders */
+  --rule: #b39a7a; /* Section separators, borders, dividers */
+
+  /* Primary brand accents */
+  --olive: #55613f; /* Buttons, active accents, UI emphasis */
+  --olive-deep: #4d4431; /* Hover states and deeper accent treatment */
+
+  /* Highlight / contrast accents */
+  --clay: #674452; /* Links, emphasis highlights, featured accent color */
+
+  /* Section-specific tonal blocks */
+  --tone-about: #f2e1cf; /* About section panel background */
+  --tone-contact: #e9dcc9; /* Contact section panel background */
+
+  /* Type styles */
+  --font-serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --max-text: 640px;
+  --max-wide: 1080px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    /* Dark-mode defaults: warmer, moodier surfaces with still-readable contrast */
+    --bg: #171210; /* Main dark background */
+    --bg-alt: #241d1b; /* Alternate dark panel background */
+    --ink: #f3e7dc; /* Primary dark-mode text */
+    --ink-soft: #d3bfa9; /* Secondary dark-mode copy */
+    --rule: #574b49; /* Divider and border color in dark mode */
+    --olive: #a89a72; /* Dark-mode accent for buttons and emphasis */
+    --olive-deep: #d3c39a; /* Dark-mode hover/deeper accent */
+    --clay: #d2a9b7; /* Dark-mode highlight and link accent */
+    --tone-about: #211a1a; /* Dark version of About panel */
+    --tone-contact: #1a1415; /* Dark version of Contact panel */
+  }
+}
+
+:root[data-theme="light"] {
+  /* Explicit light-mode palette, matching the base theme */
+  --bg: #f3efe4;
+  --bg-alt: #eae3d0;
+  --ink: #120d0f;
+  --ink-soft: #4a3d3d;
+  --rule: #b39a7a;
+  --olive: #55613f;
+  --olive-deep: #4d4431;
+  --clay: #674452;
+  --tone-about: #f2e1cf;
+  --tone-contact: #e9dcc9;
+}
+
+:root[data-theme="dark"] {
+  /* Explicit dark-mode palette for manual theme switching */
+  --bg: #171210;
+  --bg-alt: #241d1b;
+  --ink: #f3e7dc;
+  --ink-soft: #d3bfa9;
+  --rule: #574b49;
+  --olive: #a89a72;
+  --olive-deep: #d3c39a;
+  --clay: #d2a9b7;
+  --tone-about: #211a1a;
+  --tone-contact: #1a1415;
+}

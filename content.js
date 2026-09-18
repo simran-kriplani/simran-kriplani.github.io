@@ -1,7 +1,7 @@
 window.siteContent = {
   home: {
-    title: "Consumer strategy, read through behaviour.",
-    lede: "I study why people choose what they choose, then translate that into strategy - pricing, positioning, and the small design choices that move markets. Currently completing a psychology and biology degree at the University of Toronto, alongside the CFA Level I curriculum.",
+    title: "Consumer Behaviour · Finance · Strategy",
+    lede: "I thrive at the intersection of psychology and business, where understanding people leads to better products, stronger strategies, and more informed decisions.",
     facts: [
       ["Location", "Toronto, Canada"],
       ["Education", "University of Toronto - HBSc Psychology & Biology, 2026"],
