@@ -45,6 +45,14 @@
     document.getElementById("home-title").textContent = home.title;
     document.getElementById("home-lede").textContent = home.lede;
     document.getElementById("home-cta").textContent = home.cta;
+    if (home.resume) {
+      var resumeLink = document.getElementById("home-resume");
+      resumeLink.textContent = home.resume.label;
+      resumeLink.href = home.resume.href;
+      if (home.resume.download !== false) {
+        resumeLink.setAttribute("download", "");
+      }
+    }
     renderFacts();
 
     var featured = document.getElementById("featured-content");

@@ -2518,6 +2518,12 @@
         color: var(--ink);
       }
 
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-top: 0.3rem;
+      }
       .cta {
         display: inline-block;
         padding: 0.7rem 1.5rem;
@@ -2530,6 +2536,14 @@
       }
       .cta:hover {
         background: var(--olive-deep);
+      }
+      .cta-secondary {
+        background: transparent;
+        color: var(--ink);
+        border: 1px solid var(--rule);
+      }
+      .cta-secondary:hover {
+        background: rgba(122, 46, 46, 0.04);
       }
 
       .hero-figure svg {
@@ -2972,7 +2986,15 @@
             <h1 id="home-title"></h1>
             <p class="lede" id="home-lede"></p>
             <dl class="facts" id="home-facts"></dl>
-            <a class="cta" id="home-cta" href="#contact"></a>
+            <div class="hero-actions">
+              <a class="cta" id="home-cta" href="#contact"></a>
+              <a
+                class="cta cta-secondary"
+                id="home-resume"
+                href="assets/Simran_Kriplani_Resume.pdf"
+                download
+              ></a>
+            </div>
           </div>
           <div class="hero-figure" aria-hidden="true">
             <svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg">

@@ -8,6 +8,10 @@ window.siteContent = {
       ["Credential", "CFA Level I Candidate"],
     ],
     cta: "Get in touch",
+    resume: {
+      label: "My resume",
+      href: "assets/Simran_Kriplani_Resume.pdf",
+    },
     featured: {
       heading: "Featured work",
       items: [
