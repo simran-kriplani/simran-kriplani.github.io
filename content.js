@@ -273,9 +273,9 @@ window.siteContent = {
       "Storytelling, media, and visual experiments that translate research into something people can feel, remember, and talk about.",
     items: [
       {
-        slug: "from-city-to-sanctuary",
-        title: "From City to Sanctuary",
-        meta: "Short documentary · 2024",
+        slug: "research-poster",
+        title: "Meat Your Match",
+        meta: "Academic poster",
         tags: ["Documentary", "Travel", "Visual storytelling"],
         summary:
           "A travel-film project that turned landscape and reflection into a narrative about movement, belonging, and the textures of place.",
@@ -285,12 +285,12 @@ window.siteContent = {
         ],
         media: {
           type: "image",
-          src: "assets/images/headshot.png",
-          alt: "From City to Sanctuary creative project",
+          src: "assets/images/B90-Poster.png",
+          alt: "Meat Your Match academic poster",
         },
         link: {
-          href: "creative-space/from-city-to-sanctuary.html",
-          label: "Request the film",
+          href: "creative-space/research-poster.html",
+          label: "View the poster",
           external: true,
         },
       },
