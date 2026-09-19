@@ -295,8 +295,8 @@ window.siteContent = {
         },
       },
       {
-        slug: "research-to-storytelling-projects",
-        title: "Research-to-storytelling projects",
+        slug: "viral-masterminds",
+        title: "Viral Masterminds",
         meta: "Multimedia · Ongoing",
         tags: ["Storytelling", "Research communication", "Multimedia"],
         summary:
