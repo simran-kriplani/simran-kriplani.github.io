@@ -324,8 +324,63 @@
     });
   }
 
+  function renderBlogArchive() {
+    var blog = content.blog;
+    if (!blog || !blog.archiveHeading || !blog.items || blog.items.length <= 2) {
+      var archiveWrap = document.getElementById("blog-archive-list");
+      var archiveHeading = document.getElementById("blog-archive-heading");
+      if (archiveWrap) archiveWrap.parentNode.style.display = "none";
+      if (archiveHeading) archiveHeading.textContent = "";
+      return;
+    }
+
+    document.getElementById("blog-archive-heading").textContent =
+      blog.archiveHeading;
+
+    var archive = document.getElementById("blog-archive-list");
+    var archiveItems = blog.items.slice(2);
+    archiveItems.forEach(function (item) {
+      var li = document.createElement("li");
+      var link = document.createElement("a");
+      var href =
+        item.link && item.link.href
+          ? item.link.href
+          : "blog-post.html?slug=" + encodeURIComponent(item.slug);
+      link.href = href;
+      link.target = item.link && item.link.external ? "_blank" : "_self";
+      link.rel = "noopener noreferrer";
+      link.textContent = item.title;
+      li.appendChild(link);
+      archive.appendChild(li);
+    });
+  }
+
   function renderBlog() {
-    renderFeatureList("blog", "blog-list");
+    var blog = content.blog;
+    var blogList = document.getElementById("blog-list");
+    var blogTitle = document.getElementById("blog-title");
+    var blogIntro = document.getElementById("blog-intro");
+
+    if (blogTitle) blogTitle.textContent = blog.title;
+    if (blogIntro) blogIntro.textContent = blog.intro;
+
+    var featuredItems = (blog.items || []).slice(0, 2);
+    featuredItems.forEach(function (item) {
+      var card = el("article", "feature-item");
+      card.appendChild(el("h2", null, item.title));
+      if (item.meta) {
+        card.appendChild(el("p", "feature-meta", item.meta));
+      }
+      if (item.summary) {
+        card.appendChild(el("p", "feature-summary", item.summary));
+      }
+      if (item.link) {
+        appendLink(card, item.link);
+      }
+      blogList.appendChild(card);
+    });
+
+    renderBlogArchive();
   }
 
   function renderCreativeWork() {

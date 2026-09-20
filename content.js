@@ -229,6 +229,7 @@ window.siteContent = {
     title: "Blog",
     intro:
       "Short reflections on consumer behaviour, decision-making, and the strategic lessons hiding inside everyday choices.",
+    archiveHeading: "From the notebook",
     items: [
       {
         slug: "why-behavioural-thinking-makes-strategy-clearer",
@@ -264,6 +265,42 @@ window.siteContent = {
           external: true,
         },
       },
+      {
+        slug: "what-good-research-actually-looks-like",
+        title: "What good research actually looks like",
+        meta: "Notebook · 2025",
+        summary:
+          "The difference between collecting information and turning it into a decision people can trust.",
+        link: {
+          href: "blog-post.html?slug=what-good-research-actually-looks-like",
+          label: "Read more",
+          external: true,
+        },
+      },
+      {
+        slug: "why-people-trust-ideas-that-feel-familiar",
+        title: "Why people trust ideas that feel familiar",
+        meta: "Reflection · 2025",
+        summary:
+          "A reminder that cognition is not just about facts; it is also about the emotional comfort of the pattern.",
+        link: {
+          href: "blog-post.html?slug=why-people-trust-ideas-that-feel-familiar",
+          label: "Read more",
+          external: true,
+        },
+      },
+      {
+        slug: "the-small-design-decisions-that-shape-behaviour",
+        title: "The small design decisions that shape behaviour",
+        meta: "Field notes · 2025",
+        summary:
+          "Why the most influential choices are often the ones that feel almost invisible in the moment.",
+        link: {
+          href: "blog-post.html?slug=the-small-design-decisions-that-shape-behaviour",
+          label: "Read more",
+          external: true,
+        },
+      },
     ],
   },
 
@@ -295,8 +332,8 @@ window.siteContent = {
         },
       },
       {
-        slug: "viral-masterminds",
-        title: "Viral Masterminds",
+        slug: "travel-video",
+        title: "Travel Video",
         meta: "Multimedia · Ongoing",
         tags: ["Storytelling", "Research communication", "Multimedia"],
         summary:
@@ -307,11 +344,11 @@ window.siteContent = {
         ],
         media: {
           type: "video",
-          src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-          alt: "Research-to-storytelling project video",
+          src: "https://www.youtube.com/embed/P5Srb0uVHbI?si=K1Gme0TCwovMWCsj",
+          alt: "Travel video",
         },
         link: {
-          href: "creative-space/research-to-storytelling-projects.html",
+          href: "creative-space/travel-video.html",
           label: "Collaborate",
           external: true,
         },
