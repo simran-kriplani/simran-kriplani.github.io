@@ -32,10 +32,41 @@
     parent.appendChild(p);
   }
 
+  function makeFactIcon(type) {
+    var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("class", "fact-icon");
+    svg.setAttribute("viewBox", "0 0 24 24");
+    svg.setAttribute("aria-hidden", "true");
+
+    var icons = {
+      location: [
+        '<path d="M12 21s6-5.5 6-11a6 6 0 1 0-12 0c0 5.5 6 11 6 11Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>',
+        '<circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/>',
+      ],
+      education: [
+        '<path d="M3 8.5 12 4l9 4.5-9 4.5L3 8.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>',
+        '<path d="M7 10.8v3.7c0 1.5 2.2 3 5 3s5-1.5 5-3v-3.7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>',
+      ],
+      credential: [
+        '<path d="M7 4.5h10a2 2 0 0 1 2 2v10.5a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.7"/>',
+        '<path d="M9 8.5h6M9 12h6M9 15.5h4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>',
+      ],
+    };
+
+    svg.innerHTML = (icons[(type || "").toLowerCase()] || icons.location).join("");
+    return svg;
+  }
+
   function renderFacts() {
     var facts = document.getElementById("home-facts");
     content.home.facts.forEach(function (fact) {
-      facts.appendChild(el("dt", null, fact[0]));
+      var label = fact[0].toLowerCase();
+      var dt = el("dt");
+      var icon = makeFactIcon(label);
+      var srLabel = el("span", "fact-label", fact[0]);
+      dt.appendChild(icon);
+      dt.appendChild(srLabel);
+      facts.appendChild(dt);
       facts.appendChild(el("dd", null, fact[1]));
     });
   }

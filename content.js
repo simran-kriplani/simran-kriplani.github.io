@@ -1,7 +1,7 @@
 window.siteContent = {
   home: {
     title: "Hi! I'm Simran.",
-    lede: "I thrive at the intersection of psychology and business, where understanding people leads to better products, stronger strategies, and more informed decisions.",
+    lede: "I study consumer and market behaviour and turn those insights into branding, positioning, and strategy. Because understanding people leads to better products, stronger strategies, and more informed decisions.",
     facts: [
       ["Location", "Toronto, Canada"],
       ["Education", "University of Toronto - HBSc Psychology & Biology, 2026"],
@@ -56,7 +56,7 @@ window.siteContent = {
   caseStudies: {
     title: "Case studies",
     intro:
-      "These sit at the intersection of consumer psychology and commercial strategy - reading market data and research literature for the same thing: what people actually do, and why.",
+      "These sit at the intersection of behavioural science and consumer strategy - reading market data and research literature for the same thing: what people actually do, and why.",
     archiveHeading: "In the archive",
     items: [
       {

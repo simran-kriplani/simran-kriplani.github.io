@@ -2560,8 +2560,28 @@
         font-size: 0.92rem;
       }
       .facts dt {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
         color: var(--ink-soft);
         margin: 0;
+      }
+      .fact-icon {
+        width: 0.95rem;
+        height: 0.95rem;
+        color: var(--ink-soft);
+        flex-shrink: 0;
+      }
+      .fact-label {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
       }
       .facts dd {
         margin: 0;
