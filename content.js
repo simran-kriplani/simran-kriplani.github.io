@@ -1,7 +1,7 @@
 window.siteContent = {
   home: {
     title: "Hi! I'm Simran.",
-    lede: "I study consumer and market behaviour and turn those insights into branding, positioning, and strategy. Because understanding people leads to better products, stronger strategies, and more informed decisions.",
+    lede: "I study consumer and market behaviour and turn those insights into branding, positioning, and strategy.",
     facts: [
       ["Location", "Toronto, Canada"],
       ["Education", "University of Toronto - HBSc Psychology & Biology, 2026"],
@@ -487,7 +487,7 @@ window.siteContent = {
 
   contact: {
     title: "Contact",
-    lede: "I'm currently looking for full-time roles in consumer strategy, insights, and management consulting. If you're working on a pricing question, a brand repositioning, or just want to talk through a behavioural economics paper, I'd like to hear from you.",
+    lede: "I'm currently looking for full-time roles in consumer strategy, insights, and market research. If you're working on a brand repositioning, a consumer insights problem, or just want to talk through a behavioural economics paper, I'd like to hear from you. Let's connect!",
     links: [
       {
         type: "email",
