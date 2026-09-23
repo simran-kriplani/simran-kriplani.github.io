@@ -1,6 +1,6 @@
 window.siteContent = {
   home: {
-    title: "Consumer Behaviour · Finance · Strategy",
+    title: "Hi! I'm Simran.",
     lede: "I thrive at the intersection of psychology and business, where understanding people leads to better products, stronger strategies, and more informed decisions.",
     facts: [
       ["Location", "Toronto, Canada"],
@@ -117,9 +117,9 @@ window.siteContent = {
         },
       },
       {
-        slug: "campus-leadership",
-        title: "Applied Behavioural Strategy in Campus Leadership",
-        meta: "SYNAPSE UofT · Psychological Health Society",
+        slug: "counterfeits",
+        title: "Counterfeits",
+        meta: "Research Assistant · Rotman School of Management",
         paragraphs: [
           "Two campus organizations gave me a testing ground for behavioural strategy outside the lab: one focused on making neuroscience accessible to a broad student audience, the other on encouraging students to take mental health seriously.",
           "As Vice President of Communications at SYNAPSE, I led a team that designed and ran campaigns applying behavioural principles - like shortening the distance between interest and action - to drive engagement and knowledge retention. As Director of Marketing at the Psychological Health Society, I built social campaigns that used behavioural insight to normalize help-seeking and encourage small, sustainable habit change rather than one-off calls to action.",
@@ -185,8 +185,8 @@ window.siteContent = {
         },
       },
       {
-        slug: "multimedia-documentary-project",
-        title: "Multimedia Documentary Project",
+        slug: "coffee-cup",
+        title: "Comfort, Caffeine, Connection: The Cultural Impact of the Coffee Cup",
         meta: "Creative research · 2023",
         paragraphs: [
           "This project translated a dense scientific concept into a visually compelling story about how viruses can hijack host metabolism and reshape biological systems.",
@@ -199,7 +199,7 @@ window.siteContent = {
           alt: "Simran Kriplani portrait",
         },
         detail: {
-          href: "in-the-archive/multimedia-documentary-project.html",
+          href: "in-the-archive/coffee-cup.html",
           label: "Read the work",
         },
       },
@@ -358,14 +358,14 @@ window.siteContent = {
 
   about: {
     title: "About",
-    bio: "I hold an Honours Bachelor of Science in Psychology and Biology at the University of Toronto, alongside the CFA Level I curriculum. That combination is deliberate: psychology gives me a working model of why people decide the way they do, biology trained me to treat every claim as a hypothesis to test, and the CFA program keeps that thinking anchored to how markets and companies actually behave. I'm most interested in the space where those three things meet - pricing, brand strategy, and the research underneath both.",
+    bio: "I hold an Honours Bachelor of Science in Psychology and Biology at the University of Toronto, alongside the CFA Level I curriculum. That combination is deliberate: psychology gives me a working model of why people decide the way they do, biology trained me to treat every claim as a hypothesis to test, and the CFA program keeps that thinking anchored to how markets and companies actually behave. I'm most interested in the space where those three things meet - consumer behaviour, brand strategy, and the research underneath it all.",
     education: {
       heading: "Education",
       entries: [
         {
           title: "Honours Bachelor of Science - Psychology & Biology",
           meta: "September 2022 - May 2026",
-          org: "University of Toronto, Toronto, Ontario",
+          org: "University of Toronto",
           paragraphs: ["High distinction · Dean's List, 2023-2026."],
           coursework:
             "Relevant coursework: statistics, judgment & decision-making, behaviour modification, psychology & money, social psychology, business, advanced research methods, psychology of prejudice, cognitive neuroscience.",
