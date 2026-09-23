@@ -10,7 +10,7 @@ window.siteContent = {
     cta: "Get in touch",
     resume: {
       label: "My resume",
-      href: "assets/Simran_Kriplani_Resume.pdf",
+      href: "assets/SimranKriplani_Resume.pdf",
     },
     featured: {
       heading: "Featured work",
@@ -166,7 +166,7 @@ window.siteContent = {
         },
       },
       {
-        slug: "Is this Seat Taken?",
+        slug: "is-this-seat-taken",
         title: "Is this Seat Taken? A Behavioural Fix for Crowded Libraries",
         meta: "Reducing Inefficient Seat Search in UofT Libraries",
         paragraphs: [
@@ -204,8 +204,8 @@ window.siteContent = {
         },
       },
       {
-        slug: "travel-video-project",
-        title: "Travel Video Project",
+        slug: "wellness-experiment",
+        title: "Cultivating Kindness Within: A Behavioural Experiment in Self-Compassion",
         meta: "Short film · 2023",
         paragraphs: [
           "This documentary followed a reflective journey through the Ma Moosh Ka Win Valley Trail, using landscape and movement to explore themes of place, memory, and belonging.",
