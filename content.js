@@ -218,7 +218,7 @@ window.siteContent = {
           alt: "Simran Kriplani portrait",
         },
         detail: {
-          href: "in-the-archive/travel-video-project.html",
+          href: "in-the-archive/wellness-experiment.html",
           label: "Read the work",
         },
       },
