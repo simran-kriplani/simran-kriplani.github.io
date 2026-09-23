@@ -195,7 +195,7 @@ window.siteContent = {
         ],
         tags: ["Science communication", "Storytelling", "Video"],
         photo: {
-          src: "assets/images/headshot.png",
+          src: "assets/images/coffee-cup.png",
           alt: "Simran Kriplani portrait",
         },
         detail: {
@@ -214,7 +214,7 @@ window.siteContent = {
         ],
         tags: ["Documentary", "Travel", "Visual storytelling"],
         photo: {
-          src: "assets/images/headshot.png",
+          src: "assets/images/wellness.png",
           alt: "Simran Kriplani portrait",
         },
         detail: {
