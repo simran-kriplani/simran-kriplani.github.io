@@ -117,6 +117,23 @@ h1 {
   font-size: 1.06rem;
 }
 
+.article-figure {
+  width: min(100%, 760px);
+  margin: 0 0 1.75rem;
+  text-align: left;
+}
+
+.article-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid var(--rule);
+  background: rgba(255,255,255,0.15);
+}
+
 .references {
   margin-top: 2.75rem;
   padding-top: 1.5rem;

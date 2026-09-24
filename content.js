@@ -62,7 +62,7 @@ window.siteContent = {
       {
         slug: "grocery-oligopoly",
         title: "A Consumer Behaviour Perspective on Canada's Grocery Oligopoly",
-        meta: "Independent research project · University of Toronto",
+        meta: "Independent research project",
         paragraphs: [
           "Canada's grocery sector is dominated by a small number of conglomerates that each operate multiple retail banners spanning discount, mid-market, and premium tiers. That structure lets a single company appear to compete with itself while still controlling most of the shelf space a shopper actually sees.",
           "I processed multi-brand retail datasets in Python and Excel to trace how pricing moved across banners and time periods, and mapped the results against shifts in market share among the major players.",
@@ -91,7 +91,7 @@ window.siteContent = {
       {
         slug: "brand-anthropomorphism",
         title: "Who's Really In Charge? Competence and Control in the age of AI",
-        meta: "Research Assistant · UofT Rotman School of Management",
+        meta: "Research Assistant · Rotman School of Management",
         paragraphs: [
           "Consumers increasingly form judgments about brands that behave like people - including AI systems introduced as assistants, agents, or advisors. Understanding when that framing builds trust, and when it backfires, has real implications for how companies design and position AI-driven products.",
           "Working under Dr. Pankaj Aggarwal, I combined generative AI research tools with academic databases to synthesize more than 220 articles spanning consumer judgment and AI role framing, cutting research synthesis time by roughly 40%. From there, I analysed how the various social roles of AI influence consumer perception, agency, trust, and behaviour.",
@@ -118,7 +118,7 @@ window.siteContent = {
       },
       {
         slug: "counterfeits",
-        title: "Counterfeits",
+        title: "The Anatomy of a Fake",
         meta: "Research Assistant · Rotman School of Management",
         paragraphs: [
           "Two campus organizations gave me a testing ground for behavioural strategy outside the lab: one focused on making neuroscience accessible to a broad student audience, the other on encouraging students to take mental health seriously.",
@@ -126,21 +126,21 @@ window.siteContent = {
           "Across both, the throughline was the same: a consistent brand voice and a real content strategy do more for behaviour change than any single clever post.",
         ],
         tags: [
-          "Campaign strategy",
-          "Content strategy",
-          "Behavioural design",
-          "Brand voice",
+          "Consumer Behaviour",
+          "Contagion & Authenticity",
+          "Research design",
+          "Moral Psychology",
         ],
         photo: {
           src: "assets/images/headshot.png",
           alt: "Simran Kriplani portrait",
         },
         detail: {
-          href: "case-studies/campus-leadership.html",
+          href: "case-studies/counterfeits.html",
           label: "Read the case study",
         },
         pdf: {
-          href: "assets/case-studies/campus-leadership.pdf",
+          href: "assets/case-studies/counterfeits.pdf",
           label: "View PDF",
         },
       },
