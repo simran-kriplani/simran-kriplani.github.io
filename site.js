@@ -391,26 +391,124 @@
     var blogList = document.getElementById("blog-list");
     var blogTitle = document.getElementById("blog-title");
     var blogIntro = document.getElementById("blog-intro");
+    var carouselViewport = document.getElementById("blog-carousel-viewport");
 
     if (blogTitle) blogTitle.textContent = blog.title;
     if (blogIntro) blogIntro.textContent = blog.intro;
 
-    var featuredItems = (blog.items || []).slice(0, 2);
-    featuredItems.forEach(function (item) {
-      var card = el("article", "feature-item");
-      card.appendChild(el("h2", null, item.title));
-      if (item.meta) {
-        card.appendChild(el("p", "feature-meta", item.meta));
-      }
-      if (item.summary) {
-        card.appendChild(el("p", "feature-summary", item.summary));
-      }
-      if (item.link) {
-        appendLink(card, item.link);
-      }
-      blogList.appendChild(card);
-    });
+    var carouselItems = (blog.items || []).slice(0, 6);
+    var currentIndex = 0;
+    var dragStartX = 0;
+    var dragCurrentX = 0;
+    var dragStartTranslate = 0;
+    var isDragging = false;
 
+    function buildHref(item) {
+      if (item && item.link && item.link.href) {
+        return item.link.href;
+      }
+      return "blog-post.html?slug=" + encodeURIComponent(item.slug);
+    }
+
+    function getCardShift() {
+      if (!blogList || !blogList.querySelector(".blog-card")) return 0;
+      var cards = blogList.querySelectorAll(".blog-card");
+      var gap = parseFloat(getComputedStyle(blogList).gap) || 16;
+      return cards[0].getBoundingClientRect().width + gap;
+    }
+
+    function updateCarouselPosition() {
+      if (!blogList) return;
+      var offset = currentIndex * getCardShift();
+      blogList.style.transition = "transform 0.52s cubic-bezier(0.22, 1, 0.36, 1)";
+      blogList.style.transform = "translateX(-" + offset + "px)";
+    }
+
+    function renderBlogCards() {
+      if (!blogList) return;
+      blogList.innerHTML = "";
+
+      carouselItems.forEach(function (item) {
+        var card = el("article", "blog-card");
+        var image = el("img", "blog-card-image");
+        image.src = item.image || "assets/images/dress-good.png";
+        image.alt = item.title;
+
+        var contentWrap = el("div", "blog-card-content");
+        var heading = el("h2");
+        var titleLink = el("a", null, item.title);
+        titleLink.href = buildHref(item);
+        titleLink.target = item.link && item.link.external ? "_blank" : "_self";
+        titleLink.rel = "noopener noreferrer";
+        heading.appendChild(titleLink);
+        contentWrap.appendChild(heading);
+
+        card.appendChild(image);
+        card.appendChild(contentWrap);
+        blogList.appendChild(card);
+      });
+
+      requestAnimationFrame(updateCarouselPosition);
+    }
+
+    function step(direction) {
+      if (carouselItems.length <= 2) return;
+      currentIndex = (currentIndex + direction + carouselItems.length) % carouselItems.length;
+      updateCarouselPosition();
+    }
+
+    function onPointerDown(event) {
+      if (event.pointerType === "mouse" && event.button !== 0) return;
+      isDragging = true;
+      dragStartX = event.clientX;
+      dragCurrentX = event.clientX;
+      dragStartTranslate = currentIndex * getCardShift();
+      if (carouselViewport) {
+        carouselViewport.classList.add("dragging");
+      }
+      blogList.style.transition = "none";
+      blogList.setPointerCapture(event.pointerId);
+    }
+
+    function onPointerMove(event) {
+      if (!isDragging) return;
+      dragCurrentX = event.clientX;
+      var delta = dragCurrentX - dragStartX;
+      var translate = dragStartTranslate - delta;
+      blogList.style.transform = "translateX(-" + translate + "px)";
+    }
+
+    function onPointerUp(event) {
+      if (!isDragging) return;
+      isDragging = false;
+      if (carouselViewport) {
+        carouselViewport.classList.remove("dragging");
+      }
+      var delta = dragCurrentX - dragStartX;
+      if (Math.abs(delta) > 60) {
+        step(delta < 0 ? 1 : -1);
+      } else {
+        updateCarouselPosition();
+      }
+      if (event && event.pointerId !== undefined && blogList && blogList.hasPointerCapture) {
+        try {
+          blogList.releasePointerCapture(event.pointerId);
+        } catch (error) {
+          // no-op
+        }
+      }
+    }
+
+    if (carouselViewport) {
+      carouselViewport.addEventListener("pointerdown", onPointerDown);
+      carouselViewport.addEventListener("pointermove", onPointerMove);
+      carouselViewport.addEventListener("pointerup", onPointerUp);
+      carouselViewport.addEventListener("pointerleave", onPointerUp);
+      carouselViewport.addEventListener("pointercancel", onPointerUp);
+    }
+
+    window.addEventListener("resize", updateCarouselPosition);
+    renderBlogCards();
     renderBlogArchive();
   }
 

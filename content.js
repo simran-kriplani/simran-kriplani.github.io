@@ -235,6 +235,7 @@ window.siteContent = {
         slug: "why-behavioural-thinking-makes-strategy-clearer",
         title: "Why behavioural thinking makes strategy clearer",
         meta: "Essay · 2026",
+        image: "assets/images/dress-good.png",
         summary:
           "A note on how framing, defaults, and mental models shape the way people respond to markets, brands, and product decisions.",
         body: [
@@ -252,6 +253,7 @@ window.siteContent = {
         slug: "the-hidden-psychology-behind-pricing",
         title: "The hidden psychology behind pricing",
         meta: "Field notes · 2026",
+        image: "assets/images/counterfeit_bags.png",
         summary:
           "What a pricing decision looks like when you start from how people actually compare options instead of how theory assumes they should.",
         body: [

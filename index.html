@@ -2924,6 +2924,64 @@
         text-decoration: underline;
       }
 
+      .blog-carousel-viewport {
+        position: relative;
+        overflow: hidden;
+        margin-top: 1.5rem;
+        cursor: grab;
+        user-select: none;
+        touch-action: pan-y;
+      }
+      .blog-carousel-viewport.dragging {
+        cursor: grabbing;
+      }
+      .blog-carousel-track {
+        display: flex;
+        gap: 1rem;
+        transition: transform 0.52s cubic-bezier(0.22, 1, 0.36, 1);
+        will-change: transform;
+      }
+      .blog-card {
+        flex: 0 0 calc(50% - 0.5rem);
+        min-width: 0;
+        padding: 0;
+        border: 1px solid var(--rule);
+        border-radius: 1.1rem;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 20px rgba(25, 24, 22, 0.04);
+      }
+      .blog-card .blog-card-image {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1.62;
+        object-fit: cover;
+        background: var(--ivory);
+      }
+      .blog-card-content {
+        padding: 1rem 1rem 1.15rem;
+      }
+      .blog-card h2 {
+        margin: 0;
+        font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+        line-height: 1.25;
+      }
+      .blog-card h2 a {
+        color: var(--ink);
+        text-decoration: none;
+      }
+      .blog-card h2 a:hover,
+      .blog-card h2 a:focus-visible {
+        color: var(--clay);
+        text-decoration: underline;
+        text-underline-offset: 0.14em;
+      }
+      @media (max-width: 720px) {
+        .blog-card {
+          flex-basis: calc(50% - 0.4rem);
+        }
+      }
+
       /* ---------- About ---------- */
       .about-intro {
         display: grid;
@@ -3201,7 +3259,9 @@
       <section data-page="blog" id="blog">
         <h1 id="blog-title"></h1>
         <p class="section-intro" id="blog-intro"></p>
-        <div class="feature-list" id="blog-list"></div>
+        <div class="blog-carousel-viewport" id="blog-carousel-viewport">
+          <div class="blog-carousel-track" id="blog-list"></div>
+        </div>
         <div class="research-strip blog-strip" aria-live="polite">
           <h2 id="blog-archive-heading"></h2>
           <ul id="blog-archive-list"></ul>
