@@ -1,7 +1,7 @@
 window.siteContent = {
   home: {
     title: "Hi! I'm Simran.",
-    lede: "I study consumer and market behaviour and turn those insights into branding, positioning, and strategy.",
+    lede: "I work at the intersection of psychology and business, studying consumer and market behaviour and turning those insights into branding, positioning, and strategy.",
     facts: [
       ["Location", "Toronto, Canada"],
       ["Education", "University of Toronto - HBSc Psychology & Biology, 2026"],
@@ -56,7 +56,7 @@ window.siteContent = {
   caseStudies: {
     title: "Case studies",
     intro:
-      "These sit at the intersection of behavioural science and consumer strategy - reading market data and research literature for the same thing: what people actually do, and why.",
+      "Projects that blend behavioural science and consumer strategy - reading market data and research literature for the same thing: what people actually do, and why.",
     archiveHeading: "In the archive",
     items: [
       {
@@ -121,9 +121,10 @@ window.siteContent = {
         title: "The Anatomy of a Fake",
         meta: "Research Assistant · Rotman School of Management",
         paragraphs: [
-          "Two campus organizations gave me a testing ground for behavioural strategy outside the lab: one focused on making neuroscience accessible to a broad student audience, the other on encouraging students to take mental health seriously.",
-          "As Vice President of Communications at SYNAPSE, I led a team that designed and ran campaigns applying behavioural principles - like shortening the distance between interest and action - to drive engagement and knowledge retention. As Director of Marketing at the Psychological Health Society, I built social campaigns that used behavioural insight to normalize help-seeking and encourage small, sustainable habit change rather than one-off calls to action.",
-          "Across both, the throughline was the same: a consistent brand voice and a real content strategy do more for behaviour change than any single clever post.",
+          "Why do some counterfeits feel more authentic than others?",
+          "Drawing on research in consumer psychology, this case study examines how we attach symbolic, emotional, and even moral meaning to counterfeit goods. Understanding our perception of these products has real implications for how brands communicate authenticity, and how policy addresses counterfeit demand.",
+          "Working under Dr. Pankaj Aggarwal, I helped navigate a series of studies isolating the specific cues that drive perceived authenticity between two otherwise identical counterfeits.",
+          "This work formed the basis of a SSHRC-style grant proposal, with clear theoretical motivation, integration of prior literature, and proposed studies.",
         ],
         tags: [
           "Consumer Behaviour",
