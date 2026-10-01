@@ -412,13 +412,10 @@ section[data-page="contact"] {
   font-size: 10px;
 }
 
-/* Hero curve: draws itself in, then the annotations appear one at a time.
+/* Hero curve: js/site.js draws the line in (a stroke-dashoffset transition),
+   then the annotations appear one at a time.
    Base styles are the finished state, so nothing is hidden without JS or
    under reduced motion (which switches animations off). */
-.hero-figure.is-animated .value-curve {
-  stroke-dasharray: var(--curve-length);
-  animation: curve-draw 1.6s cubic-bezier(0.65, 0, 0.35, 1) both;
-}
 .hero-figure.is-animated .annot {
   animation: annot-in 0.6s ease both;
 }
@@ -430,14 +427,6 @@ section[data-page="contact"] {
 }
 .hero-figure.is-animated .annot-3 {
   animation-delay: 1.6s;
-}
-@keyframes curve-draw {
-  from {
-    stroke-dashoffset: var(--curve-length);
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
 }
 @keyframes annot-in {
   from {
