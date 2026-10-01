@@ -1,6 +1,6 @@
 # Simran Kriplani — portfolio site
 
-A static portfolio (no build step). Open `index.html` in a browser, or serve the folder with any static server (`python3 -m http.server`). Pushes to `main` deploy to GitHub Pages via `.github/workflows/pages.yml`.
+A static portfolio (no build step). Open `index.html` in a browser, or serve the folder with any static server (`python3 -m http.server`). Pushes to `main` deploy to GitHub Pages via `.github/workflows/pages.yml`, which replaces the `?v=dev` on CSS/JS links with the commit hash so visitors never mix a new page with old cached files. Keep `?v=dev` on any new `css/` or `js/` link you add.
 
 ## Project structure
 
