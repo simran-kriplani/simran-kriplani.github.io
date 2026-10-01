@@ -680,8 +680,17 @@
     var LOSS_AVERSION = 2.25; // Tversky & Kahneman (1992)
 
     var length = curve.getTotalLength();
-    figure.style.setProperty("--curve-length", length);
-    if (!reduceMotion) figure.classList.add("is-animated");
+    if (!reduceMotion) {
+      // Draw the line in by animating its dash offset from full length to 0.
+      // Plain numbers and a transition: works in every browser, Safari included.
+      curve.style.strokeDasharray = length;
+      curve.style.strokeDashoffset = length;
+      curve.getBoundingClientRect(); // commit the start state before animating
+      curve.style.transition =
+        "stroke-dashoffset 1.6s cubic-bezier(0.65, 0, 0.35, 1)";
+      curve.style.strokeDashoffset = 0;
+      figure.classList.add("is-animated");
+    }
 
     // The curve only ever moves rightwards, so sample it once and look points up by x.
     var samples = [];
@@ -761,7 +770,7 @@
         ? "Hover along the curve to compare a loss with an equal gain"
         : "Drag along the curve to compare a loss with an equal gain",
     );
-    readout.after(hint);
+    readout.parentNode.insertBefore(hint, readout.nextSibling);
 
     svg.addEventListener("pointerdown", onPointer);
     svg.addEventListener("pointermove", onPointer);
@@ -793,6 +802,7 @@
       "section[data-page]:not(#home) > .section-intro",
       "details.case-study",
       ".research-strip",
+      ".lab-card",
       ".blog-carousel",
       ".feature-item",
       ".about-intro",
@@ -922,22 +932,36 @@
         toggle.focus();
       }
     });
-    matchMedia("(min-width: 761px)").addEventListener("change", function () {
+    var desktop = matchMedia("(min-width: 761px)");
+    var close = function () {
       setOpen(false);
-    });
+    };
+    // Safari before 14 only supports the older addListener API.
+    if (desktop.addEventListener) desktop.addEventListener("change", close);
+    else desktop.addListener(close);
   }
 
-  renderHome();
-  renderCaseStudies();
-  renderBlog();
-  renderCreativeWork();
-  renderAbout();
-  renderContact();
-  renderFooter();
-  setupThemeToggle();
-  setupNavigation();
-  setupMobileMenu();
-  setupHeroCurve();
-  setupCountUp();
-  setupReveal();
+  // Each part runs independently, so a problem in one (e.g. an unsupported
+  // browser feature) can't stop the rest of the page from working.
+  [
+    renderHome,
+    renderCaseStudies,
+    renderBlog,
+    renderCreativeWork,
+    renderAbout,
+    renderContact,
+    renderFooter,
+    setupThemeToggle,
+    setupNavigation,
+    setupMobileMenu,
+    setupHeroCurve,
+    setupCountUp,
+    setupReveal,
+  ].forEach(function (step) {
+    try {
+      step();
+    } catch (error) {
+      console.error(error);
+    }
+  });
 })();
