@@ -1,0 +1,35 @@
+/*
+  Site theme: light palette, fonts and layout widths.
+  Update these values to change the palette without touching layout or component styles.
+  Dark-mode overrides live in theme-dark.css (loaded by index.html only).
+*/
+
+:root {
+  /* Core page surfaces */
+  --bg: #f3efe4; /* Main page background */
+  --bg-alt: #eae3d0; /* Alternate section background, case-study panel */
+
+  /* Typography */
+  --ink: #120d0f; /* Primary text, headings, strong body text */
+  --ink-soft: #4a3d3d; /* Secondary text, metadata, subdued body copy */
+
+  /* Structural dividers and borders */
+  --rule: #b39a7a; /* Section separators, borders, dividers */
+
+  /* Primary brand accents */
+  --olive: #55613f; /* Buttons, active accents, UI emphasis */
+  --olive-deep: #4d4431; /* Hover states and deeper accent treatment */
+
+  /* Highlight / contrast accents */
+  --clay: #674452; /* Links, emphasis highlights, featured accent color */
+
+  /* Section-specific tonal blocks */
+  --tone-about: #f2e1cf; /* About section panel background */
+  --tone-contact: #e9dcc9; /* Contact section panel background */
+
+  /* Type styles */
+  --font-serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --max-text: 640px;
+  --max-wide: 1080px;
+}

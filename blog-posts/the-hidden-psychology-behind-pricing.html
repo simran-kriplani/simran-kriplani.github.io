@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The hidden psychology behind pricing</title>
-    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/article.css" />
   </head>
-  <body>
+  <body class="article-page">
     <main class="page-shell">
       <a class="back-link" href="../index.html">← Back to the site</a>
 
@@ -22,7 +23,7 @@
           <p>Good pricing does not just communicate cost. It influences how people judge value, fairness, and confidence in the decision they are making. That is why the most effective pricing strategies often feel less like a mechanical calculation and more like a careful read of human judgment.</p>
         </div>
 
-        <section class="comments" aria-label="Comments section">
+        <section class="comments" aria-label="Comments section" data-comments-key="the-hidden-psychology-behind-pricing">
           <h2>Thoughts</h2>
           <textarea id="comment-box" placeholder="Share your thoughts..."></textarea>
           <div class="comment-actions">
@@ -33,37 +34,6 @@
       </article>
     </main>
 
-    <script>
-      (function () {
-        const key = 'the-hidden-psychology-behind-pricing';
-        const commentBox = document.getElementById('comment-box');
-        const submitButton = document.getElementById('comment-submit');
-        const commentList = document.getElementById('comment-list');
-
-        function renderComments() {
-          const comments = JSON.parse(localStorage.getItem('simran-blog-comments') || '{}');
-          const items = comments[key] || [];
-          commentList.innerHTML = '';
-          items.forEach(function (comment) {
-            const li = document.createElement('li');
-            li.textContent = comment;
-            commentList.appendChild(li);
-          });
-        }
-
-        submitButton.addEventListener('click', function () {
-          const value = commentBox.value.trim();
-          if (!value) return;
-          const comments = JSON.parse(localStorage.getItem('simran-blog-comments') || '{}');
-          comments[key] = comments[key] || [];
-          comments[key].push(value);
-          localStorage.setItem('simran-blog-comments', JSON.stringify(comments));
-          commentBox.value = '';
-          renderComments();
-        });
-
-        renderComments();
-      })();
-    </script>
+    <script src="../js/comments.js"></script>
   </body>
 </html>
