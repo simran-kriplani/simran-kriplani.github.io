@@ -19,10 +19,12 @@ js/
   content.js          All homepage text, links and lists (edit copy here)
   icons.js            Inline SVG icon markup
   theme-init.js       Applies the saved light/dark choice before first paint
-  site.js             Renders content.js into index.html; theme toggle, carousels, nav menu
+  site.js             Renders content.js into index.html; theme toggle, carousels, nav menu,
+                      hero curve, scroll reveals and count-up figures
   blog-post.js        Renders blog-post.html
   case-study.js       Renders case-study.html
   comments.js         Browser-local comment box used on blog posts
+  article.js          Reading-progress bar and reading time on article pages
 
 case-studies/         Full write-ups linked from "Case studies"
 blog-posts/           Static versions of the first two blog posts
@@ -76,7 +78,7 @@ Add an item to `blog.items` with a `slug`, `title`, `meta` and a `link.href` poi
 
 ## Standalone article pages
 
-Every page in `case-studies/`, `blog-posts/`, `from-the-notebook/`, `in-the-archive/` and `creative-space/` loads the site fonts, `js/theme-init.js`, the theme stylesheets and `article.css`, plus a variant class on `<body>`:
+Every page in `case-studies/`, `blog-posts/`, `from-the-notebook/`, `in-the-archive/` and `creative-space/` loads the site fonts, `js/theme-init.js`, the theme stylesheets and `article.css`, ends with `<script src="../js/article.js"></script>`, and has a variant class on `<body>`:
 
 ```html
 <link rel="stylesheet" href="../css/theme.css" />

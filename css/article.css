@@ -184,6 +184,25 @@ h1 {
   font-size: 1rem;
 }
 
+/* ---------- Reading progress and time (js/article.js) ---------- */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 3px;
+  background: var(--clay);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+}
+.reading-time {
+  white-space: nowrap;
+}
+.reading-time::before {
+  content: " · ";
+}
+
 /* ---------- Comments (blog posts) ---------- */
 .comments {
   margin-top: 42px;

@@ -412,6 +412,79 @@ section[data-page="contact"] {
   font-size: 10px;
 }
 
+/* Hero curve: draws itself in, then the annotations appear one at a time.
+   Base styles are the finished state, so nothing is hidden without JS or
+   under reduced motion (which switches animations off). */
+.hero-figure.is-animated .value-curve {
+  stroke-dasharray: var(--curve-length);
+  animation: curve-draw 1.6s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+.hero-figure.is-animated .annot {
+  animation: annot-in 0.6s ease both;
+}
+.hero-figure.is-animated .annot-1 {
+  animation-delay: 0.9s;
+}
+.hero-figure.is-animated .annot-2 {
+  animation-delay: 1.25s;
+}
+.hero-figure.is-animated .annot-3 {
+  animation-delay: 1.6s;
+}
+@keyframes curve-draw {
+  from {
+    stroke-dashoffset: var(--curve-length);
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes annot-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
+
+/* Hover/drag probe: a dot that follows the curve, with guides to both axes. */
+.hero-figure svg {
+  touch-action: pan-y;
+  cursor: crosshair;
+}
+.curve-probe {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+.hero-figure.is-probing .curve-probe {
+  opacity: 1;
+}
+.probe-guide {
+  stroke: var(--clay);
+  stroke-width: 1;
+  stroke-dasharray: 2 3;
+}
+.probe-dot {
+  fill: var(--clay);
+  stroke: var(--bg);
+  stroke-width: 2;
+}
+.curve-readout {
+  min-height: 3.1em;
+  margin: 0.4rem 0 0;
+  color: var(--ink-soft);
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+}
+.curve-readout strong {
+  color: var(--ink);
+  font-style: normal;
+  font-weight: 600;
+}
+
 /* ---------- Featured carousel ---------- */
 .featured {
   background: linear-gradient(
@@ -1084,6 +1157,24 @@ details[open] .case-toggle::before {
   font-size: 0.85rem;
   color: var(--ink-soft);
   margin-top: 0.15rem;
+}
+
+/* ---------- Scroll reveal ---------- */
+/* js/site.js adds .reveal only when motion is allowed, then .is-visible on entry. */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0s);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+.count-up {
+  font-variant-numeric: tabular-nums;
 }
 
 /* ---------- Footer ---------- */

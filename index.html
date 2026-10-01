@@ -103,7 +103,7 @@
               ></a>
             </div>
           </div>
-          <div class="hero-figure" aria-hidden="true">
+          <div class="hero-figure" id="hero-figure" aria-hidden="true">
             <svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg">
               <line class="axis-line" x1="20" y1="190" x2="460" y2="190"></line>
               <line class="axis-line" x1="240" y1="20" x2="240" y2="360"></line>
@@ -111,36 +111,63 @@
               <text class="axis-text" x="24" y="182">losses</text>
               <path
                 class="value-curve"
+                id="value-curve"
                 d="M40,345 C160,320 200,260 240,190 C280,120 340,95 440,85"
               ></path>
-              <circle class="ref-dot" cx="240" cy="190" r="4"></circle>
-              <line
-                class="annot-line"
-                x1="248"
-                y1="182"
-                x2="290"
-                y2="60"
-              ></line>
-              <text class="annot-text" x="292" y="57">reference point</text>
-              <line
-                class="annot-line"
-                x1="195"
-                y1="255"
-                x2="120"
-                y2="230"
-              ></line>
-              <text class="annot-text" x="20" y="226">steeper for losses</text>
-              <line
-                class="annot-line"
-                x1="390"
-                y1="98"
-                x2="410"
-                y2="150"
-              ></line>
-              <text class="annot-text" x="330" y="165">
-                diminishing sensitivity
-              </text>
+              <g class="annot annot-1">
+                <circle class="ref-dot" cx="240" cy="190" r="4"></circle>
+                <line
+                  class="annot-line"
+                  x1="248"
+                  y1="182"
+                  x2="290"
+                  y2="60"
+                ></line>
+                <text class="annot-text" x="292" y="57">reference point</text>
+              </g>
+              <g class="annot annot-2">
+                <line
+                  class="annot-line"
+                  x1="195"
+                  y1="255"
+                  x2="120"
+                  y2="230"
+                ></line>
+                <text class="annot-text" x="20" y="226">
+                  steeper for losses
+                </text>
+              </g>
+              <g class="annot annot-3">
+                <line
+                  class="annot-line"
+                  x1="390"
+                  y1="98"
+                  x2="410"
+                  y2="150"
+                ></line>
+                <text class="annot-text" x="330" y="165">
+                  diminishing sensitivity
+                </text>
+              </g>
+              <g class="curve-probe" id="curve-probe">
+                <line
+                  class="probe-guide"
+                  id="probe-guide-x"
+                  x1="240"
+                  y1="190"
+                ></line>
+                <line
+                  class="probe-guide"
+                  id="probe-guide-y"
+                  x1="240"
+                  y1="190"
+                ></line>
+                <circle class="probe-dot" id="probe-dot" r="5.5"></circle>
+              </g>
             </svg>
+            <p class="curve-readout" id="curve-readout">
+              Explore the curve: losses loom larger than gains.
+            </p>
           </div>
         </div>
 
