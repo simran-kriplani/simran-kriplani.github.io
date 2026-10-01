@@ -451,6 +451,10 @@ section[data-page="contact"] {
   touch-action: pan-y;
   cursor: crosshair;
 }
+/* Invisible but "painted", so the whole figure responds to the pointer. */
+.curve-hit {
+  fill: transparent;
+}
 .curve-probe {
   opacity: 0;
   transition: opacity 0.2s ease;
@@ -478,6 +482,14 @@ section[data-page="contact"] {
   font-style: italic;
   line-height: 1.5;
   text-align: center;
+}
+.curve-hint {
+  margin: 0.35rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+  opacity: 0.8;
 }
 .curve-readout strong {
   color: var(--ink);

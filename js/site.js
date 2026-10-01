@@ -672,9 +672,10 @@
     var guideX = byId("probe-guide-x");
     var guideY = byId("probe-guide-y");
     var readout = byId("curve-readout");
-    var idleText = readout.innerHTML;
     var ORIGIN_X = 240; // reference point in SVG units
     var ORIGIN_Y = 190;
+    var VIEWBOX_WIDTH = 480;
+    var REST_X = 140; // resting example: a $50 loss
     var DOLLARS_PER_UNIT = 100 / 200; // the curve spans -$100 … +$100
     var LOSS_AVERSION = 2.25; // Tversky & Kahneman (1992)
 
@@ -724,10 +725,8 @@
       );
     }
 
-    function probe(event) {
-      var ctm = svg.getScreenCTM();
-      if (!ctm) return;
-      var x = (event.clientX - ctm.e) / ctm.a;
+    // Put the dot (and its guides to both axes) on the curve at a given x.
+    function showAt(x) {
       var point = pointAt(Math.max(40, Math.min(440, x)));
       dot.setAttribute("cx", point.x);
       dot.setAttribute("cy", point.y);
@@ -743,14 +742,42 @@
       readout.innerHTML = describe(point.x);
     }
 
-    svg.addEventListener("pointerdown", probe);
-    svg.addEventListener("pointermove", probe);
+    // Map the pointer to SVG units from the element's on-screen box. (Avoids
+    // getScreenCTM(), which is unreliable for inline SVG in some browsers.)
+    function onPointer(event) {
+      var box = svg.getBoundingClientRect();
+      if (!box.width) return;
+      showAt(((event.clientX - box.left) / box.width) * VIEWBOX_WIDTH);
+    }
+
+    function rest() {
+      showAt(REST_X);
+    }
+
+    var hint = el(
+      "p",
+      "curve-hint",
+      matchMedia("(hover: hover)").matches
+        ? "Hover along the curve to compare a loss with an equal gain"
+        : "Drag along the curve to compare a loss with an equal gain",
+    );
+    readout.after(hint);
+
+    svg.addEventListener("pointerdown", onPointer);
+    svg.addEventListener("pointermove", onPointer);
     svg.addEventListener("pointerleave", function (event) {
       // On touch, keep the last reading visible after the finger lifts.
-      if (event.pointerType !== "mouse") return;
-      figure.classList.remove("is-probing");
-      readout.innerHTML = idleText;
+      if (event.pointerType === "mouse") rest();
     });
+
+    // Once the curve has drawn in, park the dot on an example so the
+    // interaction is visible before anyone hovers.
+    setTimeout(
+      function () {
+        if (!figure.matches(":hover")) rest();
+      },
+      reduceMotion ? 0 : 2200,
+    );
   }
 
   // Sections and cards ease in as they scroll into view. Skipped entirely

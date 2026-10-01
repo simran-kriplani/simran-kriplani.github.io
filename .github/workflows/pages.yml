@@ -21,6 +21,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # Cache-bust local CSS/JS: "?v=dev" becomes the commit hash, so browsers
+      # never pair a freshly deployed page with stale cached scripts or styles.
+      - name: Version asset URLs
+        run: sed -i "s/?v=dev/?v=${GITHUB_SHA::8}/g" $(git ls-files '*.html')
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
