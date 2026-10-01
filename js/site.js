@@ -10,7 +10,7 @@
   var icons = window.siteIcons;
   var SVG_NS = "http://www.w3.org/2000/svg";
   var DRAG_THRESHOLD = 5; // px before a press on the blog carousel becomes a drag
-  var SWIPE_DISTANCE = 60; // px a drag must travel to change slides
+  var SWIPE_DISTANCE = 60; // px a mouse drag must travel to move to another card
 
   /* ---------- Helpers ---------- */
 
@@ -237,32 +237,8 @@
   function setupBlogCarousel(items) {
     var viewport = byId("blog-carousel-viewport");
     var track = byId("blog-list");
-    var index = 0;
-    var dragStartX = 0;
-    var dragDelta = 0;
-    var dragStartOffset = 0;
-    var pressed = false;
-    var dragging = false;
-
-    function cardShift() {
-      var gap = parseFloat(getComputedStyle(track).gap) || 16;
-      return track.firstElementChild.getBoundingClientRect().width + gap;
-    }
-
-    function moveTo(offset) {
-      track.style.transform = "translateX(-" + offset + "px)";
-    }
-
-    function settle() {
-      track.style.transition = "";
-      moveTo(index * cardShift());
-    }
-
-    function step(direction) {
-      if (items.length <= 2) return;
-      index = (index + direction + items.length) % items.length;
-      settle();
-    }
+    var prev = byId("blog-prev");
+    var next = byId("blog-next");
 
     items.forEach(function (item) {
       var card = el("article", "blog-card");
@@ -284,53 +260,75 @@
       track.appendChild(card);
     });
 
-    // Dragging only starts after the pointer moves a few pixels, so a plain
-    // click on a card still reaches its link.
-    function onPointerDown(event) {
-      if (event.pointerType === "mouse" && event.button !== 0) return;
+    function cardShift() {
+      var gap = parseFloat(getComputedStyle(track).gap) || 16;
+      return track.firstElementChild.getBoundingClientRect().width + gap;
+    }
+
+    function updateArrows() {
+      var max = viewport.scrollWidth - viewport.clientWidth;
+      prev.disabled = viewport.scrollLeft < 1;
+      next.disabled = viewport.scrollLeft > max - 1;
+    }
+
+    function scrollByCard(direction) {
+      viewport.scrollBy({ left: direction * cardShift(), behavior: "smooth" });
+    }
+
+    prev.addEventListener("click", function () {
+      scrollByCard(-1);
+    });
+    next.addEventListener("click", function () {
+      scrollByCard(1);
+    });
+    viewport.addEventListener("scroll", updateArrows, { passive: true });
+    window.addEventListener("resize", updateArrows);
+    updateArrows();
+
+    // Touch and trackpads scroll natively; this adds click-and-drag for the mouse.
+    // Dragging only starts after a few pixels so a plain click still reaches the link.
+    var startX = 0;
+    var startScroll = 0;
+    var pressed = false;
+    var dragging = false;
+
+    viewport.addEventListener("pointerdown", function (event) {
+      if (event.pointerType !== "mouse" || event.button !== 0) return;
       pressed = true;
       dragging = false;
-      dragStartX = event.clientX;
-      dragDelta = 0;
-      dragStartOffset = index * cardShift();
-    }
+      startX = event.clientX;
+      startScroll = viewport.scrollLeft;
+    });
 
-    function onPointerMove(event) {
+    viewport.addEventListener("pointermove", function (event) {
       if (!pressed) return;
-      dragDelta = event.clientX - dragStartX;
+      var delta = event.clientX - startX;
       if (!dragging) {
-        if (Math.abs(dragDelta) < DRAG_THRESHOLD) return;
+        if (Math.abs(delta) < DRAG_THRESHOLD) return;
         dragging = true;
         viewport.classList.add("dragging");
-        track.style.transition = "none";
-        track.setPointerCapture(event.pointerId);
+        viewport.setPointerCapture(event.pointerId);
       }
-      moveTo(dragStartOffset - dragDelta);
-    }
+      viewport.scrollLeft = startScroll - delta;
+    });
 
-    function onPointerUp(event) {
+    function endDrag(event) {
       if (!pressed) return;
       pressed = false;
       if (!dragging) return;
       dragging = false;
       viewport.classList.remove("dragging");
-      if (Math.abs(dragDelta) > SWIPE_DISTANCE) {
-        step(dragDelta < 0 ? 1 : -1);
-      } else {
-        settle();
-      }
       try {
-        track.releasePointerCapture(event.pointerId);
+        viewport.releasePointerCapture(event.pointerId);
       } catch (error) {}
+      // Settle on the card the drag started from, or the neighbouring one after a real swipe.
+      var delta = event.clientX - startX;
+      var card = Math.round(startScroll / cardShift());
+      if (Math.abs(delta) > SWIPE_DISTANCE) card += delta < 0 ? 1 : -1;
+      viewport.scrollTo({ left: card * cardShift(), behavior: "smooth" });
     }
-
-    viewport.addEventListener("pointerdown", onPointerDown);
-    viewport.addEventListener("pointermove", onPointerMove);
-    viewport.addEventListener("pointerup", onPointerUp);
-    viewport.addEventListener("pointerleave", onPointerUp);
-    viewport.addEventListener("pointercancel", onPointerUp);
-    window.addEventListener("resize", settle);
-    requestAnimationFrame(settle);
+    viewport.addEventListener("pointerup", endDrag);
+    viewport.addEventListener("pointercancel", endDrag);
   }
 
   function renderBlog() {
