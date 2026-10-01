@@ -695,25 +695,95 @@ details[open] .case-toggle::before {
 }
 
 /* ---------- Blog carousel ---------- */
-.blog-carousel-viewport {
+.blog-carousel {
   position: relative;
-  overflow: hidden;
   margin-top: 1.5rem;
+}
+/* Native horizontal scrolling with snapping: touch, trackpad and keyboard just work. */
+.blog-carousel-viewport {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
   cursor: grab;
   user-select: none;
-  touch-action: pan-y;
+  overscroll-behavior-x: contain;
+}
+.blog-carousel-viewport::-webkit-scrollbar {
+  display: none;
+}
+.blog-carousel-viewport:focus-visible {
+  outline: 2px solid var(--clay);
+  outline-offset: 4px;
 }
 .blog-carousel-viewport.dragging {
   cursor: grabbing;
+  scroll-snap-type: none;
 }
 .blog-carousel-track {
   display: flex;
   gap: 1rem;
-  transition: transform 0.52s cubic-bezier(0.22, 1, 0.36, 1);
-  will-change: transform;
+}
+
+/* Arrows sit in the gutter beside the cards on wide screens, and below them otherwise. */
+.blog-carousel-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  margin-top: 0.9rem;
+}
+.carousel-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  padding: 0;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(25, 24, 22, 0.1);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+.carousel-arrow svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.carousel-arrow:hover:not(:disabled) {
+  transform: scale(1.06);
+  border-color: var(--olive);
+  color: var(--olive-deep);
+}
+.carousel-arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+@media (min-width: 1180px) {
+  .blog-carousel-nav {
+    position: absolute;
+    inset: 0 -3.6rem;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none;
+  }
+  .carousel-arrow {
+    pointer-events: auto;
+  }
 }
 .blog-card {
   flex: 0 0 calc(50% - 0.5rem);
+  scroll-snap-align: start;
   min-width: 0;
   border: 1px solid var(--rule);
   border-radius: 1.1rem;
@@ -723,6 +793,7 @@ details[open] .case-toggle::before {
 }
 .blog-card-image {
   display: block;
+  -webkit-user-drag: none;
   width: 100%;
   aspect-ratio: 1.62;
   object-fit: cover;
