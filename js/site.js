@@ -57,9 +57,7 @@
   function appendList(list, items, hrefFor) {
     items.forEach(function (item) {
       var li = el("li");
-      li.appendChild(
-        link({ label: item.title, href: hrefFor(item), external: true }),
-      );
+      li.appendChild(link({ label: item.title, href: hrefFor(item) }));
       list.appendChild(li);
     });
   }
@@ -91,17 +89,28 @@
   function renderFeatured() {
     var featured = content.home.featured;
     var items = featured.items;
-    var card = byId("featured-card");
+    var box = byId("featured-card").parentNode;
+    var reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
     var index = 0;
     var timer = null;
+    var paused = false;
+
+    // All slides are rendered up front and stacked, so the box keeps a steady
+    // height and the controls never jump as slides change.
+    var slides = items.map(function (item) {
+      var slide = el("div", "featured-slide");
+      slide.appendChild(el("span", "featured-tag", item.tag || "featured"));
+      slide.appendChild(el("h3", null, item.title));
+      slide.appendChild(el("p", null, item.description));
+      slide.appendChild(link(item.link));
+      byId("featured-card").appendChild(slide);
+      return slide;
+    });
 
     function show() {
-      var item = items[index];
-      card.textContent = "";
-      card.appendChild(el("span", "featured-tag", item.tag || "featured"));
-      card.appendChild(el("h3", null, item.title));
-      card.appendChild(el("p", null, item.description));
-      card.appendChild(link(item.link));
+      slides.forEach(function (slide, i) {
+        slide.classList.toggle("is-active", i === index);
+      });
       setText("featured-count", index + 1 + " / " + items.length);
     }
 
@@ -110,11 +119,19 @@
       show();
     }
 
+    // Auto-advance, except under reduced motion or while the visitor is
+    // hovering over or focused inside the box.
     function restartTimer() {
       clearInterval(timer);
+      if (paused || reducedMotion.matches) return;
       timer = setInterval(function () {
         step(1);
       }, 7500);
+    }
+
+    function setPaused(value) {
+      paused = value;
+      restartTimer();
     }
 
     setText("featured-heading", featured.heading);
@@ -133,6 +150,18 @@
         step(button[1]);
         restartTimer();
       });
+    });
+    box.addEventListener("mouseenter", function () {
+      setPaused(true);
+    });
+    box.addEventListener("mouseleave", function () {
+      setPaused(box.contains(document.activeElement));
+    });
+    box.addEventListener("focusin", function () {
+      setPaused(true);
+    });
+    box.addEventListener("focusout", function (event) {
+      if (!box.contains(event.relatedTarget)) setPaused(box.matches(":hover"));
     });
     restartTimer();
   }
@@ -206,7 +235,11 @@
       if (target) {
         body.appendChild(
           link(
-            { label: target.label, href: target.href, external: true },
+            {
+              label: target.label,
+              href: target.href,
+              external: target === study.pdf,
+            },
             "case-pdf-link",
           ),
         );
@@ -249,9 +282,7 @@
       image.decoding = "async";
 
       var heading = el("h2");
-      heading.appendChild(
-        link({ label: item.title, href: postHref(item), external: true }),
-      );
+      heading.appendChild(link({ label: item.title, href: postHref(item) }));
       var text = el("div", "blog-card-content");
       text.appendChild(heading);
 
@@ -595,20 +626,68 @@
         observer.observe(section);
       });
 
-    // "#case-studies:<slug>" opens and scrolls to that case study.
+    // "#case-studies:<slug>" opens and scrolls to that case study. If the slug
+    // doesn't exist, fall back to the section itself rather than doing nothing.
     function openDeepLink() {
       var parts = location.hash.slice(1).split(":");
-      var details = parts[0] === "case-studies" && parts[1] && byId(parts[1]);
-      if (!details) return;
-      details.open = true;
+      if (parts.length < 2) return;
+      var details = byId(parts[1]);
+      var target =
+        details && details.tagName === "DETAILS" ? details : byId(parts[0]);
+      if (!target) return;
+      if (target === details) details.open = true;
       requestAnimationFrame(function () {
-        details.scrollIntoView({ block: "start" });
+        target.scrollIntoView({ block: "start" });
       });
     }
 
     window.addEventListener("hashchange", openDeepLink);
+    // Clicking a deep link that is already in the URL doesn't fire hashchange.
+    document.addEventListener("click", function (event) {
+      var anchor = event.target.closest('a[href^="#"]');
+      if (
+        anchor &&
+        anchor.hash === location.hash &&
+        anchor.hash.includes(":")
+      ) {
+        event.preventDefault();
+        openDeepLink();
+      }
+    });
     openDeepLink();
     setCurrent(location.hash.slice(1).split(":")[0] || "home");
+  }
+
+  // Small screens: the nav collapses into a drop-down menu behind a toggle button.
+  function setupMobileMenu() {
+    var header = document.querySelector(".topbar");
+    var toggle = byId("nav-toggle");
+    var nav = byId("primary-nav");
+
+    function setOpen(open) {
+      header.classList.toggle("nav-open", open);
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    }
+
+    toggle.addEventListener("click", function () {
+      setOpen(!header.classList.contains("nav-open"));
+    });
+    nav.addEventListener("click", function (event) {
+      if (event.target.closest("a")) setOpen(false);
+    });
+    document.addEventListener("click", function (event) {
+      if (!header.contains(event.target)) setOpen(false);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && header.classList.contains("nav-open")) {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+    matchMedia("(min-width: 761px)").addEventListener("change", function () {
+      setOpen(false);
+    });
   }
 
   renderHome();
@@ -620,4 +699,5 @@
   renderFooter();
   setupThemeToggle();
   setupNavigation();
+  setupMobileMenu();
 })();

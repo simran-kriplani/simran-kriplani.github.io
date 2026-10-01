@@ -289,9 +289,8 @@ window.siteContent = {
           "When those mechanisms are visible, strategy becomes clearer. The brand message stops sounding like generic persuasion and starts acting like a cue about what matters, what is safer, and what is worth acting on. That is where the real work begins: not in crafting a clever claim, but in designing the environment in which people can make a sensible choice.",
         ],
         link: {
-          href: "blog-post.html?slug=why-behavioural-thinking-makes-strategy-clearer",
+          href: "blog-posts/why-behavioural-thinking-makes-strategy-clearer.html",
           label: "Read more",
-          external: true,
         },
       },
       {
@@ -307,9 +306,8 @@ window.siteContent = {
           "A strong pricing strategy is therefore not simply about discounting or premium positioning. It is about understanding the mental shortcuts consumers rely on when they decide whether a price is acceptable, expensive, or suspiciously cheap. Once you start from that point, pricing stops sounding like arithmetic and starts looking like behaviour design.",
         ],
         link: {
-          href: "blog-post.html?slug=the-hidden-psychology-behind-pricing",
+          href: "blog-posts/the-hidden-psychology-behind-pricing.html",
           label: "Dive in",
-          external: true,
         },
       },
       {
@@ -319,9 +317,8 @@ window.siteContent = {
         summary:
           "The difference between collecting information and turning it into a decision people can trust.",
         link: {
-          href: "blog-post.html?slug=what-good-research-actually-looks-like",
+          href: "from-the-notebook/what-good-research-actually-looks-like.html",
           label: "Read more",
-          external: true,
         },
       },
       {
@@ -331,9 +328,8 @@ window.siteContent = {
         summary:
           "A reminder that cognition is not just about facts; it is also about the emotional comfort of the pattern.",
         link: {
-          href: "blog-post.html?slug=why-people-trust-ideas-that-feel-familiar",
+          href: "from-the-notebook/why-people-trust-ideas-that-feel-familiar.html",
           label: "Read more",
-          external: true,
         },
       },
       {
@@ -343,9 +339,8 @@ window.siteContent = {
         summary:
           "Why the most influential choices are often the ones that feel almost invisible in the moment.",
         link: {
-          href: "blog-post.html?slug=the-small-design-decisions-that-shape-behaviour",
+          href: "from-the-notebook/the-small-design-decisions-that-shape-behaviour.html",
           label: "Read more",
-          external: true,
         },
       },
     ],
@@ -375,7 +370,6 @@ window.siteContent = {
         link: {
           href: "creative-space/research-poster.html",
           label: "View the poster",
-          external: true,
         },
       },
       {
@@ -397,7 +391,6 @@ window.siteContent = {
         link: {
           href: "creative-space/travel-video.html",
           label: "Collaborate",
-          external: true,
         },
       },
     ],
