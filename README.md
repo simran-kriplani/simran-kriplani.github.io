@@ -1,107 +1,42 @@
-# Simran Kriplani — portfolio site
+# Simran Kriplani — Consumer Strategy & Behavioural Research
 
-A static portfolio (no build step). Open `index.html` in a browser, or serve the folder with any static server (`python3 -m http.server`). Pushes to `main` deploy to GitHub Pages via `.github/workflows/pages.yml`, which replaces the `?v=dev` on CSS/JS links with the commit hash so visitors never mix a new page with old cached files. Keep `?v=dev` on any new `css/` or `js/` link you add.
+**[simran-kriplani.github.io](https://simran-kriplani.github.io)**
 
-## Project structure
+This is the home of Simran Kriplani's portfolio: a Toronto-based researcher working where psychology meets business, studying how consumers and markets behave and turning that into branding, positioning and strategy.
 
-```
-index.html            Homepage shell: empty containers that js/site.js fills in
-blog-post.html        Template for a blog post, chosen with ?slug=<slug>
-case-study.html       Template for a case study, chosen with ?slug=<slug>
+Simran holds an Honours Bachelor of Science in Psychology and Biology from the University of Toronto and is a CFA Level I candidate.
 
-css/
-  theme.css           Light palette, fonts and widths (edit colours here)
-  theme-dark.css      Dark palette (all pages)
-  site.css            Homepage styles
-  article.css         Styles shared by every standalone article page
+## What you'll find
 
-js/
-  content.js          All homepage text, links and lists (edit copy here)
-  icons.js            Inline SVG icon markup
-  theme-init.js       Applies the saved light/dark choice before first paint
-  site.js             Renders content.js into index.html; theme toggle, carousels, nav menu,
-                      hero curve, scroll reveals and count-up figures
-  blog-post.js        Renders blog-post.html
-  case-study.js       Renders case-study.html
-  experiment.js       "Try it yourself" decoy-pricing experiment on the homepage
-  comments.js         Browser-local comment box used on blog posts
-  article.js          Reading-progress bar and reading time on article pages
+- **Case studies:** longer pieces of research, such as how a handful of conglomerates use brand architecture and pricing to hold Canada's grocery market, how framing AI as an assistant or an agent changes whether people trust it, and why one counterfeit can feel more "authentic" than an identical one.
+- **The archive:** smaller behavioural projects, from a nudge-based fix for crowded UofT libraries to a self-compassion experiment and the cultural life of the coffee cup.
+- **Blog and notebook:** short reflections on pricing, familiarity, research practice and the small design decisions that shape behaviour.
+- **Creative space:** posters and video that translate research into something people can see and feel.
+- **Try it yourself:** a 30-second experiment on the homepage where you pick a café membership, then find out how the way the options were presented may have shaped your choice.
 
-case-studies/         Full write-ups linked from "Case studies"
-blog-posts/           Static versions of the first two blog posts
-from-the-notebook/    Static pages for the remaining blog posts
-in-the-archive/       Pages linked from "In the archive"
-creative-space/       Pages linked from "Creative Space"
+## The ideas behind it
 
-assets/
-  images/             Photos and illustrations
-  case-studies/       Case study PDFs
-  SimranKriplani_Resume.pdf, Simran_Kriplani_Resume.tex   Resume and its LaTeX source
-```
+The site tries to show behavioural science rather than just describe it.
 
-## Editing content
+- **Prospect theory.** The curve at the top of the homepage is Kahneman and Tversky's value function: losses loom larger than gains. Move along it and it translates any loss into the gain it would take to feel as good. (Kahneman & Tversky, 1979; Tversky & Kahneman, 1992)
+- **The decoy effect.** The "Try it yourself" experiment uses an option almost nobody wants, placed only to make another look better. Visitors are randomly shown the version with or without the decoy, just as in the original research. (Huber, Payne & Puto, 1982; Ariely, 2008)
+- **Choice architecture.** Small details of how a choice is presented, such as defaults, order and framing, often matter more than the choice itself. That idea runs through Simran's work and through the site's design: it follows your light or dark preference, respects reduced-motion settings, and keeps every page a click or two from the next.
 
-Almost all homepage text lives in `js/content.js`. Edit the text between the quotes, keeping the commas and brackets intact, then refresh the browser.
+## Why Simran built it
 
-| To change…                   | Edit in `js/content.js`                              |
-| ---------------------------- | ---------------------------------------------------- |
-| Hero text, facts, buttons    | `home`                                               |
-| Featured carousel            | `home.featured.items`                                |
-| Skill cards on the homepage  | `home.skillsPreview.items` (icons are in `icons.js`) |
-| Case studies                 | `caseStudies.items`                                  |
-| "In the archive" list        | `caseStudies.archive`                                |
-| Blog carousel and archive    | `blog.items`                                         |
-| Creative Space cards         | `creativeWork.items`                                 |
-| "Try it yourself" experiment | `experiment` (plans, reveal copy, study figures)     |
-| About, skills, experience    | `about`                                              |
-| Contact links, footer        | `contact`, `footer`                                  |
+A résumé lists conclusions. This site shows the thinking behind them: the questions, the evidence and the reasoning that connects them.
 
-### Add a case study
+Simran's background is a deliberate combination. Psychology gives a working model of why people decide the way they do. Biology builds the habit of treating every claim as a hypothesis to test. The CFA program keeps that thinking anchored to how markets and companies actually behave. The space where those meet, consumer behaviour, brand strategy and the research underneath them, is where Simran wants to work, and this site is a place to show that work in full.
 
-Add an object to `caseStudies.items`:
+Simran is currently looking for full-time roles in consumer strategy, insights and market research.
 
-```js
-{
-  slug: "my-new-project",            // used for #case-studies:my-new-project links
-  title: "My New Project",
-  meta: "Independent research project",
-  paragraphs: ["First paragraph.", "Second paragraph."],
-  tags: ["Research", "Strategy"],
-  detail: { href: "case-studies/my-new-project.html", label: "Read the case study" },
-  pdf: { href: "assets/case-studies/my-new-project.pdf", label: "View PDF" },
-},
-```
+## Get in touch
 
-Then create `case-studies/my-new-project.html` by copying an existing page in that folder, and drop the PDF in `assets/case-studies/`. Link to the case study from anywhere with `href: "#case-studies:my-new-project"`.
+- Email: [simrankriplani.work@gmail.com](mailto:simrankriplani.work@gmail.com)
+- LinkedIn: [linkedin.com/in/simran-kriplani](https://www.linkedin.com/in/simran-kriplani/)
 
-### Add a blog post
+## About this repository
 
-Add an item to `blog.items` with a `slug`, `title`, `meta` and a `link.href` pointing at the post's page (copy an existing page in `blog-posts/` or `from-the-notebook/`). Without a `link`, the post falls back to `blog-post.html?slug=<slug>`, which renders its `body` paragraphs. The first six items appear in the carousel (add an `image` for the card), and items from the third onward are also listed under "From the notebook".
+The site is built with plain HTML, CSS and JavaScript (no frameworks or build step) and hosted on GitHub Pages. It uses Google Analytics to understand visits and to tally anonymous choices in the "Try it yourself" experiment. Blog comments are stored only in your own browser.
 
-## Standalone article pages
-
-Every page in `case-studies/`, `blog-posts/`, `from-the-notebook/`, `in-the-archive/` and `creative-space/` loads the site fonts, `js/theme-init.js`, the theme stylesheets and `article.css`, ends with `<script src="../js/article.js"></script>`, and has a variant class on `<body>`:
-
-```html
-<link rel="stylesheet" href="../css/theme.css" />
-<link rel="stylesheet" href="../css/theme-dark.css" />
-<link rel="stylesheet" href="../css/article.css" />
-...
-<body class="article-page">
-  <!-- case studies, blog posts -->
-  <body class="article-page article-page--wide">
-    <!-- notebook, archive -->
-    <body class="article-page article-page--creative">
-      <!-- creative space -->
-    </body>
-  </body>
-</body>
-```
-
-Copy an existing page from the same folder as the starting point for a new one; its "Back to the site" link already returns to the right homepage section. The available building blocks (`.article`, `.article-header`, `.article-image`, `.tag-list`, `.article-body`, `.article-figure`, `.references`, `.pdf-note`, `.comments`) are documented by example in `css/article.css`.
-
-## "Try it yourself" experiment
-
-Between Case studies and Blog, visitors choose a café membership. Each visitor is randomly placed (and remembered) in one of two groups: **decoy** (three plans, including a café pass priced the same as the bundle) or **control** (two plans). The reveal explains the decoy effect and shows Ariely's Economist results.
-
-Every choice is sent to Google Analytics as a `decoy_experiment` event with `action` (`choose_plan` / `try_other_version`), `experiment_group` and `plan`. To compare your own visitors' choices, register `experiment_group` and `plan` as event-scoped custom dimensions in GA (Admin → Custom definitions), then use Explore to break `choose_plan` events down by both.
+The writing, research and images are Simran's own. Please ask before reusing them.
