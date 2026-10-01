@@ -17,7 +17,8 @@ window.siteContent = {
       items: [
         {
           tag: "featured",
-          title: "A Consumer Behaviour Perspective on Canada's Grocery Oligopoly",
+          title:
+            "A Consumer Behaviour Perspective on Canada's Grocery Oligopoly",
           description:
             "How brand architecture and dynamic pricing let a handful of conglomerates defend market share across Canada's grocery sector - and what that means for anyone trying to compete with them.",
           link: {
@@ -27,7 +28,8 @@ window.siteContent = {
         },
         {
           tag: "featured",
-          title: "Who's Really In Charge? Competence and Control in the age of AI",
+          title:
+            "Who's Really In Charge? Competence and Control in the age of AI",
           description:
             "A synthesis of consumer perception, AI role framing, and agency - and why the same product can feel helpful or manipulative depending on how it's positioned.",
           link: {
@@ -50,6 +52,44 @@ window.siteContent = {
     skillsPreview: {
       heading: "Where the work draws from",
       link: { href: "#about", label: "See the full skill set" },
+      items: [
+        {
+          icon: "behaviour",
+          label: "Behavioural strategy",
+          short:
+            "Turning consumer psychology into sharper strategic decisions.",
+        },
+        {
+          icon: "research",
+          label: "Research synthesis",
+          short:
+            "Combining evidence, data, and interpretation into actionable insight.",
+        },
+        {
+          icon: "strategy",
+          label: "Brand strategy",
+          short:
+            "Framing value, trust, and positioning so brands feel clear and credible.",
+        },
+        {
+          icon: "data",
+          label: "Data analysis",
+          short:
+            "Using numbers to test patterns, explain behaviour, and support decisions.",
+        },
+        {
+          icon: "narrative",
+          label: "Storytelling",
+          short:
+            "Translating complexity into clear narratives that people remember.",
+        },
+        {
+          icon: "ai",
+          label: "AI + insight",
+          short:
+            "Applying modern tools to research workflows without losing analytical rigor.",
+        },
+      ],
     },
   },
 
@@ -90,7 +130,8 @@ window.siteContent = {
       },
       {
         slug: "brand-anthropomorphism",
-        title: "Who's Really In Charge? Competence and Control in the age of AI",
+        title:
+          "Who's Really In Charge? Competence and Control in the age of AI",
         meta: "Research Assistant · Rotman School of Management",
         paragraphs: [
           "Consumers increasingly form judgments about brands that behave like people - including AI systems introduced as assistants, agents, or advisors. Understanding when that framing builds trust, and when it backfires, has real implications for how companies design and position AI-driven products.",
@@ -149,7 +190,8 @@ window.siteContent = {
     archive: [
       {
         slug: "look-good-feel-good",
-        title: "Look Good, Feel Good? Behaviour Change Strategies to Dress with Intention",
+        title:
+          "Look Good, Feel Good? Behaviour Change Strategies to Dress with Intention",
         meta: "Essay · 2024",
         paragraphs: [
           "This project turned the question of personal style into a behavioural research prompt: how do clothing choices shape emotion, confidence, and identity in everyday life?",
@@ -187,7 +229,8 @@ window.siteContent = {
       },
       {
         slug: "coffee-cup",
-        title: "Comfort, Caffeine, Connection: The Cultural Impact of the Coffee Cup",
+        title:
+          "Comfort, Caffeine, Connection: The Cultural Impact of the Coffee Cup",
         meta: "Creative research · 2023",
         paragraphs: [
           "This project translated a dense scientific concept into a visually compelling story about how viruses can hijack host metabolism and reshape biological systems.",
@@ -206,7 +249,8 @@ window.siteContent = {
       },
       {
         slug: "wellness-experiment",
-        title: "Cultivating Kindness Within: A Behavioural Experiment in Self-Compassion",
+        title:
+          "Cultivating Kindness Within: A Behavioural Experiment in Self-Compassion",
         meta: "Short film · 2023",
         paragraphs: [
           "This documentary followed a reflective journey through the Ma Moosh Ka Win Valley Trail, using landscape and movement to explore themes of place, memory, and belonging.",

@@ -1,0 +1,343 @@
+/*
+  Shared styles for every standalone article page (case studies, blog posts,
+  creative work, notebook entries, archive entries).
+
+  Pages are light-only and use the palette from theme.css.
+  Set one variant class on <body> next to "article-page":
+
+    (none)                        case studies, blog posts  — 940px shell
+    article-page--post            blog-post.html            — 960px shell
+    article-page--wide            notebook, archive, case-study.html — 1100px shell
+    article-page--creative        creative-space pages      — media-led layout
+*/
+
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--clay);
+  text-decoration: none;
+}
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+.page-shell {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 48px 20px 80px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.article {
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  padding: 36px;
+}
+
+.article-header {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(180px, 280px);
+  gap: 28px;
+  align-items: center;
+}
+
+.article-image {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  background: rgba(255, 255, 255, 0.2);
+}
+.article-image img {
+  display: block;
+  width: 100%;
+  min-height: 260px;
+  object-fit: cover;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+h1 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 1.08;
+}
+
+.subtitle {
+  margin: 14px 0 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 22px 0 28px;
+}
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(85, 97, 63, 0.12);
+  border: 1px solid rgba(85, 97, 63, 0.25);
+  color: var(--olive-deep);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.article-body p,
+.post-body p {
+  margin: 0 0 1.5rem;
+  font-size: 1.06rem;
+}
+
+.article-figure {
+  width: min(100%, 760px);
+  margin: 0 0 1.75rem;
+  text-align: left;
+}
+.article-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid var(--rule);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.references {
+  margin-top: 2.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+.references p {
+  margin: 0 0 0.9rem;
+}
+.references .references-title {
+  margin-bottom: 0.85rem;
+  font-size: 1.06rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.references .references-title u {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.pdf-note {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+  font-size: 1rem;
+}
+
+/* ---------- Comments (blog posts) ---------- */
+.comments {
+  margin-top: 42px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+}
+.comments h2 {
+  margin: 0 0 16px;
+  font-size: 1.4rem;
+}
+.comments textarea {
+  width: 100%;
+  min-height: 120px;
+  border-radius: 12px;
+  border: 1px solid var(--rule);
+  background: rgba(255, 255, 255, 0.25);
+  padding: 14px 16px;
+  font: inherit;
+  color: var(--ink);
+}
+.comment-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+.comments button {
+  appearance: none;
+  border: none;
+  border-radius: 999px;
+  background: var(--olive);
+  color: white;
+  padding: 10px 18px;
+  font: inherit;
+  cursor: pointer;
+}
+.comments button:hover {
+  background: #485533;
+}
+.comment-list {
+  margin-top: 16px;
+  padding-left: 0;
+  list-style: none;
+}
+.comment-list li {
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.18);
+  margin-top: 12px;
+}
+
+@media (max-width: 700px) {
+  .article {
+    padding: 24px 18px;
+  }
+  .article-header {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Variant: blog-post.html ---------- */
+.article-page--post .page-shell {
+  max-width: 960px;
+}
+.post-body {
+  margin-top: 30px;
+}
+.post-body p {
+  margin-bottom: 1.4rem;
+  font-size: 1.08rem;
+}
+
+/* ---------- Variant: wide (notebook, archive, case-study.html) ---------- */
+.article-page--wide .page-shell {
+  max-width: 1100px;
+}
+.article-page--wide .back-link {
+  font-size: 0.95rem;
+}
+.article-page--wide .article {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(18, 13, 15, 0.04);
+}
+.article-page--wide .article-header {
+  gap: 32px;
+}
+.article-page--wide .article-image {
+  background: var(--tone-about);
+}
+.article-page--wide .article-image img {
+  height: 100%;
+}
+.article-page--wide .tag-list {
+  margin: 24px 0 30px;
+}
+.article-page--wide .article-body {
+  max-width: 760px;
+}
+.article-page--wide .article-figure {
+  width: auto;
+  max-width: 620px;
+  margin: 1.5rem 0 2rem;
+}
+.article-page--wide .article-figure img {
+  max-height: none;
+  object-fit: fill;
+  background: #fff;
+}
+.article-page--wide .article-figure figcaption {
+  margin-top: 0.75rem;
+  color: var(--olive);
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.6;
+  text-align: left;
+}
+.article-page--wide .pdf-note {
+  margin-top: 44px;
+  padding-top: 22px;
+  font-size: 1.02rem;
+}
+@media (max-width: 760px) {
+  .article-page--wide .article {
+    padding: 24px 18px;
+  }
+  .article-page--wide .article-header {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Variant: creative (creative-space pages) ---------- */
+.article-page--creative .article-header {
+  display: block;
+  margin-bottom: 18px;
+}
+.article-page--creative .article-intro,
+.article-page--creative .article-body {
+  max-width: 760px;
+}
+.article-page--creative .tag-list {
+  margin: 18px 0 0;
+}
+.article-page--creative .tag {
+  padding: 6px 12px;
+  font-size: 0.76rem;
+  letter-spacing: 0.02em;
+}
+.article-page--creative .tag:hover,
+.article-page--creative .tag:focus-visible {
+  text-decoration: none;
+  background: rgba(85, 97, 63, 0.16);
+}
+.article-page--creative .article-image,
+.article-video {
+  width: 100%;
+  margin-top: 24px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  background: rgba(255, 255, 255, 0.2);
+}
+.article-page--creative .article-image img,
+.article-video iframe {
+  display: block;
+  width: 100%;
+  min-height: 420px;
+  max-height: 72vh;
+  object-fit: cover;
+  border: 0;
+}
+@media (max-width: 700px) {
+  .article-page--creative .article-image img,
+  .article-video iframe {
+    min-height: 260px;
+  }
+}

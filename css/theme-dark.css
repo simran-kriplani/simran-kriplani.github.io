@@ -1,0 +1,33 @@
+/*
+  Dark-mode palette. Applies when the visitor's OS prefers dark and they have not
+  chosen light, or when js/site.js sets data-theme="dark" on <html> (theme toggle).
+  The two blocks below must stay in sync.
+*/
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121819;
+    --bg-alt: #1b2425;
+    --ink: #f6efe7;
+    --ink-soft: #d0c0a7;
+    --rule: #3f4a46;
+    --olive: #aebd8a;
+    --olive-deep: #dfe9c6;
+    --clay: #d8a5ae;
+    --tone-about: #1b2323;
+    --tone-contact: #171d1d;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #121819;
+  --bg-alt: #1b2425;
+  --ink: #f6efe7;
+  --ink-soft: #d0c0a7;
+  --rule: #3f4a46;
+  --olive: #aebd8a;
+  --olive-deep: #dfe9c6;
+  --clay: #d8a5ae;
+  --tone-about: #1b2323;
+  --tone-contact: #171d1d;
+}
