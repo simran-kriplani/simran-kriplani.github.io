@@ -23,6 +23,7 @@ js/
                       hero curve, scroll reveals and count-up figures
   blog-post.js        Renders blog-post.html
   case-study.js       Renders case-study.html
+  experiment.js       "Try it yourself" decoy-pricing experiment on the homepage
   comments.js         Browser-local comment box used on blog posts
   article.js          Reading-progress bar and reading time on article pages
 
@@ -42,17 +43,18 @@ assets/
 
 Almost all homepage text lives in `js/content.js`. Edit the text between the quotes, keeping the commas and brackets intact, then refresh the browser.
 
-| To change…                  | Edit in `js/content.js`                              |
-| --------------------------- | ---------------------------------------------------- |
-| Hero text, facts, buttons   | `home`                                               |
-| Featured carousel           | `home.featured.items`                                |
-| Skill cards on the homepage | `home.skillsPreview.items` (icons are in `icons.js`) |
-| Case studies                | `caseStudies.items`                                  |
-| "In the archive" list       | `caseStudies.archive`                                |
-| Blog carousel and archive   | `blog.items`                                         |
-| Creative Space cards        | `creativeWork.items`                                 |
-| About, skills, experience   | `about`                                              |
-| Contact links, footer       | `contact`, `footer`                                  |
+| To change…                     | Edit in `js/content.js`                              |
+| ------------------------------ | ---------------------------------------------------- |
+| Hero text, facts, buttons      | `home`                                               |
+| Featured carousel              | `home.featured.items`                                |
+| Skill cards on the homepage    | `home.skillsPreview.items` (icons are in `icons.js`) |
+| Case studies                   | `caseStudies.items`                                  |
+| "In the archive" list          | `caseStudies.archive`                                |
+| Blog carousel and archive      | `blog.items`                                         |
+| Creative Space cards           | `creativeWork.items`                                 |
+| \"Try it yourself\" experiment | `experiment` (plans, reveal copy, study figures)     |
+| About, skills, experience      | `about`                                              |
+| Contact links, footer          | `contact`, `footer`                                  |
 
 ### Add a case study
 
@@ -97,3 +99,9 @@ Every page in `case-studies/`, `blog-posts/`, `from-the-notebook/`, `in-the-arch
 ```
 
 Copy an existing page from the same folder as the starting point for a new one; its "Back to the site" link already returns to the right homepage section. The available building blocks (`.article`, `.article-header`, `.article-image`, `.tag-list`, `.article-body`, `.article-figure`, `.references`, `.pdf-note`, `.comments`) are documented by example in `css/article.css`.
+
+## "Try it yourself" experiment
+
+Between Case studies and Blog, visitors choose a café membership. Each visitor is randomly placed (and remembered) in one of two groups: **decoy** (three plans, including a café pass priced the same as the bundle) or **control** (two plans). The reveal explains the decoy effect and shows Ariely's Economist results.
+
+Every choice is sent to Google Analytics as a `decoy_experiment` event with `action` (`choose_plan` / `try_other_version`), `experiment_group` and `plan`. To compare your own visitors' choices, register `experiment_group` and `plan` as event-scoped custom dimensions in GA (Admin → Custom definitions), then use Explore to break `choose_plan` events down by both.
