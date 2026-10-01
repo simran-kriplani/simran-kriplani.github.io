@@ -43,18 +43,18 @@ assets/
 
 Almost all homepage text lives in `js/content.js`. Edit the text between the quotes, keeping the commas and brackets intact, then refresh the browser.
 
-| To change…                     | Edit in `js/content.js`                              |
-| ------------------------------ | ---------------------------------------------------- |
-| Hero text, facts, buttons      | `home`                                               |
-| Featured carousel              | `home.featured.items`                                |
-| Skill cards on the homepage    | `home.skillsPreview.items` (icons are in `icons.js`) |
-| Case studies                   | `caseStudies.items`                                  |
-| "In the archive" list          | `caseStudies.archive`                                |
-| Blog carousel and archive      | `blog.items`                                         |
-| Creative Space cards           | `creativeWork.items`                                 |
-| \"Try it yourself\" experiment | `experiment` (plans, reveal copy, study figures)     |
-| About, skills, experience      | `about`                                              |
-| Contact links, footer          | `contact`, `footer`                                  |
+| To change…                   | Edit in `js/content.js`                              |
+| ---------------------------- | ---------------------------------------------------- |
+| Hero text, facts, buttons    | `home`                                               |
+| Featured carousel            | `home.featured.items`                                |
+| Skill cards on the homepage  | `home.skillsPreview.items` (icons are in `icons.js`) |
+| Case studies                 | `caseStudies.items`                                  |
+| "In the archive" list        | `caseStudies.archive`                                |
+| Blog carousel and archive    | `blog.items`                                         |
+| Creative Space cards         | `creativeWork.items`                                 |
+| "Try it yourself" experiment | `experiment` (plans, reveal copy, study figures)     |
+| About, skills, experience    | `about`                                              |
+| Contact links, footer        | `contact`, `footer`                                  |
 
 ### Add a case study
 
