@@ -802,6 +802,7 @@
       "section[data-page]:not(#home) > .section-intro",
       "details.case-study",
       ".research-strip",
+      ".lab-card",
       ".blog-carousel",
       ".feature-item",
       ".about-intro",

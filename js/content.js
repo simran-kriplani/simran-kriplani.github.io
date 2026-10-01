@@ -270,6 +270,90 @@ window.siteContent = {
     ],
   },
 
+  // "Try it yourself" decoy-pricing experiment between Case studies and Blog.
+  // Visitors are randomly shown 3 plans (with the decoy) or 2 (without).
+  experiment: {
+    eyebrow: "Try it yourself · 30-second experiment",
+    title: "Which plan would you sign up for?",
+    intro:
+      "A new café on Ossington is launching a membership. Pick the plan you'd actually buy. There's no wrong answer.",
+    plans: [
+      {
+        id: "beans",
+        name: "Beans at home",
+        detail: "Two bags of beans roasted in the Junction, delivered monthly",
+        price: "$32",
+      },
+      {
+        id: "cafe",
+        name: "Café pass",
+        detail: "Ten handcrafted drinks a month at the café",
+        price: "$45",
+        decoy: true,
+      },
+      {
+        id: "bundle",
+        name: "Café pass + beans",
+        detail: "Ten drinks a month at the café, plus two bags delivered",
+        price: "$45",
+      },
+    ],
+    pricePeriod: "/ month",
+    groups: {
+      decoy: {
+        heading: "You were in the decoy group.",
+        body: "Did you notice the café pass? It costs exactly the same as the café pass + beans, so almost no one picks it. It isn't there to be chosen. It's there to make the bundle look like a steal. Marketers call it a decoy.",
+      },
+      control: {
+        heading: "You were in the control group.",
+        body: "Half of visitors see a third plan: a café pass on its own for $45, the same price as the café pass + beans. Almost no one picks it, but simply being there pushes people toward the bundle. Marketers call it a decoy.",
+      },
+    },
+    choices: {
+      decoy: {
+        bundle:
+          "You went for the bundle, which is exactly what the decoy is designed to encourage.",
+        beans:
+          "You held out for the cheaper plan. The decoy didn't get you this time.",
+        cafe: "You picked the decoy itself, which is rare: for the same $45, the bundle adds the beans.",
+      },
+      control: {
+        bundle: "You chose the bundle with no decoy nudging you.",
+        beans:
+          "You chose the cheaper plan, the most common pick when there's no decoy.",
+      },
+    },
+    study: {
+      heading: "The classic result",
+      body: "When Dan Ariely tested The Economist's subscription offer on 100 MIT students, adding a print-only option that nobody chose more than doubled the share picking the premium bundle.",
+      groups: [
+        {
+          label: "With the decoy",
+          rows: [
+            { label: "Web only · $59", value: 16 },
+            { label: "Print only · $125", value: 0 },
+            { label: "Print + web · $125", value: 84, highlight: true },
+          ],
+        },
+        {
+          label: "Without the decoy",
+          rows: [
+            { label: "Web only · $59", value: 68 },
+            { label: "Print + web · $125", value: 32, highlight: true },
+          ],
+        },
+      ],
+      source:
+        "Ariely, Predictably Irrational (2008). The decoy effect was first documented by Huber, Payne & Puto (1982).",
+    },
+    closing:
+      "How choices are presented can move behaviour more than the price itself. That's the space I work in.",
+    links: {
+      retry: "Try the other version",
+      more: { href: "#case-studies", label: "See my case studies" },
+    },
+  },
+
   blog: {
     title: "Blog",
     intro:

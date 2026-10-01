@@ -845,6 +845,243 @@ details[open] .case-toggle::before {
   text-underline-offset: 0.18em;
 }
 
+/* ---------- Try it yourself (decoy experiment, js/experiment.js) ---------- */
+.lab {
+  margin-top: 3rem;
+  scroll-margin-top: 88px;
+}
+.lab-card {
+  padding: 1.6rem 1.6rem 1.8rem;
+  border: 1px solid var(--rule);
+  border-radius: 0.9rem;
+  background: var(--bg-alt);
+}
+.lab-eyebrow {
+  display: inline-block;
+  margin-bottom: 0.7rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--olive-deep);
+}
+.lab-title {
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+}
+.lab-intro {
+  max-width: 60ch;
+  color: var(--ink-soft);
+}
+
+.lab-plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+.lab-plan {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  min-height: 11rem;
+  padding: 1.1rem 1.1rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  background: var(--bg);
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.3s ease;
+}
+@media (hover: hover) {
+  .lab-plan:hover:not(:disabled) {
+    transform: translateY(-3px);
+    border-color: var(--olive);
+    box-shadow: 0 10px 22px rgba(25, 24, 22, 0.08);
+  }
+}
+.lab-plan-name {
+  font-weight: 600;
+}
+.lab-plan-detail {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+.lab-plan-price {
+  margin-top: auto;
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  line-height: 1;
+}
+.lab-plan-period {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+.lab-plans.is-decided .lab-plan {
+  cursor: default;
+  opacity: 0.5;
+}
+.lab-plans.is-decided .lab-plan.is-chosen {
+  opacity: 1;
+  border-color: var(--olive);
+  box-shadow: inset 0 0 0 1px var(--olive);
+}
+.lab-plan.is-chosen .lab-plan-name::after {
+  content: " · Your pick";
+  color: var(--olive-deep);
+}
+
+.lab-result {
+  margin-top: 1.6rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--rule);
+}
+.lab-result:focus {
+  outline: none;
+}
+.lab-result-heading {
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+}
+.lab-result-choice {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.lab-result-body {
+  max-width: 68ch;
+  color: var(--ink-soft);
+}
+
+/* Two small bar charts side by side (stacked on phones). */
+.lab-study {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 2.5rem;
+  margin-top: 1.4rem;
+}
+.lab-study > :not(.lab-chart) {
+  grid-column: 1 / -1;
+}
+.lab-study-heading {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.lab-study-body {
+  max-width: 68ch;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+.lab-chart-label {
+  margin: 0.4rem 0 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.lab-bars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.lab-bar {
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr) 2.6rem;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.25rem 0;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+.lab-bar.is-highlight {
+  color: var(--ink);
+  font-weight: 600;
+}
+.lab-bar-track {
+  height: 10px;
+  border-left: 1px solid var(--rule);
+}
+.lab-bar-fill {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: 0 4px 4px 0;
+  background: var(--rule);
+  transition: width 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.lab-bar.is-highlight .lab-bar-fill {
+  background: var(--olive);
+}
+.lab-bar-value {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.lab-source {
+  margin: 0.9rem 0 0;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+.lab-closing {
+  margin: 1.3rem 0 0;
+  max-width: 60ch;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+}
+.lab-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.4rem;
+  margin-top: 1.1rem;
+}
+.lab-retry {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.lab-retry:hover {
+  border-color: var(--olive);
+}
+.lab-more {
+  font-weight: 600;
+  text-decoration: none;
+}
+.lab-more:hover {
+  text-decoration: underline;
+}
+@media (max-width: 640px) {
+  .lab-card {
+    padding: 1.2rem 1.1rem 1.4rem;
+  }
+  .lab-plan {
+    min-height: 0;
+  }
+  .lab-study {
+    grid-template-columns: 1fr;
+  }
+  .lab-bar {
+    grid-template-columns: 7.5rem minmax(0, 1fr) 2.4rem;
+  }
+}
+
 /* ---------- Creative space ---------- */
 .feature-list {
   display: grid;
