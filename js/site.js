@@ -260,75 +260,163 @@
       track.appendChild(card);
     });
 
+    var nav = prev.parentNode;
+    var reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+    var target = null; // card index an arrow/keyboard/drag scroll is heading to
+    var idleTimer = null;
+    var drag = null; // { startX, lastX, startScroll, moved } while the mouse is down
+    var suppressClick = false;
+
     function cardShift() {
       var gap = parseFloat(getComputedStyle(track).gap) || 16;
       return track.firstElementChild.getBoundingClientRect().width + gap;
     }
 
-    function updateArrows() {
-      var max = viewport.scrollWidth - viewport.clientWidth;
-      prev.disabled = viewport.scrollLeft < 1;
-      next.disabled = viewport.scrollLeft > max - 1;
+    function maxScroll() {
+      return viewport.scrollWidth - viewport.clientWidth;
     }
 
-    function scrollByCard(direction) {
-      viewport.scrollBy({ left: direction * cardShift(), behavior: "smooth" });
+    function lastIndex() {
+      return Math.ceil(maxScroll() / cardShift() - 0.01);
+    }
+
+    function positionOf(index) {
+      return Math.min(index * cardShift(), maxScroll());
+    }
+
+    function currentIndex() {
+      return target !== null
+        ? target
+        : Math.round(viewport.scrollLeft / cardShift());
+    }
+
+    function updateArrows() {
+      var max = maxScroll();
+      var pos = target !== null ? positionOf(target) : viewport.scrollLeft;
+      nav.hidden = max < 1;
+      prev.disabled = pos < 1;
+      next.disabled = pos > max - 1;
+    }
+
+    // Runs once scrolling has been idle briefly: forget the target and let
+    // CSS scroll snapping take over again.
+    function settle() {
+      target = null;
+      viewport.classList.remove("is-settling");
+      updateArrows();
+    }
+
+    function scheduleSettle() {
+      clearTimeout(idleTimer);
+      idleTimer = setTimeout(settle, 150);
+    }
+
+    // Targets accumulate, so repeated clicks during an animation are never lost.
+    function goTo(index) {
+      target = Math.max(0, Math.min(index, lastIndex()));
+      viewport.scrollTo({
+        left: positionOf(target),
+        behavior: reducedMotion.matches ? "auto" : "smooth",
+      });
+      updateArrows();
+      scheduleSettle();
     }
 
     prev.addEventListener("click", function () {
-      scrollByCard(-1);
+      goTo(currentIndex() - 1);
     });
     next.addEventListener("click", function () {
-      scrollByCard(1);
+      goTo(currentIndex() + 1);
     });
-    viewport.addEventListener("scroll", updateArrows, { passive: true });
+
+    viewport.addEventListener("keydown", function (event) {
+      if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+      event.preventDefault();
+      goTo(currentIndex() + (event.key === "ArrowRight" ? 1 : -1));
+    });
+
+    viewport.addEventListener(
+      "scroll",
+      function () {
+        updateArrows();
+        if (!drag) scheduleSettle();
+      },
+      { passive: true },
+    );
     window.addEventListener("resize", updateArrows);
     updateArrows();
 
     // Touch and trackpads scroll natively; this adds click-and-drag for the mouse.
-    // Dragging only starts after a few pixels so a plain click still reaches the link.
-    var startX = 0;
-    var startScroll = 0;
-    var pressed = false;
-    var dragging = false;
-
+    // Dragging only starts after a few pixels so a plain click still opens the post.
     viewport.addEventListener("pointerdown", function (event) {
       if (event.pointerType !== "mouse" || event.button !== 0) return;
-      pressed = true;
-      dragging = false;
-      startX = event.clientX;
-      startScroll = viewport.scrollLeft;
+      drag = {
+        startX: event.clientX,
+        lastX: event.clientX,
+        startScroll: viewport.scrollLeft,
+        moved: false,
+      };
     });
 
     viewport.addEventListener("pointermove", function (event) {
-      if (!pressed) return;
-      var delta = event.clientX - startX;
-      if (!dragging) {
+      if (!drag) return;
+      // The button was released outside the page: treat it as the end of the drag.
+      if (!(event.buttons & 1)) return endDrag(event);
+      drag.lastX = event.clientX;
+      var delta = drag.lastX - drag.startX;
+      if (!drag.moved) {
         if (Math.abs(delta) < DRAG_THRESHOLD) return;
-        dragging = true;
-        viewport.classList.add("dragging");
+        drag.moved = true;
+        target = null;
+        clearTimeout(idleTimer);
+        viewport.classList.add("dragging", "is-settling");
         viewport.setPointerCapture(event.pointerId);
       }
-      viewport.scrollLeft = startScroll - delta;
+      viewport.scrollLeft = drag.startScroll - delta;
     });
 
     function endDrag(event) {
-      if (!pressed) return;
-      pressed = false;
-      if (!dragging) return;
-      dragging = false;
+      if (!drag) return;
+      var ended = drag;
+      drag = null;
+      if (!ended.moved) return;
+
       viewport.classList.remove("dragging");
       try {
         viewport.releasePointerCapture(event.pointerId);
       } catch (error) {}
-      // Settle on the card the drag started from, or the neighbouring one after a real swipe.
-      var delta = event.clientX - startX;
-      var card = Math.round(startScroll / cardShift());
-      if (Math.abs(delta) > SWIPE_DISTANCE) card += delta < 0 ? 1 : -1;
-      viewport.scrollTo({ left: card * cardShift(), behavior: "smooth" });
+
+      // Swallow the click that follows a drag so it doesn't open a post.
+      suppressClick = true;
+      setTimeout(function () {
+        suppressClick = false;
+      });
+
+      // Settle on the nearest card, moving at least one card after a real swipe.
+      var delta = ended.lastX - ended.startX;
+      var from = Math.round(ended.startScroll / cardShift());
+      var to = Math.round(viewport.scrollLeft / cardShift());
+      if (to === from && Math.abs(delta) > SWIPE_DISTANCE) {
+        to += delta < 0 ? 1 : -1;
+      }
+      goTo(to);
     }
+
     viewport.addEventListener("pointerup", endDrag);
     viewport.addEventListener("pointercancel", endDrag);
+    viewport.addEventListener(
+      "click",
+      function (event) {
+        if (!suppressClick) return;
+        event.preventDefault();
+        event.stopPropagation();
+      },
+      true,
+    );
+    // Stop the browser's native link/image dragging from hijacking the gesture.
+    viewport.addEventListener("dragstart", function (event) {
+      event.preventDefault();
+    });
   }
 
   function renderBlog() {
