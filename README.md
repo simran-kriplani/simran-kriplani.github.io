@@ -11,17 +11,20 @@ case-study.html       Template for a case study, chosen with ?slug=<slug>
 
 css/
   theme.css           Light palette, fonts and widths (edit colours here)
-  theme-dark.css      Dark palette (homepage only)
+  theme-dark.css      Dark palette (all pages)
   site.css            Homepage styles
   article.css         Styles shared by every standalone article page
 
 js/
   content.js          All homepage text, links and lists (edit copy here)
   icons.js            Inline SVG icon markup
-  site.js             Renders content.js into index.html; theme toggle, carousels, nav
+  theme-init.js       Applies the saved light/dark choice before first paint
+  site.js             Renders content.js into index.html; theme toggle, carousels, nav menu,
+                      hero curve, scroll reveals and count-up figures
   blog-post.js        Renders blog-post.html
   case-study.js       Renders case-study.html
   comments.js         Browser-local comment box used on blog posts
+  article.js          Reading-progress bar and reading time on article pages
 
 case-studies/         Full write-ups linked from "Case studies"
 blog-posts/           Static versions of the first two blog posts
@@ -71,14 +74,15 @@ Then create `case-studies/my-new-project.html` by copying an existing page in th
 
 ### Add a blog post
 
-Add an item to `blog.items` with a `slug`, `title`, `meta`, `body` (array of paragraphs) and a `link.href` of `blog-post.html?slug=<slug>`. The first six items appear in the carousel (add an `image` for the card), and items from the third onward are also listed under "From the notebook". `blog-post.html` renders the post and its comment box automatically.
+Add an item to `blog.items` with a `slug`, `title`, `meta` and a `link.href` pointing at the post's page (copy an existing page in `blog-posts/` or `from-the-notebook/`). Without a `link`, the post falls back to `blog-post.html?slug=<slug>`, which renders its `body` paragraphs. The first six items appear in the carousel (add an `image` for the card), and items from the third onward are also listed under "From the notebook".
 
 ## Standalone article pages
 
-Every page in `case-studies/`, `blog-posts/`, `from-the-notebook/`, `in-the-archive/` and `creative-space/` uses the same two stylesheets and a variant class on `<body>`:
+Every page in `case-studies/`, `blog-posts/`, `from-the-notebook/`, `in-the-archive/` and `creative-space/` loads the site fonts, `js/theme-init.js`, the theme stylesheets and `article.css`, ends with `<script src="../js/article.js"></script>`, and has a variant class on `<body>`:
 
 ```html
 <link rel="stylesheet" href="../css/theme.css" />
+<link rel="stylesheet" href="../css/theme-dark.css" />
 <link rel="stylesheet" href="../css/article.css" />
 ...
 <body class="article-page">
@@ -92,4 +96,4 @@ Every page in `case-studies/`, `blog-posts/`, `from-the-notebook/`, `in-the-arch
 </body>
 ```
 
-Copy an existing page from the same folder as the starting point for a new one. The available building blocks (`.article`, `.article-header`, `.article-image`, `.tag-list`, `.article-body`, `.article-figure`, `.references`, `.pdf-note`, `.comments`) are documented by example in `css/article.css`.
+Copy an existing page from the same folder as the starting point for a new one; its "Back to the site" link already returns to the right homepage section. The available building blocks (`.article`, `.article-header`, `.article-image`, `.tag-list`, `.article-body`, `.article-figure`, `.references`, `.pdf-note`, `.comments`) are documented by example in `css/article.css`.

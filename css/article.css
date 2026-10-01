@@ -2,7 +2,8 @@
   Shared styles for every standalone article page (case studies, blog posts,
   creative work, notebook entries, archive entries).
 
-  Pages are light-only and use the palette from theme.css.
+  Pages use the palette from theme.css / theme-dark.css and follow the visitor's
+  light/dark choice from the homepage (js/theme-init.js).
   Set one variant class on <body> next to "article-page":
 
     (none)                        case studies, blog posts  — 940px shell
@@ -43,6 +44,13 @@ a:focus-visible {
   display: inline-block;
   margin-bottom: 20px;
   font-weight: 600;
+}
+.back-link:focus-visible,
+.article a:focus-visible,
+.comments button:focus-visible,
+.comments textarea:focus-visible {
+  outline: 2px solid var(--clay);
+  outline-offset: 3px;
 }
 
 .article {
@@ -85,6 +93,7 @@ a:focus-visible {
 h1 {
   margin: 0;
   font-family: var(--font-serif);
+  font-weight: 500;
   font-size: clamp(2.2rem, 4vw, 4rem);
   line-height: 1.08;
 }
@@ -111,6 +120,17 @@ h1 {
   color: var(--olive-deep);
   font-size: 0.8rem;
   font-weight: 600;
+}
+
+/* Comfortable line length, and long URLs wrap instead of widening the page. */
+.article-body,
+.post-body,
+.references {
+  max-width: 760px;
+  overflow-wrap: break-word;
+}
+.subtitle + .article-body {
+  margin-top: 28px;
 }
 
 .article-body p,
@@ -164,6 +184,25 @@ h1 {
   font-size: 1rem;
 }
 
+/* ---------- Reading progress and time (js/article.js) ---------- */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 3px;
+  background: var(--clay);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+}
+.reading-time {
+  white-space: nowrap;
+}
+.reading-time::before {
+  content: " · ";
+}
+
 /* ---------- Comments (blog posts) ---------- */
 .comments {
   margin-top: 42px;
@@ -194,7 +233,7 @@ h1 {
   border: none;
   border-radius: 999px;
   background: var(--olive);
-  color: white;
+  color: var(--on-olive, white);
   padding: 10px 18px;
   font: inherit;
   cursor: pointer;
@@ -260,9 +299,6 @@ h1 {
 .article-page--wide .tag-list {
   margin: 24px 0 30px;
 }
-.article-page--wide .article-body {
-  max-width: 760px;
-}
 .article-page--wide .article-figure {
   width: auto;
   max-width: 620px;
@@ -300,8 +336,7 @@ h1 {
   display: block;
   margin-bottom: 18px;
 }
-.article-page--creative .article-intro,
-.article-page--creative .article-body {
+.article-page--creative .article-intro {
   max-width: 760px;
 }
 .article-page--creative .tag-list {

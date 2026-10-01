@@ -57,9 +57,7 @@
   function appendList(list, items, hrefFor) {
     items.forEach(function (item) {
       var li = el("li");
-      li.appendChild(
-        link({ label: item.title, href: hrefFor(item), external: true }),
-      );
+      li.appendChild(link({ label: item.title, href: hrefFor(item) }));
       list.appendChild(li);
     });
   }
@@ -91,17 +89,28 @@
   function renderFeatured() {
     var featured = content.home.featured;
     var items = featured.items;
-    var card = byId("featured-card");
+    var box = byId("featured-card").parentNode;
+    var reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
     var index = 0;
     var timer = null;
+    var paused = false;
+
+    // All slides are rendered up front and stacked, so the box keeps a steady
+    // height and the controls never jump as slides change.
+    var slides = items.map(function (item) {
+      var slide = el("div", "featured-slide");
+      slide.appendChild(el("span", "featured-tag", item.tag || "featured"));
+      slide.appendChild(el("h3", null, item.title));
+      slide.appendChild(el("p", null, item.description));
+      slide.appendChild(link(item.link));
+      byId("featured-card").appendChild(slide);
+      return slide;
+    });
 
     function show() {
-      var item = items[index];
-      card.textContent = "";
-      card.appendChild(el("span", "featured-tag", item.tag || "featured"));
-      card.appendChild(el("h3", null, item.title));
-      card.appendChild(el("p", null, item.description));
-      card.appendChild(link(item.link));
+      slides.forEach(function (slide, i) {
+        slide.classList.toggle("is-active", i === index);
+      });
       setText("featured-count", index + 1 + " / " + items.length);
     }
 
@@ -110,11 +119,19 @@
       show();
     }
 
+    // Auto-advance, except under reduced motion or while the visitor is
+    // hovering over or focused inside the box.
     function restartTimer() {
       clearInterval(timer);
+      if (paused || reducedMotion.matches) return;
       timer = setInterval(function () {
         step(1);
       }, 7500);
+    }
+
+    function setPaused(value) {
+      paused = value;
+      restartTimer();
     }
 
     setText("featured-heading", featured.heading);
@@ -133,6 +150,18 @@
         step(button[1]);
         restartTimer();
       });
+    });
+    box.addEventListener("mouseenter", function () {
+      setPaused(true);
+    });
+    box.addEventListener("mouseleave", function () {
+      setPaused(box.contains(document.activeElement));
+    });
+    box.addEventListener("focusin", function () {
+      setPaused(true);
+    });
+    box.addEventListener("focusout", function (event) {
+      if (!box.contains(event.relatedTarget)) setPaused(box.matches(":hover"));
     });
     restartTimer();
   }
@@ -206,7 +235,11 @@
       if (target) {
         body.appendChild(
           link(
-            { label: target.label, href: target.href, external: true },
+            {
+              label: target.label,
+              href: target.href,
+              external: target === study.pdf,
+            },
             "case-pdf-link",
           ),
         );
@@ -249,9 +282,7 @@
       image.decoding = "async";
 
       var heading = el("h2");
-      heading.appendChild(
-        link({ label: item.title, href: postHref(item), external: true }),
-      );
+      heading.appendChild(link({ label: item.title, href: postHref(item) }));
       var text = el("div", "blog-card-content");
       text.appendChild(heading);
 
@@ -595,20 +626,278 @@
         observer.observe(section);
       });
 
-    // "#case-studies:<slug>" opens and scrolls to that case study.
+    // "#case-studies:<slug>" opens and scrolls to that case study. If the slug
+    // doesn't exist, fall back to the section itself rather than doing nothing.
     function openDeepLink() {
       var parts = location.hash.slice(1).split(":");
-      var details = parts[0] === "case-studies" && parts[1] && byId(parts[1]);
-      if (!details) return;
-      details.open = true;
+      if (parts.length < 2) return;
+      var details = byId(parts[1]);
+      var target =
+        details && details.tagName === "DETAILS" ? details : byId(parts[0]);
+      if (!target) return;
+      if (target === details) details.open = true;
       requestAnimationFrame(function () {
-        details.scrollIntoView({ block: "start" });
+        target.scrollIntoView({ block: "start" });
       });
     }
 
     window.addEventListener("hashchange", openDeepLink);
+    // Clicking a deep link that is already in the URL doesn't fire hashchange.
+    document.addEventListener("click", function (event) {
+      var anchor = event.target.closest('a[href^="#"]');
+      if (
+        anchor &&
+        anchor.hash === location.hash &&
+        anchor.hash.includes(":")
+      ) {
+        event.preventDefault();
+        openDeepLink();
+      }
+    });
     openDeepLink();
     setCurrent(location.hash.slice(1).split(":")[0] || "home");
+  }
+
+  /* ---------- Motion ---------- */
+
+  var reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Hero value curve (prospect theory): draws itself in on load, and a probe
+  // follows the pointer along it, translating the position into a loss/gain.
+  function setupHeroCurve() {
+    var figure = byId("hero-figure");
+    var svg = figure.querySelector("svg");
+    var curve = byId("value-curve");
+    var dot = byId("probe-dot");
+    var guideX = byId("probe-guide-x");
+    var guideY = byId("probe-guide-y");
+    var readout = byId("curve-readout");
+    var idleText = readout.innerHTML;
+    var ORIGIN_X = 240; // reference point in SVG units
+    var ORIGIN_Y = 190;
+    var DOLLARS_PER_UNIT = 100 / 200; // the curve spans -$100 … +$100
+    var LOSS_AVERSION = 2.25; // Tversky & Kahneman (1992)
+
+    var length = curve.getTotalLength();
+    figure.style.setProperty("--curve-length", length);
+    if (!reduceMotion) figure.classList.add("is-animated");
+
+    // The curve only ever moves rightwards, so sample it once and look points up by x.
+    var samples = [];
+    for (var i = 0; i <= 240; i++) {
+      samples.push(curve.getPointAtLength((length * i) / 240));
+    }
+    function pointAt(x) {
+      var best = samples[0];
+      samples.forEach(function (point) {
+        if (Math.abs(point.x - x) < Math.abs(best.x - x)) best = point;
+      });
+      return best;
+    }
+
+    function dollars(amount) {
+      return "<strong>$" + amount + "</strong>";
+    }
+
+    function describe(x) {
+      var amount =
+        Math.round((Math.abs(x - ORIGIN_X) * DOLLARS_PER_UNIT) / 5) * 5;
+      if (amount === 0) return "The reference point: no gain, no loss.";
+      if (x < ORIGIN_X) {
+        var equivalent = Math.round((amount * LOSS_AVERSION) / 5) * 5;
+        return (
+          "Losing " +
+          dollars(amount) +
+          " feels about as bad as gaining " +
+          dollars(equivalent) +
+          " feels good."
+        );
+      }
+      return (
+        "Gaining " +
+        dollars(amount) +
+        " feels good, but losing " +
+        dollars(amount) +
+        " would hurt about " +
+        LOSS_AVERSION +
+        "× as much."
+      );
+    }
+
+    function probe(event) {
+      var ctm = svg.getScreenCTM();
+      if (!ctm) return;
+      var x = (event.clientX - ctm.e) / ctm.a;
+      var point = pointAt(Math.max(40, Math.min(440, x)));
+      dot.setAttribute("cx", point.x);
+      dot.setAttribute("cy", point.y);
+      guideX.setAttribute("x1", point.x);
+      guideX.setAttribute("y1", ORIGIN_Y);
+      guideX.setAttribute("x2", point.x);
+      guideX.setAttribute("y2", point.y);
+      guideY.setAttribute("x1", ORIGIN_X);
+      guideY.setAttribute("y1", point.y);
+      guideY.setAttribute("x2", point.x);
+      guideY.setAttribute("y2", point.y);
+      figure.classList.add("is-probing");
+      readout.innerHTML = describe(point.x);
+    }
+
+    svg.addEventListener("pointerdown", probe);
+    svg.addEventListener("pointermove", probe);
+    svg.addEventListener("pointerleave", function (event) {
+      // On touch, keep the last reading visible after the finger lifts.
+      if (event.pointerType !== "mouse") return;
+      figure.classList.remove("is-probing");
+      readout.innerHTML = idleText;
+    });
+  }
+
+  // Sections and cards ease in as they scroll into view. Skipped entirely
+  // under reduced motion, so content is never hidden.
+  function setupReveal() {
+    if (reduceMotion || !("IntersectionObserver" in window)) return;
+
+    var groups = [
+      ".featured",
+      ".skills-preview h2",
+      ".skill-card",
+      "section[data-page]:not(#home) > h1",
+      "section[data-page]:not(#home) > .section-intro",
+      "details.case-study",
+      ".research-strip",
+      ".blog-carousel",
+      ".feature-item",
+      ".about-intro",
+      ".about-entry",
+      ".skills-full-grid > div",
+      ".contact-lede",
+      ".contact-list li",
+    ];
+
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          var node = entry.target;
+          observer.unobserve(node);
+          node.classList.add("is-visible");
+          // Once revealed, hand transforms back to the element's own hover styles.
+          var delay = parseFloat(node.style.getPropertyValue("--reveal-delay"));
+          setTimeout(
+            function () {
+              node.classList.remove("reveal", "is-visible");
+              node.style.removeProperty("--reveal-delay");
+            },
+            delay * 1000 + 800,
+          );
+        });
+      },
+      { rootMargin: "0px 0px -8% 0px" },
+    );
+
+    groups.forEach(function (selector) {
+      document.querySelectorAll(selector).forEach(function (node) {
+        // Anything already on screen when the page loads stays put.
+        if (node.getBoundingClientRect().top < window.innerHeight) return;
+        // Stagger siblings of the same kind (e.g. a row of cards).
+        var index = Array.prototype.indexOf.call(
+          node.parentNode.querySelectorAll(":scope > " + node.tagName),
+          node,
+        );
+        node.style.setProperty(
+          "--reveal-delay",
+          Math.min(index, 5) * 0.07 + "s",
+        );
+        node.classList.add("reveal");
+        observer.observe(node);
+      });
+    });
+  }
+
+  // Figures like "220+" and "40%" count up the first time they scroll into view.
+  function setupCountUp() {
+    if (reduceMotion || !("IntersectionObserver" in window)) return;
+
+    var pattern = /(\d+)([+%])/g;
+    var walker = document.createTreeWalker(
+      document.querySelector("main"),
+      NodeFilter.SHOW_TEXT,
+    );
+    var textNodes = [];
+    while (walker.nextNode()) {
+      if (pattern.test(walker.currentNode.nodeValue)) {
+        textNodes.push(walker.currentNode);
+      }
+      pattern.lastIndex = 0;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        observer.unobserve(entry.target);
+        var node = entry.target;
+        var target = Number(node.dataset.value);
+        var suffix = node.dataset.suffix;
+        var start = performance.now();
+        (function tick(now) {
+          var progress = Math.min((now - start) / 1200, 1);
+          var eased = 1 - Math.pow(1 - progress, 3);
+          node.textContent = Math.round(target * eased) + suffix;
+          if (progress < 1) requestAnimationFrame(tick);
+        })(start);
+      });
+    });
+
+    textNodes.forEach(function (textNode) {
+      var fragment = document.createDocumentFragment();
+      var text = textNode.nodeValue;
+      var last = 0;
+      text.replace(pattern, function (match, value, suffix, offset) {
+        fragment.appendChild(document.createTextNode(text.slice(last, offset)));
+        // The real figure stays in place until the animation starts.
+        var span = el("span", "count-up", match);
+        span.dataset.value = value;
+        span.dataset.suffix = suffix;
+        fragment.appendChild(span);
+        observer.observe(span);
+        last = offset + match.length;
+      });
+      fragment.appendChild(document.createTextNode(text.slice(last)));
+      textNode.parentNode.replaceChild(fragment, textNode);
+    });
+  }
+
+  // Small screens: the nav collapses into a drop-down menu behind a toggle button.
+  function setupMobileMenu() {
+    var header = document.querySelector(".topbar");
+    var toggle = byId("nav-toggle");
+    var nav = byId("primary-nav");
+
+    function setOpen(open) {
+      header.classList.toggle("nav-open", open);
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    }
+
+    toggle.addEventListener("click", function () {
+      setOpen(!header.classList.contains("nav-open"));
+    });
+    nav.addEventListener("click", function (event) {
+      if (event.target.closest("a")) setOpen(false);
+    });
+    document.addEventListener("click", function (event) {
+      if (!header.contains(event.target)) setOpen(false);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && header.classList.contains("nav-open")) {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+    matchMedia("(min-width: 761px)").addEventListener("change", function () {
+      setOpen(false);
+    });
   }
 
   renderHome();
@@ -620,4 +909,8 @@
   renderFooter();
   setupThemeToggle();
   setupNavigation();
+  setupMobileMenu();
+  setupHeroCurve();
+  setupCountUp();
+  setupReveal();
 })();
