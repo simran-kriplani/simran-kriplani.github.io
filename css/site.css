@@ -717,6 +717,9 @@ details[open] .case-toggle::before {
 }
 .blog-carousel-viewport.dragging {
   cursor: grabbing;
+}
+/* Snapping is paused while dragging and while JS animates to a card, so it can't fight either. */
+.blog-carousel-viewport.is-settling {
   scroll-snap-type: none;
 }
 .blog-carousel-track {
@@ -759,21 +762,29 @@ details[open] .case-toggle::before {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-.carousel-arrow:hover:not(:disabled) {
-  transform: scale(1.06);
-  border-color: var(--olive);
-  color: var(--olive-deep);
+@media (hover: hover) {
+  .carousel-arrow:hover:not(:disabled) {
+    transform: scale(1.06);
+    border-color: var(--olive);
+    color: var(--olive-deep);
+  }
+}
+.carousel-arrow:active:not(:disabled) {
+  transform: scale(0.95);
 }
 .carousel-arrow:disabled {
   opacity: 0.3;
   cursor: default;
 }
 @media (min-width: 1180px) {
+  /* Centred on the card images: image height = (carousel width - gap) / 2 / 1.62. */
   .blog-carousel-nav {
     position: absolute;
-    inset: 0 -3.6rem;
+    top: 0;
+    left: -3.6rem;
+    right: -3.6rem;
     margin: 0;
-    align-items: center;
+    padding-top: calc((100% - 1rem) / 3.24 / 2 - 1.3rem);
     justify-content: space-between;
     pointer-events: none;
   }
@@ -816,9 +827,10 @@ details[open] .case-toggle::before {
   text-decoration: underline;
   text-underline-offset: 0.14em;
 }
+/* On small screens show one card at a time with the next one peeking in. */
 @media (max-width: 720px) {
   .blog-card {
-    flex-basis: calc(50% - 0.4rem);
+    flex-basis: 80%;
   }
 }
 
