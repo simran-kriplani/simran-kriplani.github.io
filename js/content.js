@@ -20,7 +20,7 @@ window.siteContent = {
           title:
             "A Consumer Behaviour Perspective on Canada's Grocery Oligopoly",
           description:
-            "How brand architecture and dynamic pricing let a handful of conglomerates defend market share across Canada's grocery sector - and what that means for anyone trying to compete with them.",
+            'What 76.8 million Toronto shelf prices reveal about how a handful of parent companies use banner tiers, shared price points and "was" prices to shape what shoppers pay - and what that means for anyone trying to compete with them.',
           link: {
             href: "#case-studies:grocery-oligopoly",
             label: "See more",
@@ -104,9 +104,9 @@ window.siteContent = {
         title: "A Consumer Behaviour Perspective on Canada's Grocery Oligopoly",
         meta: "Independent research project",
         paragraphs: [
-          "Canada's grocery sector is dominated by a small number of conglomerates that each operate multiple retail banners spanning discount, mid-market, and premium tiers. That structure lets a single company appear to compete with itself while still controlling most of the shelf space a shopper actually sees.",
-          "I processed multi-brand retail datasets in Python and Excel to trace how pricing moved across banners and time periods, and mapped the results against shifts in market share among the major players.",
-          "The patterns pointed to a deliberate multi-brand strategy: premium banners protect margin while discount banners defend share, with pricing moving in tandem across the portfolio rather than banner by banner. I translated those findings into a customer strategy and positioning framework, then built a client-ready executive presentation framing the commercial and economic implications for retail stakeholders.",
+          "Canada's grocery sector is dominated by a few parent companies, each running banners that span discount, conventional and premium tiers. I asked whether they behave like independent stores competing item by item, or like portfolio managers sorting shoppers by what they're willing to pay.",
+          "I analysed 76.8 million daily shelf prices for eight Toronto banners in Python and DuckDB, matched products item by item across stores, and benchmarked the results against Statistics Canada's CPI.",
+          "The identical item costs a median 12.5% more at Loblaws than at its sister banner No Frills, while rivals Loblaws and Metro charge the exact same price on 40% of matched item-days. Market power shows up less in overt price moves than in pricing architecture: tiered banners, shared price points and reference prices. I translated the findings into a research memo, an Excel model and an executive presentation.",
         ],
         tags: [
           "Quantitative analysis",

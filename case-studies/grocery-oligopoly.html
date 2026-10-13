@@ -22,6 +22,10 @@
     />
     <script src="../js/theme-init.js?v=dev"></script>
     <title>A Consumer Behaviour Perspective on Canada's Grocery Oligopoly</title>
+    <meta
+      name="description"
+      content="76.8 million Toronto shelf prices show how Canada's grocery giants use banner tiers, shared price points and reference prices to shape what shoppers pay."
+    />
     <link rel="stylesheet" href="../css/theme.css?v=dev" />
     <link rel="stylesheet" href="../css/theme-dark.css?v=dev" />
     <link rel="stylesheet" href="../css/article.css?v=dev" />
@@ -35,10 +39,11 @@
           <div>
             <span class="eyebrow">Case study</span>
             <h1>A Consumer Behaviour Perspective on Canada's Grocery Oligopoly</h1>
-            <p class="subtitle">Independent research project · University of Toronto</p>
+            <p class="subtitle">Same owner, different shelf · Independent research project, University of Toronto</p>
           </div>
-          <div class="article-image">
-            <img src="../assets/images/headshot.png" alt="Grocery oligopoly case study visual" />
+          <div class="article-stat">
+            <span class="article-stat-value">12.5%</span>
+            <span class="article-stat-label">more for the identical item at Loblaws than at its sister banner, No Frills (median across 16,863 products)</span>
           </div>
         </header>
 
@@ -51,16 +56,81 @@
         </div>
 
         <div class="article-body">
-          <p>Canada's grocery sector is characterized by a concentrated mix of large retail chains, each strategically operating a portfolio of banners that cover discount, mid-market, and premium segments. This structure allows the same parent company to appear competitive across categories while maintaining a high degree of control over which products, prices, and brands customers encounter first.</p>
-          <p>My analysis focused on how pricing patterns moved across banners, time periods, and product categories. By combining Python-enabled data cleaning with Excel-based analysis, I traced where price changes were synchronized across competitors and where firms appeared to segment by consumer value proposition rather than by pure direct competition.</p>
-          <p>The key insight was that the market does not behave like a set of independent merchants competing fiercely in a single category. Instead, it behaves more like a coordinated portfolio strategy: premium banners protect margin while discount banners defend volume, and nearby banners often react in ways that reinforce a broader market structure rather than simply compete on an individual basis.</p>
-          <p>From a behavioural and strategic lens, this matters because consumer decisions are shaped not only by absolute price, but by the overlay of comparison, perception, and brand architecture. When shoppers are exposed to multiple banners across a single retailer, they are not simply choosing between products; they are evaluating a perceived market landscape shaped by the retailer's strategic framing.</p>
-          <p>I translated the findings into a client-facing research memo and presentation that connected the data to commercial interpretation, giving a clear view of how market power is exercised through pricing architecture, portfolio design, and brand segmentation.</p>
+          <p><i>A shopper tired of high grocery bills stops going to Loblaws and starts going to No Frills. The receipt is smaller. But the money still goes to the same company, which owns both stores and sets both prices.</i></p>
+
+          <p>Canada's grocery market is often described as a contest between rival stores. In practice, a few parent companies each run a portfolio of banners spanning discount, conventional and premium tiers. That raises a question the overall price level can't answer: <b>are these firms independent merchants competing item by item, or portfolio managers sorting shoppers by what they're willing to pay?</b></p>
+
+          <h2>The data</h2>
+          <p>I analysed <b>76.8 million daily shelf-price observations</b> for eight Toronto grocery banners, from February 2024 to October 2026, using Project Hammer's public scrape of grocers' websites. I matched products item by item across stores, and used Statistics Canada's CPI and average retail prices for context.</p>
+          <p>The cleaning in Python and DuckDB separated regular prices from promotions and parsed multi-buy deals like "2 for $7". The results became an Excel workbook with live formulas, a 17-slide executive deck and a research memo. As a check, the scraped prices rose 3.4–6.3% between August 2024 and September 2026, in line with the 6.0% rise in Ontario's official CPI for food from stores.</p>
+
+          <h2>What the shelf prices show</h2>
+
+          <h3>1. One basket, two price tiers</h3>
+          <p>On an identical basket of about 1,700 products, Metro and Loblaws price about 20 points above No Frills and Walmart. The gap <i>between</i> tiers dwarfs the gap <i>within</i> them: 3.6 points separate Metro and Loblaws, and 0.3 separate No Frills and Walmart. Loblaw owns a banner in both tiers.</p>
+          <figure class="article-figure">
+            <img src="../assets/images/grocery-oligopoly/price-ladder.png" alt="Price index on an identical basket: Metro 113, Loblaws 110, No Frills 90, Walmart 90 (regular prices); after promotions 102, 100, 86 and 83." loading="lazy" />
+            <figcaption>Price index on the same basket of products (four-banner average = 100). Filled dots are regular prices; open dots include promotions.</figcaption>
+          </figure>
+
+          <h3>2. The banner itself is a price signal</h3>
+          <p>Loblaws and No Frills share one product catalogue, which makes them the cleanest test of portfolio pricing. The same item costs a median <b>12.5% more</b> at Loblaws, and 78% of 16,863 matched products are dearer there. The premium has held steady since mid-2024. It appears in every category, including Loblaw's own PC and No Name brands. Shoppers aren't paying for the product. They're paying for the store.</p>
+          <figure class="article-figure">
+            <img src="../assets/images/grocery-oligopoly/banner-premium.png" alt="Median Loblaws premium over No Frills for identical items, by month (between 11% and 14%) and by category (every category positive, for both national and private-label brands)." loading="lazy" />
+            <figcaption>Loblaws' premium over No Frills for identical items, over time and by category.</figcaption>
+          </figure>
+
+          <h3>3. Rival conventional banners share price points</h3>
+          <p>Loblaws and Metro are owned by different companies, yet they charge the <b>identical regular price on 40% of matched item-days</b>. When both change the same item's price, 29% of the time they land on exactly the same new price. Loblaws and Walmart almost never do (0.1%). For a shopper, comparison shopping between conventional banners yields very little.</p>
+          <figure class="article-figure">
+            <img src="../assets/images/grocery-oligopoly/identical-item-gaps.png" alt="Median price premium and share of days at the identical price for pairs of banners. Loblaws and Metro: 0% premium and 40% of item-days at the identical price. Loblaws and Walmart: 21% premium and 0%." loading="lazy" />
+            <figcaption>Same product, same day: price premium and how often two banners charge exactly the same price.</figcaption>
+          </figure>
+
+          <h3>4. Coordination in timing lives inside portfolios</h3>
+          <p>Loblaws and No Frills change the same item's price within a day of each other <b>1.9 times as often as chance</b>. Across rival owners, the figure is 0.9–1.4 times, no higher than with Save-On-Foods, a Western grocer that doesn't operate in Toronto. That points to shared supplier costs, not stores reacting to each other. No banner consistently moves first, and most changes appear on Thursdays, in step with the weekly flyer.</p>
+          <figure class="article-figure">
+            <img src="../assets/images/grocery-oligopoly/synchronisation.png" alt="Synchronisation of price changes relative to chance: Loblaws and No Frills 1.94 times; rival pairs between 0.88 and 1.95 times; out-of-market control pairs between 1.04 and 1.98 times." loading="lazy" />
+            <figcaption>How often one banner's price change is matched by another's within a day, relative to chance (1.0 = chance).</figcaption>
+          </figure>
+
+          <h3>5. Promotions manage price image</h3>
+          <p>The conventional banners put 26–34% of product-days on promotion, against 14% at No Frills. Those deals trim about 9–10% off their basket, which narrows the gap to the discount tier but never closes it. A struck-through "was" price works as an anchor: the higher the regular price, the bigger the visible saving.</p>
+          <figure class="article-figure">
+            <img src="../assets/images/grocery-oligopoly/promotions.png" alt="Share of product-days on promotion: Metro 34%, Loblaws 26%, Voilà 19%, Walmart 19%, No Frills 14%. Basket index after promotions: Metro 102, Loblaws 100, No Frills 86, Walmart 83." loading="lazy" />
+            <figcaption>How often each banner runs promotions, and how far they move the basket.</figcaption>
+          </figure>
+
+          <h3>6. No visible holiday price freeze</h3>
+          <p>A November-to-February price freeze has been described as "industry practice", but it doesn't show up on the shelf. Price increases in that window ran at 0.84–1.09 times the rate of the rest of the year at the four main Toronto banners, with no statistically significant difference.</p>
+
+          <h2>Why it works: the consumer-behaviour lens</h2>
+          <p>Shoppers don't compare 1,700 items. They choose stores using shortcuts, and four of them turn this portfolio structure into durable pricing power:</p>
+          <ul>
+            <li><b>Choice-set illusion.</b> Many banner names signal many competitors, but five of the eight banners studied belong to three parents.</li>
+            <li><b>Anchoring.</b> The conventional tier's regular price sets the reference point, so both "was" prices and the discount tier feel like savings.</li>
+            <li><b>Tier sorting.</b> Shoppers self-select into good, better or best banners instead of comparing identical items, so the portfolio captures every level of willingness to pay.</li>
+            <li><b>Price image over price facts.</b> Shoppers rely on a banner's overall reputation for price, and identical price points among conventional rivals remove the signal that would reward comparing them.</li>
+          </ul>
+          <p>None of this requires explicit coordination. <b>The architecture does the work.</b></p>
+
+          <h2>What it means</h2>
+          <ul>
+            <li><b>For regulators:</b> assess concentration at the parent-company level, since the banner is a marketing device. Make "was" prices verifiable.</li>
+            <li><b>For challengers:</b> position against the conventional tier, where rivals share price points, with transparent everyday pricing instead of high-low promotions.</li>
+            <li><b>For shoppers:</b> compare across owners, not just banners, and treat "was" prices as anchors rather than proof of a saving.</li>
+          </ul>
+
+          <aside class="article-note">
+            <p><b>Read with care.</b> Shared or synchronised prices are descriptive evidence. They're consistent with tacit coordination, but equally with common supplier costs and manufacturer-suggested prices. Nothing here is a finding of collusion. The data cover online pickup prices for one Toronto neighbourhood, with no cost or sales-volume data.</p>
+          </aside>
+
+          <p class="article-sources">Data: Project Hammer (Jacob Filipp), Toronto online shelf prices, Feb 2024–Oct 2026; Statistics Canada Tables 18-10-0004-01 and 18-10-0245-01; Competition Bureau Canada, <i>Retail Grocery Market Study</i> (2023).</p>
         </div>
 
         <p class="pdf-note">
-          Found this interesting? Read the full literature review
-          <a href="../assets/case-studies/grocery-oligopoly.pdf" target="_blank" rel="noopener">here</a>
+          Want the full analysis, with methods and recommendations?
+          <a href="../assets/case-studies/grocery-oligopoly.pdf" target="_blank" rel="noopener">Read the research memo (PDF)</a>
         </p>
       </article>
     </main>
