@@ -364,7 +364,7 @@ window.siteContent = {
         slug: "why-behavioural-thinking-makes-strategy-clearer",
         title: "Why behavioural thinking makes strategy clearer",
         meta: "Essay · 2026",
-        image: "assets/images/dress-good.png",
+        image: "assets/images/gambling.png",
         summary:
           "A note on how framing, defaults, and mental models shape the way people respond to markets, brands, and product decisions.",
         body: [
