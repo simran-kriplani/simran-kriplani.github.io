@@ -364,7 +364,7 @@ window.siteContent = {
         slug: "why-behavioural-thinking-makes-strategy-clearer",
         title: "Why behavioural thinking makes strategy clearer",
         meta: "Essay · 2026",
-        image: "assets/images/gambling.png",
+        image: "assets/images/dress-good.png",
         summary:
           "A note on how framing, defaults, and mental models shape the way people respond to markets, brands, and product decisions.",
         body: [
@@ -374,6 +374,18 @@ window.siteContent = {
         ],
         link: {
           href: "blog-posts/why-behavioural-thinking-makes-strategy-clearer.html",
+          label: "Read more",
+        },
+      },
+      {
+        slug: "gambling-fallacy",
+        title: "Streaks, Beliefs, and Chip the Coin",
+        meta: "Gambler's Fallacy and Hot Hand Effect",
+        image: "assets/images/gambling.png",
+        summary:
+          "How our beliefs about streaks shape the stories we tell about chance, randomness, and intention.",
+        link: {
+          href: "blog-posts/gambling-fallacy.html",
           label: "Read more",
         },
       },

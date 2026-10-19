@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streaks, Beliefs, and Chip the Coin</title>
+    <link rel="stylesheet" href="shared.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <a class="back-link" href="../index.html">← Back to the site</a>
+
+      <article class="article">
+        <span class="eyebrow">Blog post</span>
+        <h1>Streaks, Beliefs, and Chip the Coin</h1>
+        <p class="subtitle">Gambler's Fallacy and Hot Hand Effect</p>
+
+        <div class="article-body">
+          <p>Imagine a fair coin lands on heads four times in a row. What do you expect on the fifth flip? Many people feel a pull toward tails. Surely, after so many heads, tails is due. But give that same coin a name and a personality, call it Chip, and the intuition can shift. Instead of expecting the streak to end, we may begin to expect it to continue.</p>
+          <p>This tension lies at the heart of two well-documented biases in judgment under uncertainty. The gambler's fallacy is the belief that a streak is likely to reverse, while the hot-hand belief is the expectation that it will continue. One treats a pattern as something that must correct itself; the other treats it as evidence of momentum. From casino gambling and sports performance to financial markets and algorithmic decision systems, people routinely draw conclusions from patterns that normative probability treats as completely uninformative.</p>
+          <p>The obvious question is which belief is the real bias. But this framing misses something more interesting: the two beliefs can coexist. In one study, people expected mechanical devices to reverse a streak while expecting human performers to sustain one, even when making these judgments in the same session. Lottery players similarly tend to avoid recently drawn numbers, assuming that randomness will eventually balance itself out. The difference is not necessarily in people's ability to reason about probability, but in their assumptions about what produces an outcome. Is each process independent, or does the result of one somehow influence what comes next?</p>
+          <p>People answer this question using cues that have nothing to do with actual probability. Counterintuitively, longer gaps between events can strengthen gambler's-fallacy reasoning, challenging the intuition that more time allows randomness to reset. Real-world behaviour can depart from this expectation altogether: baccarat gamblers in casinos have been observed following streaks rather than betting on reversals, particularly when a pattern persists. Despite the game's reliance on chance, some players respond as though the sequence itself carries information. The same pattern can invite opposing interpretations depending on what people believe it signifies.</p>
+          <p>Which brings us back to Chip. What happens when we change not the coin's properties, but how we perceive it? Anthropomorphized slot machines have been shown to increase engagement and risk-taking even though the payoff structure is completely identical to a plain, unnamed machine. More directly: when an outcome is attributed to an intentional agent, people judge a streak as more likely to continue, even when the underlying process is, and remains, entirely random. Attribute agency to something, even briefly, and you import an entire set of assumptions along with it — memory, goals, learning, the sense that something is building. A coin can't actually get hot. But the moment it has a name, some part of the mind starts treating it like it can.</p>
+          <p>That is what makes these biases worth understanding. Our judgments about streaks reflect the causal explanations we construct around them. We look for hidden structure in sequences, constantly interpreting randomness as evidence of correction, momentum, or intention. Sometimes those interpretations reflect genuine patterns in the world. Other times, they reveal how readily we turn randomness into a story.</p>
+          <p><i>Adapted from research conducted as a research assistant under Dr. Pankaj Aggarwal, University of Toronto.</i></p>
+        </div>
+
+        <section class="comments" aria-label="Comments section">
+          <h2>Thoughts</h2>
+          <textarea id="comment-box" placeholder="Share your thoughts..."></textarea>
+          <div class="comment-actions">
+            <button type="button" id="comment-submit">Post comment</button>
+          </div>
+          <ul class="comment-list" id="comment-list"></ul>
+        </section>
+      </article>
+    </main>
+
+    <script>
+      (function () {
+        const key = 'why-behavioural-thinking-makes-strategy-clearer';
+        const commentBox = document.getElementById('comment-box');
+        const submitButton = document.getElementById('comment-submit');
+        const commentList = document.getElementById('comment-list');
+
+        function renderComments() {
+          const comments = JSON.parse(localStorage.getItem('simran-blog-comments') || '{}');
+          const items = comments[key] || [];
+          commentList.innerHTML = '';
+          items.forEach(function (comment) {
+            const li = document.createElement('li');
+            li.textContent = comment;
+            commentList.appendChild(li);
+          });
+        }
+
+        submitButton.addEventListener('click', function () {
+          const value = commentBox.value.trim();
+          if (!value) return;
+          const comments = JSON.parse(localStorage.getItem('simran-blog-comments') || '{}');
+          comments[key] = comments[key] || [];
+          comments[key].push(value);
+          localStorage.setItem('simran-blog-comments', JSON.stringify(comments));
+          commentBox.value = '';
+          renderComments();
+        });
+
+        renderComments();
+      })();
+    </script>
+  </body>
+</html>
