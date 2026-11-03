@@ -439,6 +439,17 @@ window.siteContent = {
           label: "Read more",
         },
       },
+      {
+        slug: "the-small-design-decisions-that-shape-behaviour",
+        title: "The small design decisions that shape behaviour",
+        meta: "Field notes · 2025",
+        summary:
+          "Why the most influential choices are often the ones that feel almost invisible in the moment.",
+        link: {
+          href: "from-the-notebook/the-small-design-decisions-that-shape-behaviour.html",
+          label: "Read more",
+        },
+      },
     ],
   },
 

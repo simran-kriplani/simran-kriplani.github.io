@@ -4,11 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Streaks, Beliefs, and Chip the Coin</title>
-    <link rel="stylesheet" href="shared.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Archivo:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../js/theme-init.js?v=dev"></script>
+    <link rel="stylesheet" href="../css/theme.css?v=dev" />
+    <link rel="stylesheet" href="../css/theme-dark.css?v=dev" />
+    <link rel="stylesheet" href="../css/article.css?v=dev" />
   </head>
-  <body>
+  <body class="article-page">
     <main class="page-shell">
-      <a class="back-link" href="../index.html">← Back to the site</a>
+      <a class="back-link" href="../index.html#blog">← Back to the site</a>
 
       <article class="article">
         <span class="eyebrow">Blog post</span>
@@ -25,12 +34,11 @@
           <p><i>Adapted from research conducted as a research assistant under Dr. Pankaj Aggarwal, University of Toronto.</i></p>
         <p class="pdf-note">
           Found this interesting? Read the full literature review
-          <a href="../assets/case-studies/counterfeits.pdf" target="_blank" rel="noopener">here</a>
+          <a href="../assets/blog/Literature%20Review%20-%20Fallacies%20Project.pdf" target="_blank" rel="noopener">here</a>
         </p>
-        
         </div>
 
-        <section class="comments" aria-label="Comments section">
+        <section class="comments" aria-label="Comments section" data-comments-key="gambling-fallacy">
           <h2>Thoughts</h2>
           <textarea id="comment-box" placeholder="Share your thoughts..."></textarea>
           <div class="comment-actions">
@@ -41,37 +49,7 @@
       </article>
     </main>
 
-    <script>
-      (function () {
-        const key = 'why-behavioural-thinking-makes-strategy-clearer';
-        const commentBox = document.getElementById('comment-box');
-        const submitButton = document.getElementById('comment-submit');
-        const commentList = document.getElementById('comment-list');
-
-        function renderComments() {
-          const comments = JSON.parse(localStorage.getItem('simran-blog-comments') || '{}');
-          const items = comments[key] || [];
-          commentList.innerHTML = '';
-          items.forEach(function (comment) {
-            const li = document.createElement('li');
-            li.textContent = comment;
-            commentList.appendChild(li);
-          });
-        }
-
-        submitButton.addEventListener('click', function () {
-          const value = commentBox.value.trim();
-          if (!value) return;
-          const comments = JSON.parse(localStorage.getItem('simran-blog-comments') || '{}');
-          comments[key] = comments[key] || [];
-          comments[key].push(value);
-          localStorage.setItem('simran-blog-comments', JSON.stringify(comments));
-          commentBox.value = '';
-          renderComments();
-        });
-
-        renderComments();
-      })();
-    </script>
+    <script src="../js/comments.js?v=dev"></script>
+    <script src="../js/article.js?v=dev"></script>
   </body>
 </html>
