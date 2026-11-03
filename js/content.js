@@ -519,7 +519,7 @@ window.siteContent = {
         },
         {
           title: "CFA Level I Candidate",
-          meta: "Expected February 2027",
+          meta: "February 2027 Exam",
           org: "CFA Institute",
         },
       ],
