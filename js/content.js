@@ -391,7 +391,7 @@ window.siteContent = {
       },
       {
         slug: "the-hidden-psychology-behind-pricing",
-        title: "The hidden psychology behind pricing",
+        title: "Test",
         meta: "Field notes · 2026",
         image: "assets/images/counterfeit_bags.png",
         summary:
@@ -425,17 +425,6 @@ window.siteContent = {
           "A reminder that cognition is not just about facts; it is also about the emotional comfort of the pattern.",
         link: {
           href: "from-the-notebook/why-people-trust-ideas-that-feel-familiar.html",
-          label: "Read more",
-        },
-      },
-      {
-        slug: "the-small-design-decisions-that-shape-behaviour",
-        title: "The small design decisions that shape behaviour",
-        meta: "Field notes · 2025",
-        summary:
-          "Why the most influential choices are often the ones that feel almost invisible in the moment.",
-        link: {
-          href: "from-the-notebook/the-small-design-decisions-that-shape-behaviour.html",
           label: "Read more",
         },
       },
