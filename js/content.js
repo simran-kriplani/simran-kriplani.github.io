@@ -361,10 +361,10 @@ window.siteContent = {
     archiveHeading: "From the notebook",
     items: [
       {
-        slug: "why-behavioural-thinking-makes-strategy-clearer",
-        title: "Why behavioural thinking makes strategy clearer",
-        meta: "Essay · 2026",
-        image: "assets/images/dress-good.png",
+        slug: "ladders-snakes",
+        title: "When the Ladder Becomes the Snake",
+        meta: "What happens to motivation when effort stops predicting outcomes",
+        image: "assets/images/econ.png",
         summary:
           "A note on how framing, defaults, and mental models shape the way people respond to markets, brands, and product decisions.",
         body: [
@@ -373,7 +373,7 @@ window.siteContent = {
           "When those mechanisms are visible, strategy becomes clearer. The brand message stops sounding like generic persuasion and starts acting like a cue about what matters, what is safer, and what is worth acting on. That is where the real work begins: not in crafting a clever claim, but in designing the environment in which people can make a sensible choice.",
         ],
         link: {
-          href: "blog-posts/why-behavioural-thinking-makes-strategy-clearer.html",
+          href: "blog-posts/ladders-snakes.html",
           label: "Read more",
         },
       },
