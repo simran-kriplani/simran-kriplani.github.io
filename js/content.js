@@ -159,7 +159,7 @@ window.siteContent = {
       },
       {
         slug: "counterfeits",
-        title: "The Anatomy of a Fake",
+        title: "The Anatomy of a Fake: Counterfeits and the Consumer",
         meta: "Research Assistant · Rotman School of Management",
         paragraphs: [
           "Why do some counterfeits feel more authentic than others?",
@@ -436,7 +436,7 @@ window.siteContent = {
       },
       {
         slug: "culture-bias",
-        title: "One Size does NOT Fit All: Rethinking the Cultural Boundaries of Neuropsychological Testing",
+        title: "One Size does NOT Fit All: Cultural Boundaries of Neuropsychological Testing",
         meta: "Rethinking the Cultural Boundaries of the Neuropsychological Testing",
         summary:
           "Why the most influential choices are often the ones that feel almost invisible in the moment.",
