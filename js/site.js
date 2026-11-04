@@ -257,8 +257,8 @@
   /* ---------- Blog ---------- */
 
   function renderBlogArchive(blog) {
-    // The first two posts live in the carousel; the rest are listed here.
-    var archiveItems = blog.items.slice(2);
+    // The first four posts live in the carousel; the rest are listed here.
+    var archiveItems = blog.items.slice(4);
     if (!archiveItems.length) {
       byId("blog-archive-list").parentNode.hidden = true;
       return;
@@ -454,7 +454,7 @@
     var blog = content.blog;
     setText("blog-title", blog.title);
     setText("blog-intro", blog.intro);
-    setupBlogCarousel(blog.items.slice(0, 6));
+    setupBlogCarousel(blog.items.slice(0, 4));
     renderBlogArchive(blog);
   }
 

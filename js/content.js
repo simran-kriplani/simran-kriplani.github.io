@@ -390,8 +390,8 @@ window.siteContent = {
         },
       },
       {
-        slug: "the-hidden-psychology-behind-pricing",
-        title: "Test",
+        slug: "blog3-test",
+        title: "Blog 3 Test",
         meta: "Field notes · 2026",
         image: "assets/images/counterfeit_bags.png",
         summary:
@@ -402,19 +402,25 @@ window.siteContent = {
           "A strong pricing strategy is therefore not simply about discounting or premium positioning. It is about understanding the mental shortcuts consumers rely on when they decide whether a price is acceptable, expensive, or suspiciously cheap. Once you start from that point, pricing stops sounding like arithmetic and starts looking like behaviour design.",
         ],
         link: {
-          href: "blog-posts/the-hidden-psychology-behind-pricing.html",
+          href: "blog-posts/blog3-test.html",
           label: "Dive in",
         },
       },
-      {
-        slug: "what-good-research-actually-looks-like",
-        title: "What good research actually looks like",
-        meta: "Notebook · 2025",
+            {
+        slug: "blog4-test",
+        title: "Blog 4 Test",
+        meta: "Field notes · 2026",
+        image: "assets/images/coffee-cup.png",
         summary:
-          "The difference between collecting information and turning it into a decision people can trust.",
+          "What a pricing decision looks like when you start from how people actually compare options instead of how theory assumes they should.",
+        body: [
+          "People rarely compare pricing the way textbooks suggest. We do not first calculate utility and then choose the economically rational option. Instead, we anchor, contrast, and infer value from context before we ever decide whether a price feels fair.",
+          "That is why small changes in framing can shift perceived value more than large changes in actual cost. The difference between '$9.99' and '$10' is tiny on paper but psychologically meaningful in practice, especially when the choice is relative rather than absolute.",
+          "A strong pricing strategy is therefore not simply about discounting or premium positioning. It is about understanding the mental shortcuts consumers rely on when they decide whether a price is acceptable, expensive, or suspiciously cheap. Once you start from that point, pricing stops sounding like arithmetic and starts looking like behaviour design.",
+        ],
         link: {
-          href: "from-the-notebook/what-good-research-actually-looks-like.html",
-          label: "Read more",
+          href: "blog-posts/blog4-test.html",
+          label: "Dive in",
         },
       },
       {
