@@ -436,7 +436,7 @@ window.siteContent = {
       },
       {
         slug: "culture-bias",
-        title: "Culture Bias in Neuropsychological Testing",
+        title: "One Size does NOT Fit All: Rethinking the Cultural Boundaries of Neuropsychological Testing",
         meta: "Rethinking the Cultural Boundaries of the Neuropsychological Testing",
         summary:
           "Why the most influential choices are often the ones that feel almost invisible in the moment.",
