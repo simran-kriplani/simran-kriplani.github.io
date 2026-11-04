@@ -435,13 +435,13 @@ window.siteContent = {
         },
       },
       {
-        slug: "the-small-design-decisions-that-shape-behaviour",
-        title: "The small design decisions that shape behaviour",
-        meta: "Field notes · 2025",
+        slug: "culture-bias",
+        title: "Culture Bias in Neuropsychological Testing",
+        meta: "Rethinking the Cultural Boundaries of the Neuropsychological Testing",
         summary:
           "Why the most influential choices are often the ones that feel almost invisible in the moment.",
         link: {
-          href: "from-the-notebook/the-small-design-decisions-that-shape-behaviour.html",
+          href: "from-the-notebook/culture-bias.html",
           label: "Read more",
         },
       },
