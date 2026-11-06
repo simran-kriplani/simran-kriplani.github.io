@@ -424,13 +424,13 @@ window.siteContent = {
         },
       },
       {
-        slug: "why-people-trust-ideas-that-feel-familiar",
-        title: "Why people trust ideas that feel familiar",
+        slug: "scarcity",
+        title: "When Scarcity Thinks for You: Financial Stress as a Cognitive Trap",
         meta: "Reflection · 2025",
         summary:
           "A reminder that cognition is not just about facts; it is also about the emotional comfort of the pattern.",
         link: {
-          href: "from-the-notebook/why-people-trust-ideas-that-feel-familiar.html",
+          href: "from-the-notebook/scarcity.html",
           label: "Read more",
         },
       },
