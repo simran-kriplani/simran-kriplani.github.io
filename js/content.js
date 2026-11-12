@@ -390,10 +390,10 @@ window.siteContent = {
         },
       },
       {
-        slug: "blog3-test",
-        title: "Blog 3 Test",
-        meta: "Field notes · 2026",
-        image: "assets/images/counterfeit_bags.png",
+        slug: "franklin",
+        title: "We Didn't Build the House We Live In",
+        meta: "The systems we inhabit and the choices that created them",
+        image: "assets/images/franklin.png",
         summary:
           "What a pricing decision looks like when you start from how people actually compare options instead of how theory assumes they should.",
         body: [
@@ -402,7 +402,7 @@ window.siteContent = {
           "A strong pricing strategy is therefore not simply about discounting or premium positioning. It is about understanding the mental shortcuts consumers rely on when they decide whether a price is acceptable, expensive, or suspiciously cheap. Once you start from that point, pricing stops sounding like arithmetic and starts looking like behaviour design.",
         ],
         link: {
-          href: "blog-posts/blog3-test.html",
+          href: "blog-posts/franklin.html",
           label: "Dive in",
         },
       },
