@@ -11,6 +11,7 @@
   var SVG_NS = "http://www.w3.org/2000/svg";
   var DRAG_THRESHOLD = 5; // px before a press on the blog carousel becomes a drag
   var SWIPE_DISTANCE = 60; // px a mouse drag must travel to move to another card
+  var blogCarouselGoTo;
 
   /* ---------- Helpers ---------- */
 
@@ -448,13 +449,15 @@
     viewport.addEventListener("dragstart", function (event) {
       event.preventDefault();
     });
+    
+      return goTo
   }
 
   function renderBlog() {
     var blog = content.blog;
     setText("blog-title", blog.title);
     setText("blog-intro", blog.intro);
-    setupBlogCarousel(blog.items.slice(0, 4));
+    blogCarouselGoTo = setupBlogCarousel(blog.items.slice(0, 4));
     renderBlogArchive(blog);
   }
 
@@ -631,6 +634,13 @@
     function openDeepLink() {
       var parts = location.hash.slice(1).split(":");
       if (parts.length < 2) return;
+      if (parts[0] === "blog" && blogCarouselGoTo) {
+  var blogItems = content.blog.items.slice(0, 4);
+  var blogIndex = blogItems.findIndex(function (item) {
+    return item.slug === parts[1];
+  });
+  if (blogIndex !== -1) blogCarouselGoTo(blogIndex);
+}
       var details = byId(parts[1]);
       var target =
         details && details.tagName === "DETAILS" ? details : byId(parts[0]);
