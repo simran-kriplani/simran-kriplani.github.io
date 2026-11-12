@@ -39,11 +39,11 @@ window.siteContent = {
         },
         {
           tag: "featured",
-          title: "Applied Behavioural Strategy in Campus Leadership",
+          title: "We Didn't Build the House We Live In",
           description:
-            "How campaign design, brand voice, and behaviour change frameworks translate into engagement and action when the goal is to move people, not just inform them.",
+            "How technological systems reflect the human decisions, values, and power structures behind them - and why treating technology as an inevitable force makes those decisions easier to overlook. Drawing from the work of Ursula Franklin and Leo Marx.",
           link: {
-            href: "#case-studies:campus-leadership",
+            href: "#blog:franklin",
             label: "See more",
           },
         },
@@ -367,11 +367,7 @@ window.siteContent = {
         image: "assets/images/econ.png",
         summary:
           "A note on how framing, defaults, and mental models shape the way people respond to markets, brands, and product decisions.",
-        body: [
-          "Strategy often looks like a problem of positioning, pricing, or product choices. In reality, it is usually a problem of interpretation: how people make sense of the options in front of them and what they believe is being asked of them.",
-          "Behavioural thinking pushes the strategist to ask a more useful question than 'What is the best offer?' It asks, 'What does the customer notice first, and what are they likely to infer before they even compare alternatives?' That shift matters because attention, defaults, and framing shape action long before the final decision is made.",
-          "When those mechanisms are visible, strategy becomes clearer. The brand message stops sounding like generic persuasion and starts acting like a cue about what matters, what is safer, and what is worth acting on. That is where the real work begins: not in crafting a clever claim, but in designing the environment in which people can make a sensible choice.",
-        ],
+        body: [        ],
         link: {
           href: "blog-posts/ladders-snakes.html",
           label: "Read more",
@@ -397,9 +393,6 @@ window.siteContent = {
         summary:
           "What a pricing decision looks like when you start from how people actually compare options instead of how theory assumes they should.",
         body: [
-          "People rarely compare pricing the way textbooks suggest. We do not first calculate utility and then choose the economically rational option. Instead, we anchor, contrast, and infer value from context before we ever decide whether a price feels fair.",
-          "That is why small changes in framing can shift perceived value more than large changes in actual cost. The difference between '$9.99' and '$10' is tiny on paper but psychologically meaningful in practice, especially when the choice is relative rather than absolute.",
-          "A strong pricing strategy is therefore not simply about discounting or premium positioning. It is about understanding the mental shortcuts consumers rely on when they decide whether a price is acceptable, expensive, or suspiciously cheap. Once you start from that point, pricing stops sounding like arithmetic and starts looking like behaviour design.",
         ],
         link: {
           href: "blog-posts/franklin.html",
@@ -414,9 +407,6 @@ window.siteContent = {
         summary:
           "What a pricing decision looks like when you start from how people actually compare options instead of how theory assumes they should.",
         body: [
-          "People rarely compare pricing the way textbooks suggest. We do not first calculate utility and then choose the economically rational option. Instead, we anchor, contrast, and infer value from context before we ever decide whether a price feels fair.",
-          "That is why small changes in framing can shift perceived value more than large changes in actual cost. The difference between '$9.99' and '$10' is tiny on paper but psychologically meaningful in practice, especially when the choice is relative rather than absolute.",
-          "A strong pricing strategy is therefore not simply about discounting or premium positioning. It is about understanding the mental shortcuts consumers rely on when they decide whether a price is acceptable, expensive, or suspiciously cheap. Once you start from that point, pricing stops sounding like arithmetic and starts looking like behaviour design.",
         ],
         link: {
           href: "blog-posts/blog4-test.html",
